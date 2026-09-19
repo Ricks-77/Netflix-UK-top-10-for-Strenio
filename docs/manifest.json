@@ -1,10 +1,15 @@
 {
   "id": "uk.rui.netflix.top10",
-  "version": "1.0.0",
-  "name": "Netflix UK Top 10",
-  "description": "Daily Netflix UK Top 10 movies and series, sourced from the public FlixPatrol UK Netflix chart.",
-  "resources": ["catalog"],
-  "types": ["movie", "series"],
+  "version": "1.1.0",
+  "name": "UK Streaming & IMDb Catalogs",
+  "description": "Netflix UK Top 10 plus rolling 12-month IMDb 7.5+ movie and series catalogs.",
+  "resources": [
+    "catalog"
+  ],
+  "types": [
+    "movie",
+    "series"
+  ],
   "catalogs": [
     {
       "type": "series",
@@ -15,6 +20,16 @@
       "type": "movie",
       "id": "netflix-uk-top10-movies",
       "name": "Netflix UK Top 10 - Movies"
+    },
+    {
+      "type": "movie",
+      "id": "imdb-last12m-movies",
+      "name": "Best Movies - Last 12 Months"
+    },
+    {
+      "type": "series",
+      "id": "imdb-last12m-series",
+      "name": "Best TV Series - Last 12 Months"
     }
   ],
   "behaviorHints": {
