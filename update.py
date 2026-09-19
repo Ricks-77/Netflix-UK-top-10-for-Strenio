@@ -127,6 +127,9 @@ def fetch_rankings():
         series = parse_markdown_section(r.text, "TOP 10 TV Shows")
         if len(movies) >= 8 and len(series) >= 8:
             return movies[:10], series[:10], "jina"
+        print("JINA DEBUG START")
+        print(r.text[:8000])
+        print("JINA DEBUG END")
         errors.append(f"Jina returned movies={len(movies)}, series={len(series)}")
     except Exception as e:
         errors.append(f"Jina: {e}")
