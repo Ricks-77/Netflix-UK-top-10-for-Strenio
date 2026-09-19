@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "exportedAt": "2026-09-19T18:44:17.140Z",
+  "catalogs": [
+    {
+      "id": "custom.uk_rui_netflix_top10.series.netflix_uk_top10_series",
+      "name": "Netflix UK Top 10 - Series",
+      "type": "series",
+      "enabled": true,
+      "source": "custom",
+      "sourceUrl": "https://ricks-77.github.io/Netflix-UK-top-10-for-Strenio/catalog/series/netflix-uk-top10-series.json",
+      "showInHome": true,
+      "genres": [],
+      "cacheTTL": 300,
+      "enableRatingPosters": true,
+      "manifestData": {
+        "type": "series",
+        "id": "netflix-uk-top10-series",
+        "name": "Netflix UK Top 10 - Series",
+        "extra": [],
+        "idPrefixes": []
+      }
+    },
+    {
+      "id": "custom.uk_rui_netflix_top10.movie.netflix_uk_top10_movies",
+      "name": "Netflix UK Top 10 - Movies",
+      "type": "movie",
+      "enabled": true,
+      "source": "custom",
+      "sourceUrl": "https://ricks-77.github.io/Netflix-UK-top-10-for-Strenio/catalog/movie/netflix-uk-top10-movies.json",
+      "showInHome": true,
+      "genres": [],
+      "cacheTTL": 300,
+      "enableRatingPosters": true,
+      "manifestData": {
+        "type": "movie",
+        "id": "netflix-uk-top10-movies",
+        "name": "Netflix UK Top 10 - Movies",
+        "extra": [],
+        "idPrefixes": []
+      }
+    }
+  ]
+}
