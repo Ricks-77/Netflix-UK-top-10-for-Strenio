@@ -7,6 +7,7 @@ on:
     paths:
       - "update.py"
       - "requirements.txt"
+      - "rankings.json"
       - ".github/workflows/update.yml"
   schedule:
     - cron: "20 16,18 * * *"
