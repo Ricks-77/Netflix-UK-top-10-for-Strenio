@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T20:42:54.291722+01:00",
+  "updated_at": "2026-09-19T20:58:30.829555+01:00",
   "netflix": {
     "source": "verified-local",
     "movies": 10,
@@ -11,6 +11,7 @@
     "minimum_rating": 7.5,
     "movie_min_votes": 10000,
     "series_min_votes": 5000,
+    "series_definition": "at least one IMDb episode released in the rolling 12-month window",
     "allowed_primary_languages": [
       "en",
       "fr",
@@ -56,7 +57,7 @@
     "from": "2025-09-19",
     "to": "2026-09-19",
     "movies": 12,
-    "series": 45,
+    "series": 33,
     "movie_source": "https://caching.graphql.imdb.com/",
     "series_source": "https://caching.graphql.imdb.com/"
   }
