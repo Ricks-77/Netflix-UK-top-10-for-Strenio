@@ -263,59 +263,88 @@ def imdb_search(media_type: str):
     today = datetime.now(ZoneInfo("Europe/London")).date()
     start = one_year_ago(today)
     min_votes = MOVIE_MIN_VOTES if media_type == "movie" else SERIES_MIN_VOTES
-    title_type = "feature" if media_type == "movie" else "tv_series,tv_miniseries"
-    params = {
-        "title_type": title_type,
-        "release_date": f"{start.isoformat()},{today.isoformat()}",
-        "user_rating": f"{IMDB_MIN_RATING},",
-        "num_votes": f"{min_votes},",
-        "sort": "user_rating,desc",
-        "count": str(MAX_IMDB_RESULTS),
-    }
-    query = urlencode(params, safe=",")
-    url = f"{IMDB_SEARCH_URL}?{query}"
+    title_types = ["movie"] if media_type == "movie" else ["tvSeries", "tvMiniSeries"]
+
+    type_values = ", ".join(json.dumps(x) for x in title_types)
+    query = f"""
+    query RollingIMDbSearch {{
+      advancedTitleSearch(
+        first: {MAX_IMDB_RESULTS}
+        sort: {{ sortBy: USER_RATING sortOrder: DESC }}
+        constraints: {{
+          titleTypeConstraint: {{ anyTitleTypeIds: [{type_values}] }}
+          releaseDateConstraint: {{ releaseDateRange: {{ start: "{start.isoformat()}" end: "{today.isoformat()}" }} }}
+          userRatingsConstraint: {{
+            aggregateRatingRange: {{ min: {IMDB_MIN_RATING} }}
+            ratingsCountRange: {{ min: {min_votes} }}
+          }}
+        }}
+      ) {{
+        total
+        edges {{
+          node {{
+            title {{
+              id
+              titleText {{ text }}
+              releaseYear {{ year endYear }}
+              primaryImage {{ url }}
+              ratingsSummary {{ aggregateRating voteCount }}
+            }}
+          }}
+        }}
+      }}
+    }}
+    """
+
+    endpoint = "https://caching.graphql.imdb.com/"
     headers = {
         "User-Agent": UA,
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "en-GB,en;q=0.9",
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Origin": "https://www.imdb.com",
     }
-    errors = []
-    candidates = []
     try:
-        r = requests.get(url, headers=headers, timeout=TIMEOUT)
+        r = requests.post(endpoint, headers=headers, json={"query": query}, timeout=TIMEOUT)
         r.raise_for_status()
-        candidates = parse_imdb_html(r.text)
-        if len(candidates) < 5:
-            errors.append(f"IMDb direct parsed only {len(candidates)}")
-            candidates = []
+        payload = r.json()
     except Exception as e:
-        errors.append(f"IMDb direct: {e}")
+        raise RuntimeError(f"IMDb GraphQL request failed: {e}") from e
 
-    if not candidates:
-        try:
-            jina = JINA_PREFIX + url.replace("https://", "")
-            r = requests.get(jina, headers={"User-Agent": UA, "Accept": "text/plain"}, timeout=TIMEOUT)
-            r.raise_for_status()
-            candidates = parse_imdb_markdown(r.text)
-            if len(candidates) < 5:
-                errors.append(f"IMDb via Jina parsed only {len(candidates)}")
-                candidates = []
-        except Exception as e:
-            errors.append(f"IMDb via Jina: {e}")
+    if payload.get("errors"):
+        raise RuntimeError("IMDb GraphQL returned errors: " + json.dumps(payload["errors"])[:1500])
 
-    if not candidates:
-        raise RuntimeError("Could not obtain trustworthy IMDb rolling-12-month results. " + " | ".join(errors))
-
-    # The IMDb query already filters rating and vote count and sorts descending.
-    # Re-apply parsed values where available as a guard against malformed pages.
-    clean = []
-    for c in candidates:
-        if c["rating"] is not None and c["rating"] < IMDB_MIN_RATING:
+    data = payload.get("data", {}).get("advancedTitleSearch", {})
+    edges = data.get("edges", [])
+    candidates = []
+    for edge in edges:
+        title = ((edge or {}).get("node") or {}).get("title") or {}
+        imdb_id = title.get("id", "")
+        ratings = title.get("ratingsSummary") or {}
+        rating = ratings.get("aggregateRating")
+        votes = ratings.get("voteCount")
+        name = (title.get("titleText") or {}).get("text") or imdb_id
+        if not imdb_id.startswith("tt"):
             continue
-        if c["votes"] is not None and c["votes"] < min_votes:
+        if rating is None or float(rating) < IMDB_MIN_RATING:
             continue
-        clean.append(c)
-    return clean[:MAX_IMDB_RESULTS], start, today, url
+        if votes is None or int(votes) < min_votes:
+            continue
+        candidates.append({
+            "id": imdb_id,
+            "name": name,
+            "rating": float(rating),
+            "votes": int(votes),
+        })
+
+    # GraphQL is requested in IMDb USER_RATING descending order. Enforce it
+    # locally as well, using vote count as a sensible tie-breaker.
+    candidates.sort(key=lambda x: (-x["rating"], -x["votes"], x["name"].casefold()))
+    if len(candidates) < 5:
+        raise RuntimeError(
+            f"IMDb GraphQL returned only {len(candidates)} qualifying {media_type} titles "
+            f"for {start}..{today}, rating >= {IMDB_MIN_RATING}, votes >= {min_votes}"
+        )
+    return candidates[:MAX_IMDB_RESULTS], start, today, endpoint
 
 def resolve_cinemeta_id(candidate, media_type: str):
     imdb_id = candidate["id"]
