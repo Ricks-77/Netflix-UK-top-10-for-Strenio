@@ -16,7 +16,7 @@ JINA_URL = "https://r.jina.ai/http://flixpatrol.com/top10/netflix/united-kingdom
 CINEMETA = "https://v3-cinemeta.strem.io"
 OUT = Path("docs")
 LOCAL_RANKINGS = Path("rankings.json")
-TIMEOUT = 25
+TIMEOUT = 10
 UA = "Mozilla/5.0 (compatible; NetflixUKTop10Stremio/1.0; +https://github.com/)"
 
 def norm(s: str) -> str:
@@ -118,6 +118,17 @@ def parse_html_section(html: str, heading: str):
     return titles[:10]
 
 def fetch_rankings():
+    # Prefer the verified rankings file. It is updated independently from the
+    # public Netflix UK chart and avoids Cloudflare blocking GitHub runners.
+    try:
+        data = json.loads(LOCAL_RANKINGS.read_text(encoding="utf-8"))
+        movies = data.get("movies", [])
+        series = data.get("series", [])
+        if len(movies) == 10 and len(series) == 10:
+            return movies, series, "verified-local"
+    except Exception:
+        pass
+
     headers = {"User-Agent": UA, "Accept": "text/plain,text/html,*/*"}
     errors = []
 
@@ -143,39 +154,47 @@ def fetch_rankings():
     except Exception as e:
         errors.append(f"Direct: {e}")
 
-    try:
-        data = json.loads(LOCAL_RANKINGS.read_text(encoding="utf-8"))
-        movies = data.get("movies", [])
-        series = data.get("series", [])
-        if len(movies) == 10 and len(series) == 10:
-            print("Live source unavailable; using verified local rankings.json")
-            return movies, series, "verified-local"
-        errors.append(f"Local rankings invalid movies={len(movies)}, series={len(series)}")
-    except Exception as e:
-        errors.append(f"Local rankings: {e}")
-
     raise RuntimeError("Could not obtain a trustworthy Netflix UK Top 10. " + " | ".join(errors))
+def build_catalog(titles, media_type: str, path: Path):
+    from concurrent.futures import ThreadPoolExecutor
 
-def get_json(url: str):
-    r = requests.get(url, headers={"User-Agent": UA}, timeout=TIMEOUT)
-    r.raise_for_status()
-    return r.json()
+    previous = load_previous(path)
+    prev_by_name = {norm(x.get("name")): x for x in previous if x.get("name")}
 
+    def one(title):
+        item = resolve_cinemeta(title, media_type)
+        if not item:
+            item = prev_by_name.get(norm(title))
+        return title, item
+
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        resolved = list(pool.map(one, titles))
+
+    metas = []
+    unresolved = []
+    for title, item in resolved:
+        if item:
+            metas.append(item)
+        else:
+            unresolved.append(title)
+
+    if len(metas) < 8:
+        raise RuntimeError(
+            f"Only resolved {len(metas)}/{len(titles)} {media_type} titles; refusing to overwrite previous catalog. "
+            f"Unresolved: {unresolved}"
+        )
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({"metas": metas}, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    return metas, unresolved
 def resolve_cinemeta(title: str, media_type: str):
     q = quote(title, safe="")
-    urls = [
-        f"{CINEMETA}/catalog/{media_type}/top/search={q}.json",
-        f"{CINEMETA}/catalog/{media_type}/imdbRating/search={q}.json",
-    ]
-    candidates = []
-    for url in urls:
-        try:
-            data = get_json(url)
-            candidates.extend(data.get("metas", []))
-        except Exception:
-            pass
-        if candidates:
-            break
+    url = f"{CINEMETA}/catalog/{media_type}/top/search={q}.json"
+    try:
+        data = get_json(url)
+        candidates = data.get("metas", [])
+    except Exception:
+        return None
 
     if not candidates:
         return None
@@ -189,94 +208,20 @@ def resolve_cinemeta(title: str, media_type: str):
         chosen = close[0] if close else candidates[0]
 
     imdb_id = chosen.get("id", "")
-    if not imdb_id.startswith("tt"):
-        return None
-
-    try:
-        full = get_json(f"{CINEMETA}/meta/{media_type}/{imdb_id}.json").get("meta") or chosen
-    except Exception:
-        full = chosen
-
-    poster = full.get("poster") or chosen.get("poster")
-    if not poster:
+    poster = chosen.get("poster")
+    if not imdb_id.startswith("tt") or not poster:
         return None
 
     item = {
         "id": imdb_id,
         "type": media_type,
-        "name": full.get("name") or chosen.get("name") or title,
+        "name": chosen.get("name") or title,
         "poster": poster,
         "posterShape": "poster",
     }
     for k in ("background", "description", "releaseInfo", "imdbRating"):
-        v = full.get(k) or chosen.get(k)
+        v = chosen.get(k)
         if v:
             item[k] = v
     return item
 
-def load_previous(path: Path):
-    try:
-        data = json.loads(path.read_text(encoding="utf-8"))
-        return data.get("metas", [])
-    except Exception:
-        return []
-
-def build_catalog(titles, media_type: str, path: Path):
-    previous = load_previous(path)
-    prev_by_name = {norm(x.get("name")): x for x in previous if x.get("name")}
-    metas = []
-    unresolved = []
-
-    for title in titles:
-        print(f"Resolve {media_type}: {title}")
-        item = resolve_cinemeta(title, media_type)
-        if not item:
-            item = prev_by_name.get(norm(title))
-        if item:
-            metas.append(item)
-        else:
-            unresolved.append(title)
-        time.sleep(0.15)
-
-    if len(metas) < 8:
-        raise RuntimeError(
-            f"Only resolved {len(metas)}/{len(titles)} {media_type} titles; refusing to overwrite previous catalog. "
-            f"Unresolved: {unresolved}"
-        )
-
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps({"metas": metas}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    return metas, unresolved
-
-def write_status(source, movies, series, unresolved_movies, unresolved_series):
-    import datetime as dt
-    status = {
-        "updated_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
-        "ranking_source": FLIXPATROL_URL,
-        "fetch_method": source,
-        "movies": [m["name"] for m in movies],
-        "series": [m["name"] for m in series],
-        "unresolved_movies": unresolved_movies,
-        "unresolved_series": unresolved_series,
-    }
-    (OUT / "status.json").write_text(json.dumps(status, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-def main():
-    os.chdir(Path(__file__).resolve().parent)
-    movies_titles, series_titles, source = fetch_rankings()
-    print("Movies:", movies_titles)
-    print("Series:", series_titles)
-
-    movie_path = OUT / "catalog/movie/netflix-uk-top10-movies.json"
-    series_path = OUT / "catalog/series/netflix-uk-top10-series.json"
-    movies, um = build_catalog(movies_titles, "movie", movie_path)
-    series, us = build_catalog(series_titles, "series", series_path)
-    write_status(source, movies, series, um, us)
-    print(f"Updated {len(movies)} movies and {len(series)} series")
-
-if __name__ == "__main__":
-    try:
-        main()
-    except Exception as e:
-        print(f"ERROR: {e}", file=sys.stderr)
-        sys.exit(1)
