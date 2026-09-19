@@ -188,6 +188,17 @@ def build_catalog(titles, media_type: str, path: Path):
     path.write_text(json.dumps({"metas": metas}, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
     return metas, unresolved
 def resolve_cinemeta(title: str, media_type: str):
+    # Sealook does not currently have a reliable IMDb mapping in Cinemeta.
+    # Use its verified TMDB/TVDB identity so AIOMetadata can resolve it correctly.
+    if media_type == "series" and norm(title) == "sealook":
+        return {
+            "id": "tmdb:219266",
+            "type": "series",
+            "name": "Sealook",
+            "poster": "https://artworks.thetvdb.com/banners/v4/series/438604/posters/64e42cc499a18.jpg",
+            "posterShape": "poster",
+            "releaseInfo": "2022–2023"
+        }
     q = quote(title, safe="")
     url = f"{CINEMETA}/catalog/{media_type}/top/search={q}.json"
     try:
