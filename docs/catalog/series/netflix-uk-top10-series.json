@@ -1,1 +1,111 @@
-{"metas": []}
+{
+  "metas": [
+    {
+      "id": "tt13207736",
+      "type": "series",
+      "name": "Monster",
+      "poster": "https://images.metahub.space/poster/small/tt13207736/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt13207736/img",
+      "description": "This true-crime anthology series delivers a multi-layered psychological study of individuals whose extreme actions shocked society.",
+      "releaseInfo": "2022–",
+      "imdbRating": "7.7"
+    },
+    {
+      "id": "tt13210838",
+      "type": "series",
+      "name": "The Gentlemen",
+      "poster": "https://images.metahub.space/poster/small/tt13210838/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt13210838/img",
+      "description": "When aristocratic Eddie inherits the family estate, he discovers that it's home to a huge weed empire, and its proprietors aren't going anywhere.",
+      "releaseInfo": "2024–",
+      "imdbRating": "8.0"
+    },
+    {
+      "id": "tt38218082",
+      "type": "series",
+      "name": "Crew Girl",
+      "poster": "https://images.metahub.space/poster/small/tt38218082/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt38218082/img",
+      "description": "After being disgraced by her father's financial fraud, a teen girl must escape with her mother to a small town where she ends up being the only female rower on the team at her new prep school.",
+      "releaseInfo": "2026–"
+    },
+    {
+      "id": "tt35853579",
+      "type": "series",
+      "name": "The Real Unforgotten",
+      "poster": "https://live.metahub.space/poster/small/tt35853579/img",
+      "posterShape": "poster",
+      "background": "https://live.metahub.space/background/medium/tt35853579/img",
+      "description": "Detectives reinvestigate the murder of Carol Morgan in the storeroom of her Bedfordshire corner shop in 1981 - re-examining the files, revisiting the crime scene, and looking for new witnesses as previously missed evidence points to a different theory.",
+      "releaseInfo": "2025–2025",
+      "imdbRating": "7.3"
+    },
+    {
+      "id": "tt37439410",
+      "type": "series",
+      "name": "The Perfect Lie",
+      "poster": "https://images.metahub.space/poster/small/tt37439410/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt37439410/img",
+      "description": "Four couples in a tight-knit group enjoy an extravagant lifestyle. When one of their villas burns down and a member dies, their web of lies begins to unravel.",
+      "releaseInfo": "2026–"
+    },
+    {
+      "id": "tt44113382",
+      "type": "series",
+      "name": "Death of the Pastor's Wife",
+      "poster": "https://live.metahub.space/poster/small/tt44113382/img",
+      "posterShape": "poster",
+      "background": "https://live.metahub.space/background/medium/tt44113382/img",
+      "description": "What happened to Mica Miller? This documentary series retraces her promising life, toxic marriage and the mysterious circumstances of her death.",
+      "releaseInfo": "2026–2026",
+      "imdbRating": "6.7"
+    },
+    {
+      "id": "tt39053780",
+      "type": "series",
+      "name": "Mark Rober's CrunchLabs",
+      "poster": "https://live.metahub.space/poster/small/tt39053780/img",
+      "posterShape": "poster",
+      "background": "https://live.metahub.space/background/medium/tt39053780/img",
+      "description": "At CrunchLabs, Mark Rober transforms wild ideas into reality, blending engineering and outrageous fun for science adventures you'll never forget.",
+      "releaseInfo": "2025–",
+      "imdbRating": "7.0"
+    },
+    {
+      "id": "tt8128344",
+      "type": "series",
+      "name": "Flack",
+      "poster": "https://images.metahub.space/poster/small/tt8128344/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt8128344/img",
+      "description": "Robyn, an American publicist working for a cutthroat London PR company that represents troubled celebrities, is adept at keeping her clients' lives appearing in perfect order, while her own falls to pieces.",
+      "releaseInfo": "2019–2021",
+      "imdbRating": "7.3"
+    },
+    {
+      "id": "tt39397536",
+      "type": "series",
+      "name": "Not a Stranger",
+      "poster": "https://live.metahub.space/poster/small/tt39397536/img",
+      "posterShape": "poster",
+      "background": "https://live.metahub.space/background/medium/tt39397536/img",
+      "description": "After giving birth, painter Funda put her career on hold to focus on her child. Ready to return to painting, she finally finds the nanny she has been searching for: Nazlı. But the mysterious and increasingly unsettling woman soon begins to disrupt the seemingly peaceful lives of Funda and her husband İlker. What begins as a simple employment arrangement develops into a dangerous psychological game in which desire, secrets and loyalty are put to the test.",
+      "releaseInfo": "2026–"
+    },
+    {
+      "id": "tt1475582",
+      "type": "series",
+      "name": "Sherlock",
+      "poster": "https://images.metahub.space/poster/small/tt1475582/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt1475582/img",
+      "description": "In modern-day London, brilliant but eccentric detective Sherlock Holmes teams with war veteran Dr. John Watson to crack baffling crimes, outwit formidable foes, and aid Scotland Yard with razor-sharp deduction.",
+      "releaseInfo": "2010–2017",
+      "imdbRating": "9.0"
+    }
+  ]
+}
