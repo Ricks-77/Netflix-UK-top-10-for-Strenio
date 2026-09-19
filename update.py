@@ -299,9 +299,13 @@ def imdb_search(media_type: str):
     endpoint = "https://caching.graphql.imdb.com/"
     headers = {
         "User-Agent": UA,
-        "Accept": "application/json",
+        "Accept": "application/graphql+json, application/json",
         "Content-Type": "application/json",
         "Origin": "https://www.imdb.com",
+        "Referer": "https://www.imdb.com/",
+        "X-Imdb-Client-Name": "imdb-web-next",
+        "X-Imdb-User-Language": "en-GB",
+        "X-Imdb-User-Country": "GB",
     }
     try:
         r = requests.post(endpoint, headers=headers, json={"query": query}, timeout=TIMEOUT)
