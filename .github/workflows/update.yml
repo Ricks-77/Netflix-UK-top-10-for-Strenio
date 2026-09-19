@@ -1,0 +1,43 @@
+name: Update Netflix UK Top 10
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "update.py"
+      - "requirements.txt"
+      - ".github/workflows/update.yml"
+  schedule:
+    - cron: "20 16,18 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Refresh Netflix UK Top 10
+        run: python update.py
+
+      - name: Commit changed catalogs
+        run: |
+          git config user.name "netflix-uk-top10-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/catalog docs/status.json
+          if git diff --cached --quiet; then
+            echo "No catalog changes"
+          else
+            git commit -m "Update Netflix UK Top 10"
+            git push
+          fi
