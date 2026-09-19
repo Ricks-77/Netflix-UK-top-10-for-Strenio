@@ -25,7 +25,7 @@ IMDB_MIN_RATING = 7.5
 MOVIE_MIN_VOTES = 10_000
 SERIES_MIN_VOTES = 5_000
 MAX_IMDB_RESULTS = 100
-SERIES_CANDIDATE_LIMIT = 250
+SERIES_PAGE_SIZE = 250
 SERIES_EPISODES_TO_CHECK = 20
 # Keep the rolling IMDb rows focused on languages the user actually wants.
 # Use PRIMARY language so an English dub does not let unrelated-language titles through.
@@ -350,70 +350,92 @@ def imdb_search(media_type: str):
     type_values = ", ".join(json.dumps(x) for x in title_types)
     language_values = ", ".join(json.dumps(x) for x in ALLOWED_PRIMARY_LANGUAGES)
 
-    # Movies use their own release date. For series, do NOT constrain the
-    # series premiere date here: an older show can still be active if it
-    # released an episode during the rolling 12-month window.
+    # Movies use their own release date. Series do not: older shows can qualify
+    # if they released at least one episode during the rolling 12-month window.
     release_constraint = (
         f'releaseDateConstraint: {{ releaseDateRange: {{ start: "{start.isoformat()}" end: "{today.isoformat()}" }} }}'
         if media_type == "movie" else ""
     )
-    first = MAX_IMDB_RESULTS if media_type == "movie" else SERIES_CANDIDATE_LIMIT
 
-    query = f"""
-    query RollingIMDbSearch {{
-      advancedTitleSearch(
-        first: {first}
-        sort: {{ sortBy: USER_RATING sortOrder: DESC }}
-        constraints: {{
-          titleTypeConstraint: {{ anyTitleTypeIds: [{type_values}] }}
-          languageConstraint: {{ anyPrimaryLanguages: [{language_values}] }}
-          {release_constraint}
-          userRatingsConstraint: {{
-            aggregateRatingRange: {{ min: {IMDB_MIN_RATING} }}
-            ratingsCountRange: {{ min: {min_votes} }}
-          }}
-        }}
-      ) {{
-        total
-        edges {{
-          node {{
-            title {{
-              id
-              titleText {{ text }}
-              releaseYear {{ year endYear }}
-              ratingsSummary {{ aggregateRating voteCount }}
+    page_size = MAX_IMDB_RESULTS if media_type == "movie" else SERIES_PAGE_SIZE
+    after = None
+    candidates = []
+    seen = set()
+    imdb_total = None
+
+    while True:
+        after_arg = f'after: {json.dumps(after)}' if after else ""
+        query = f"""
+        query RollingIMDbSearch {{
+          advancedTitleSearch(
+            first: {page_size}
+            {after_arg}
+            sort: {{ sortBy: USER_RATING sortOrder: DESC }}
+            constraints: {{
+              titleTypeConstraint: {{ anyTitleTypeIds: [{type_values}] }}
+              languageConstraint: {{ anyPrimaryLanguages: [{language_values}] }}
+              {release_constraint}
+              userRatingsConstraint: {{
+                aggregateRatingRange: {{ min: {IMDB_MIN_RATING} }}
+                ratingsCountRange: {{ min: {min_votes} }}
+              }}
+            }}
+          ) {{
+            total
+            pageInfo {{ hasNextPage endCursor }}
+            edges {{
+              node {{
+                title {{
+                  id
+                  titleText {{ text }}
+                  releaseYear {{ year endYear }}
+                  ratingsSummary {{ aggregateRating voteCount }}
+                }}
+              }}
             }}
           }}
         }}
-      }}
-    }}
-    """
+        """
 
-    data = imdb_graphql(query)
-    search = data.get("advancedTitleSearch", {})
-    edges = search.get("edges", [])
-    candidates = []
-    for edge in edges:
-        title = ((edge or {}).get("node") or {}).get("title") or {}
-        imdb_id = title.get("id", "")
-        ratings = title.get("ratingsSummary") or {}
-        rating = ratings.get("aggregateRating")
-        votes = ratings.get("voteCount")
-        name = (title.get("titleText") or {}).get("text") or imdb_id
-        if not imdb_id.startswith("tt"):
-            continue
-        if rating is None or float(rating) < IMDB_MIN_RATING:
-            continue
-        if votes is None or int(votes) < min_votes:
-            continue
-        candidates.append({
-            "id": imdb_id,
-            "name": name,
-            "rating": float(rating),
-            "votes": int(votes),
-        })
+        data = imdb_graphql(query)
+        search = data.get("advancedTitleSearch", {})
+        if imdb_total is None:
+            imdb_total = search.get("total")
+        edges = search.get("edges", [])
+
+        for edge in edges:
+            title = ((edge or {}).get("node") or {}).get("title") or {}
+            imdb_id = title.get("id", "")
+            if not imdb_id.startswith("tt") or imdb_id in seen:
+                continue
+            ratings = title.get("ratingsSummary") or {}
+            rating = ratings.get("aggregateRating")
+            votes = ratings.get("voteCount")
+            name = (title.get("titleText") or {}).get("text") or imdb_id
+            if rating is None or float(rating) < IMDB_MIN_RATING:
+                continue
+            if votes is None or int(votes) < min_votes:
+                continue
+            candidates.append({
+                "id": imdb_id,
+                "name": name,
+                "rating": float(rating),
+                "votes": int(votes),
+            })
+            seen.add(imdb_id)
+
+        # Movies only need the first 100 because their results are already
+        # constrained to the rolling window and sorted by rating.
+        if media_type == "movie":
+            break
+
+        page_info = search.get("pageInfo") or {}
+        after = page_info.get("endCursor")
+        if not page_info.get("hasNextPage") or not after:
+            break
 
     if media_type == "series":
+        print(f"IMDb series candidates checked: {len(candidates)} of total {imdb_total}")
         active_ids = active_series_ids(candidates, start, today)
         candidates = [c for c in candidates if c["id"] in active_ids]
 
