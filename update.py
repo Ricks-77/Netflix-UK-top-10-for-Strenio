@@ -25,6 +25,8 @@ IMDB_MIN_RATING = 7.5
 MOVIE_MIN_VOTES = 10_000
 SERIES_MIN_VOTES = 5_000
 MAX_IMDB_RESULTS = 100
+SERIES_CANDIDATE_LIMIT = 250
+SERIES_EPISODES_TO_CHECK = 20
 # Keep the rolling IMDb rows focused on languages the user actually wants.
 # Use PRIMARY language so an English dub does not let unrelated-language titles through.
 ALLOWED_PRIMARY_LANGUAGES = [
@@ -270,6 +272,75 @@ def parse_imdb_markdown(text: str):
         seen.add(imdb_id)
     return found
 
+def imdb_headers():
+    return {
+        "User-Agent": UA,
+        "Accept": "application/graphql+json, application/json",
+        "Content-Type": "application/json",
+        "Origin": "https://www.imdb.com",
+        "Referer": "https://www.imdb.com/",
+        "X-Imdb-Client-Name": "imdb-web-next",
+        "X-Imdb-User-Language": "en-GB",
+        "X-Imdb-User-Country": "GB",
+    }
+
+def imdb_graphql(query: str):
+    endpoint = "https://caching.graphql.imdb.com/"
+    try:
+        r = requests.post(endpoint, headers=imdb_headers(), json={"query": query}, timeout=TIMEOUT)
+        r.raise_for_status()
+        payload = r.json()
+    except Exception as e:
+        raise RuntimeError(f"IMDb GraphQL request failed: {e}") from e
+    if payload.get("errors"):
+        raise RuntimeError("IMDb GraphQL returned errors: " + json.dumps(payload["errors"])[:1500])
+    return payload.get("data", {})
+
+def active_series_ids(candidates, start_date, end_date):
+    """
+    A series is considered active if IMDb has at least one episode with a release
+    date inside the rolling 12-month window. This includes older shows returning
+    with a new season, not just shows that first premiered during the window.
+    """
+    active = set()
+    batch_size = 20
+
+    def check_batch(batch):
+        fields = []
+        for idx, c in enumerate(batch):
+            fields.append(
+                f'''s{idx}: title(id: "{c["id"]}") {{
+                  episodes {{
+                    episodes(first: {SERIES_EPISODES_TO_CHECK}, sort: {{by: EPISODE_THEN_RELEASE, order: DESC}}) {{
+                      edges {{ node {{ releaseDate {{ year month day }} }} }}
+                    }}
+                  }}
+                }}'''
+            )
+        data = imdb_graphql("query ActiveSeries {\n" + "\n".join(fields) + "\n}")
+        found = set()
+        for idx, c in enumerate(batch):
+            edges = (((data.get(f"s{idx}") or {}).get("episodes") or {}).get("episodes") or {}).get("edges", [])
+            for edge in edges:
+                rd = ((edge or {}).get("node") or {}).get("releaseDate") or {}
+                try:
+                    y = int(rd.get("year"))
+                    m = int(rd.get("month") or 1)
+                    d = int(rd.get("day") or 1)
+                    air_date = datetime(y, m, d).date()
+                except Exception:
+                    continue
+                if start_date <= air_date <= end_date:
+                    found.add(c["id"])
+                    break
+        return found
+
+    batches = [candidates[i:i + batch_size] for i in range(0, len(candidates), batch_size)]
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        for found in pool.map(check_batch, batches):
+            active.update(found)
+    return active
+
 def imdb_search(media_type: str):
     today = datetime.now(ZoneInfo("Europe/London")).date()
     start = one_year_ago(today)
@@ -278,15 +349,25 @@ def imdb_search(media_type: str):
 
     type_values = ", ".join(json.dumps(x) for x in title_types)
     language_values = ", ".join(json.dumps(x) for x in ALLOWED_PRIMARY_LANGUAGES)
+
+    # Movies use their own release date. For series, do NOT constrain the
+    # series premiere date here: an older show can still be active if it
+    # released an episode during the rolling 12-month window.
+    release_constraint = (
+        f'releaseDateConstraint: {{ releaseDateRange: {{ start: "{start.isoformat()}" end: "{today.isoformat()}" }} }}'
+        if media_type == "movie" else ""
+    )
+    first = MAX_IMDB_RESULTS if media_type == "movie" else SERIES_CANDIDATE_LIMIT
+
     query = f"""
     query RollingIMDbSearch {{
       advancedTitleSearch(
-        first: {MAX_IMDB_RESULTS}
+        first: {first}
         sort: {{ sortBy: USER_RATING sortOrder: DESC }}
         constraints: {{
           titleTypeConstraint: {{ anyTitleTypeIds: [{type_values}] }}
           languageConstraint: {{ anyPrimaryLanguages: [{language_values}] }}
-          releaseDateConstraint: {{ releaseDateRange: {{ start: "{start.isoformat()}" end: "{today.isoformat()}" }} }}
+          {release_constraint}
           userRatingsConstraint: {{
             aggregateRatingRange: {{ min: {IMDB_MIN_RATING} }}
             ratingsCountRange: {{ min: {min_votes} }}
@@ -300,7 +381,6 @@ def imdb_search(media_type: str):
               id
               titleText {{ text }}
               releaseYear {{ year endYear }}
-              primaryImage {{ url }}
               ratingsSummary {{ aggregateRating voteCount }}
             }}
           }}
@@ -309,29 +389,9 @@ def imdb_search(media_type: str):
     }}
     """
 
-    endpoint = "https://caching.graphql.imdb.com/"
-    headers = {
-        "User-Agent": UA,
-        "Accept": "application/graphql+json, application/json",
-        "Content-Type": "application/json",
-        "Origin": "https://www.imdb.com",
-        "Referer": "https://www.imdb.com/",
-        "X-Imdb-Client-Name": "imdb-web-next",
-        "X-Imdb-User-Language": "en-GB",
-        "X-Imdb-User-Country": "GB",
-    }
-    try:
-        r = requests.post(endpoint, headers=headers, json={"query": query}, timeout=TIMEOUT)
-        r.raise_for_status()
-        payload = r.json()
-    except Exception as e:
-        raise RuntimeError(f"IMDb GraphQL request failed: {e}") from e
-
-    if payload.get("errors"):
-        raise RuntimeError("IMDb GraphQL returned errors: " + json.dumps(payload["errors"])[:1500])
-
-    data = payload.get("data", {}).get("advancedTitleSearch", {})
-    edges = data.get("edges", [])
+    data = imdb_graphql(query)
+    search = data.get("advancedTitleSearch", {})
+    edges = search.get("edges", [])
     candidates = []
     for edge in edges:
         title = ((edge or {}).get("node") or {}).get("title") or {}
@@ -353,15 +413,18 @@ def imdb_search(media_type: str):
             "votes": int(votes),
         })
 
-    # GraphQL is requested in IMDb USER_RATING descending order. Enforce it
-    # locally as well, using vote count as a sensible tie-breaker.
+    if media_type == "series":
+        active_ids = active_series_ids(candidates, start, today)
+        candidates = [c for c in candidates if c["id"] in active_ids]
+
     candidates.sort(key=lambda x: (-x["rating"], -x["votes"], x["name"].casefold()))
     if len(candidates) < 5:
+        qualifier = "active " if media_type == "series" else ""
         raise RuntimeError(
-            f"IMDb GraphQL returned only {len(candidates)} qualifying {media_type} titles "
+            f"IMDb GraphQL returned only {len(candidates)} qualifying {qualifier}{media_type} titles "
             f"for {start}..{today}, rating >= {IMDB_MIN_RATING}, votes >= {min_votes}"
         )
-    return candidates[:MAX_IMDB_RESULTS], start, today, endpoint
+    return candidates[:MAX_IMDB_RESULTS], start, today, "https://caching.graphql.imdb.com/"
 
 def resolve_cinemeta_id(candidate, media_type: str):
     imdb_id = candidate["id"]
@@ -415,6 +478,7 @@ def main():
             "minimum_rating": IMDB_MIN_RATING,
             "movie_min_votes": MOVIE_MIN_VOTES,
             "series_min_votes": SERIES_MIN_VOTES,
+            "series_definition": "at least one IMDb episode released in the rolling 12-month window",
             "allowed_primary_languages": ALLOWED_PRIMARY_LANGUAGES,
         },
     }
