@@ -15,6 +15,7 @@ FLIXPATROL_URL = "https://flixpatrol.com/top10/netflix/united-kingdom/"
 JINA_URL = "https://r.jina.ai/http://flixpatrol.com/top10/netflix/united-kingdom/"
 CINEMETA = "https://v3-cinemeta.strem.io"
 OUT = Path("docs")
+LOCAL_RANKINGS = Path("rankings.json")
 TIMEOUT = 25
 UA = "Mozilla/5.0 (compatible; NetflixUKTop10Stremio/1.0; +https://github.com/)"
 
@@ -127,9 +128,6 @@ def fetch_rankings():
         series = parse_markdown_section(r.text, "TOP 10 TV Shows")
         if len(movies) >= 8 and len(series) >= 8:
             return movies[:10], series[:10], "jina"
-        print("JINA DEBUG START")
-        print(r.text[:8000])
-        print("JINA DEBUG END")
         errors.append(f"Jina returned movies={len(movies)}, series={len(series)}")
     except Exception as e:
         errors.append(f"Jina: {e}")
@@ -144,6 +142,17 @@ def fetch_rankings():
         errors.append(f"Direct returned movies={len(movies)}, series={len(series)}")
     except Exception as e:
         errors.append(f"Direct: {e}")
+
+    try:
+        data = json.loads(LOCAL_RANKINGS.read_text(encoding="utf-8"))
+        movies = data.get("movies", [])
+        series = data.get("series", [])
+        if len(movies) == 10 and len(series) == 10:
+            print("Live source unavailable; using verified local rankings.json")
+            return movies, series, "verified-local"
+        errors.append(f"Local rankings invalid movies={len(movies)}, series={len(series)}")
+    except Exception as e:
+        errors.append(f"Local rankings: {e}")
 
     raise RuntimeError("Could not obtain a trustworthy Netflix UK Top 10. " + " | ".join(errors))
 
