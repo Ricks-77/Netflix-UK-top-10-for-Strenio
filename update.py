@@ -25,6 +25,17 @@ IMDB_MIN_RATING = 7.5
 MOVIE_MIN_VOTES = 10_000
 SERIES_MIN_VOTES = 5_000
 MAX_IMDB_RESULTS = 100
+# Keep the rolling IMDb rows focused on languages the user actually wants.
+# Use PRIMARY language so an English dub does not let unrelated-language titles through.
+ALLOWED_PRIMARY_LANGUAGES = [
+    "en", "fr", "de", "es", "pt", "it", "nl",
+    "sv", "no", "da", "fi", "is",
+    "pl", "cs", "sk", "hu", "ro", "bg", "el",
+    "hr", "sr", "sl", "bs", "sq", "mk",
+    "et", "lv", "lt", "uk", "ru", "be",
+    "ca", "eu", "gl", "cy", "ga", "mt", "lb",
+    "ja", "ko",
+]
 
 def norm(s: str) -> str:
     s = unicodedata.normalize("NFKD", s or "")
@@ -266,6 +277,7 @@ def imdb_search(media_type: str):
     title_types = ["movie"] if media_type == "movie" else ["tvSeries", "tvMiniSeries"]
 
     type_values = ", ".join(json.dumps(x) for x in title_types)
+    language_values = ", ".join(json.dumps(x) for x in ALLOWED_PRIMARY_LANGUAGES)
     query = f"""
     query RollingIMDbSearch {{
       advancedTitleSearch(
@@ -273,6 +285,7 @@ def imdb_search(media_type: str):
         sort: {{ sortBy: USER_RATING sortOrder: DESC }}
         constraints: {{
           titleTypeConstraint: {{ anyTitleTypeIds: [{type_values}] }}
+          languageConstraint: {{ anyPrimaryLanguages: [{language_values}] }}
           releaseDateConstraint: {{ releaseDateRange: {{ start: "{start.isoformat()}" end: "{today.isoformat()}" }} }}
           userRatingsConstraint: {{
             aggregateRatingRange: {{ min: {IMDB_MIN_RATING} }}
@@ -402,6 +415,7 @@ def main():
             "minimum_rating": IMDB_MIN_RATING,
             "movie_min_votes": MOVIE_MIN_VOTES,
             "series_min_votes": SERIES_MIN_VOTES,
+            "allowed_primary_languages": ALLOWED_PRIMARY_LANGUAGES,
         },
     }
 
