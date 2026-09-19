@@ -1,0 +1,24 @@
+{
+  "id": "uk.rui.netflix.top10",
+  "version": "1.0.0",
+  "name": "Netflix UK Top 10",
+  "description": "Daily Netflix UK Top 10 movies and series, sourced from the public FlixPatrol UK Netflix chart.",
+  "resources": ["catalog"],
+  "types": ["movie", "series"],
+  "catalogs": [
+    {
+      "type": "series",
+      "id": "netflix-uk-top10-series",
+      "name": "Netflix UK Top 10 - Series"
+    },
+    {
+      "type": "movie",
+      "id": "netflix-uk-top10-movies",
+      "name": "Netflix UK Top 10 - Movies"
+    }
+  ],
+  "behaviorHints": {
+    "configurable": false,
+    "configurationRequired": false
+  }
+}
