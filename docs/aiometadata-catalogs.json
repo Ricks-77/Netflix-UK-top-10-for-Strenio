@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exportedAt": "2026-09-19T18:44:17.140Z",
+  "exportedAt": "2026-09-19T19:32:41.112Z",
   "catalogs": [
     {
       "id": "custom.uk_rui_netflix_top10.series.netflix_uk_top10_series",
@@ -38,6 +38,48 @@
         "name": "Netflix UK Top 10 - Movies",
         "extra": [],
         "idPrefixes": []
+      }
+    },
+    {
+      "id": "custom.uk_rui_netflix_top10.movie.imdb_last12m_movies",
+      "name": "Best Movies - Last 12 Months",
+      "type": "movie",
+      "enabled": true,
+      "source": "custom",
+      "sourceUrl": "https://ricks-77.github.io/Netflix-UK-top-10-for-Strenio/catalog/movie/imdb-last12m-movies.json",
+      "showInHome": true,
+      "genres": [],
+      "cacheTTL": 3600,
+      "enableRatingPosters": true,
+      "manifestData": {
+        "type": "movie",
+        "id": "imdb-last12m-movies",
+        "name": "Best Movies - Last 12 Months",
+        "extra": [],
+        "idPrefixes": [
+          "tt"
+        ]
+      }
+    },
+    {
+      "id": "custom.uk_rui_netflix_top10.series.imdb_last12m_series",
+      "name": "Best TV Series - Last 12 Months",
+      "type": "series",
+      "enabled": true,
+      "source": "custom",
+      "sourceUrl": "https://ricks-77.github.io/Netflix-UK-top-10-for-Strenio/catalog/series/imdb-last12m-series.json",
+      "showInHome": true,
+      "genres": [],
+      "cacheTTL": 3600,
+      "enableRatingPosters": true,
+      "manifestData": {
+        "type": "series",
+        "id": "imdb-last12m-series",
+        "name": "Best TV Series - Last 12 Months",
+        "extra": [],
+        "idPrefixes": [
+          "tt"
+        ]
       }
     }
   ]
