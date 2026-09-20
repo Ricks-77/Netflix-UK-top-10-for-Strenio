@@ -23,17 +23,6 @@
       "imdbRating": "8.4"
     },
     {
-      "id": "tt30472557",
-      "type": "movie",
-      "name": "Chainsaw Man - The Movie: Reze Arc",
-      "poster": "https://images.metahub.space/poster/small/tt30472557/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt30472557/img",
-      "description": "Denji encounters a new romantic interest, Reze, who works at a coffee café.",
-      "releaseInfo": "2025",
-      "imdbRating": "8.3"
-    },
-    {
       "id": "tt12042730",
       "type": "movie",
       "name": "Project Hail Mary",
@@ -56,17 +45,6 @@
       "imdbRating": "8.0"
     },
     {
-      "id": "tt35538033",
-      "type": "movie",
-      "name": "Resident Evil",
-      "poster": "https://images.metahub.space/poster/small/tt35538033/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt35538033/img",
-      "description": "Follows a hapless courier tasked with delivering a package to a remote hospital. He soon finds himself caught in the middle of an outbreak and must fight through hordes of mutated creatures to survive.",
-      "releaseInfo": "2026",
-      "imdbRating": "7.8"
-    },
-    {
       "id": "tt18259538",
       "type": "movie",
       "name": "Avatar Aang: The Last Airbender",
@@ -74,6 +52,17 @@
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt18259538/img",
       "description": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands.",
+      "releaseInfo": "2026",
+      "imdbRating": "7.7"
+    },
+    {
+      "id": "tt35538033",
+      "type": "movie",
+      "name": "Resident Evil",
+      "poster": "https://images.metahub.space/poster/small/tt35538033/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt35538033/img",
+      "description": "Follows a hapless courier tasked with delivering a package to a remote hospital. He soon finds himself caught in the middle of an outbreak and must fight through hordes of mutated creatures to survive.",
       "releaseInfo": "2026",
       "imdbRating": "7.7"
     },
