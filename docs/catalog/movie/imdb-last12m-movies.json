@@ -45,17 +45,6 @@
       "imdbRating": "8.0"
     },
     {
-      "id": "tt18259538",
-      "type": "movie",
-      "name": "Avatar Aang: The Last Airbender",
-      "poster": "https://images.metahub.space/poster/small/tt18259538/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt18259538/img",
-      "description": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands.",
-      "releaseInfo": "2026",
-      "imdbRating": "7.7"
-    },
-    {
       "id": "tt35538033",
       "type": "movie",
       "name": "Resident Evil",
@@ -63,6 +52,17 @@
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt35538033/img",
       "description": "Follows a hapless courier tasked with delivering a package to a remote hospital. He soon finds himself caught in the middle of an outbreak and must fight through hordes of mutated creatures to survive.",
+      "releaseInfo": "2026",
+      "imdbRating": "7.7"
+    },
+    {
+      "id": "tt18259538",
+      "type": "movie",
+      "name": "Avatar Aang: The Last Airbender",
+      "poster": "https://images.metahub.space/poster/small/tt18259538/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt18259538/img",
+      "description": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands.",
       "releaseInfo": "2026",
       "imdbRating": "7.7"
     },
@@ -107,17 +107,6 @@
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt1756855/img",
       "description": "After enduring years of malfunctioning products, Wile E. Coyote teams up with a local personal injury attorney to take on ACME, the manufacturer of anything and everything used by the Looney Tunes characters.",
-      "releaseInfo": "2026",
-      "imdbRating": "7.5"
-    },
-    {
-      "id": "tt33095251",
-      "type": "movie",
-      "name": "Tony",
-      "poster": "https://images.metahub.space/poster/small/tt33095251/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt33095251/img",
-      "description": "A 19-year-old Anthony Bourdain travels to Provincetown and stumbles into the chaotic world of a restaurant kitchen, setting off a summer that will shape the course of his life.",
       "releaseInfo": "2026",
       "imdbRating": "7.5"
     }
