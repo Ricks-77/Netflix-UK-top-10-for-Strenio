@@ -694,17 +694,6 @@
       "imdbRating": "8.4"
     },
     {
-      "id": "tt11198330",
-      "type": "series",
-      "name": "House of the Dragon",
-      "poster": "https://images.metahub.space/poster/small/tt11198330/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt11198330/img",
-      "description": "An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.",
-      "releaseInfo": "2022–",
-      "imdbRating": "8.3"
-    },
-    {
       "id": "tt12637874",
       "type": "series",
       "name": "Fallout",
@@ -890,6 +879,17 @@
       "description": "In this competition of intelligence, contestants face off in games of wit and strategy to be crowned winner and go home with the ultimate prize.",
       "releaseInfo": "2023–",
       "imdbRating": "8.3"
+    },
+    {
+      "id": "tt11198330",
+      "type": "series",
+      "name": "House of the Dragon",
+      "poster": "https://images.metahub.space/poster/small/tt11198330/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt11198330/img",
+      "description": "An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.",
+      "releaseInfo": "2022–",
+      "imdbRating": "8.2"
     },
     {
       "id": "tt13146488",
