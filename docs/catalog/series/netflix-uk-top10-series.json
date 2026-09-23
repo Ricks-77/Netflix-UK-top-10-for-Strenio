@@ -19,6 +19,15 @@
       "releaseInfo": "2024-"
     },
     {
+      "id": "tt35853579",
+      "type": "series",
+      "name": "The Real Unforgotten",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjQyZTQ3MTItZGY5Yy00MTgyLThhOGQtMzE4NmQzOTY1ZTQwXkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt35853579/img",
+      "releaseInfo": "2025"
+    },
+    {
       "id": "tt38218082",
       "type": "series",
       "name": "Crew Girl",
@@ -28,13 +37,13 @@
       "releaseInfo": "2026-"
     },
     {
-      "id": "tt35853579",
+      "id": "tt39397536",
       "type": "series",
-      "name": "The Real Unforgotten",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjQyZTQ3MTItZGY5Yy00MTgyLThhOGQtMzE4NmQzOTY1ZTQwXkEyXkFqcGc@._V1_SX250.jpg",
+      "name": "Not a Stranger",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYWNjNzcxYzctZGM4Zi00OWUwLTkyODctNzc1Y2U4MjZiZDY0XkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt35853579/img",
-      "releaseInfo": "2025"
+      "background": "https://images.metahub.space/background/medium/tt39397536/img",
+      "releaseInfo": "2026"
     },
     {
       "id": "tt37439410",
@@ -55,39 +64,24 @@
       "releaseInfo": "2026"
     },
     {
-      "id": "tt39053780",
+      "id": "tt37578538",
       "type": "series",
-      "name": "Mark Rober's CrunchLabs",
-      "poster": "https://m.media-amazon.com/images/M/MV5BYWIzYzlmMGUtMmViZi00MjJhLTkwYmUtMTk3YzUxZjNkMjQ4XkEyXkFqcGc@._V1_SX250.jpg",
+      "name": "The Doll",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDA3ZDljYWEtZjBmOS00NmM1LWI3YWMtODJmZGM5YzhjODNjXkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt39053780/img",
-      "releaseInfo": "2025-"
-    },
-    {
-      "id": "tt8128344",
-      "type": "series",
-      "name": "Flack",
-      "poster": "https://m.media-amazon.com/images/M/MV5BYzIwNWMwNWUtMDViYS00MTZjLTkxMTAtYWM1YjQ0ZDE1ZDQwXkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt8128344/img",
-      "releaseInfo": "2019-2021"
-    },
-    {
-      "id": "tt39397536",
-      "type": "series",
-      "name": "Not a Stranger",
-      "poster": "https://m.media-amazon.com/images/M/MV5BYWNjNzcxYzctZGM4Zi00OWUwLTkyODctNzc1Y2U4MjZiZDY0XkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt39397536/img",
+      "background": "https://images.metahub.space/background/medium/tt37578538/img",
       "releaseInfo": "2026"
     },
     {
-      "id": "tmdb:219266",
+      "id": "tt14824792",
       "type": "series",
-      "name": "Sealook",
-      "poster": "https://artworks.thetvdb.com/banners/v4/series/438604/posters/64e42cc499a18.jpg",
+      "name": "Ted",
+      "poster": "https://images.metahub.space/poster/small/tt14824792/img",
       "posterShape": "poster",
-      "releaseInfo": "2022–2023"
+      "background": "https://images.metahub.space/background/medium/tt14824792/img",
+      "description": "It's 1993, and Ted the bear's moment of fame has passed. He's living back home with his best friend, John Bennett, and his family. While Ted may be a lousy influence on John, he's a loyal pal who will go out on a limb for friendship.",
+      "releaseInfo": "2024–",
+      "imdbRating": "7.9"
     }
   ]
 }

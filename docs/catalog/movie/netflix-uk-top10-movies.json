@@ -1,13 +1,15 @@
 {
   "metas": [
     {
-      "id": "tt30324320",
+      "id": "tt29028515",
       "type": "movie",
-      "name": "Marching Powder",
-      "poster": "https://m.media-amazon.com/images/M/MV5BZmEwY2FjNTYtZmNhYi00MWJlLTgzNjgtNzNkMjUzOGY1MTA0XkEyXkFqcGc@._V1_SX250.jpg",
+      "name": "Wasteman",
+      "poster": "https://images.metahub.space/poster/small/tt29028515/img",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt30324320/img",
-      "releaseInfo": "2025"
+      "background": "https://images.metahub.space/background/medium/tt29028515/img",
+      "description": "Follows parolee Taylor whose fresh start hopes are jeopardized by cellmate Dee's arrival. As Dee takes Taylor under his wing, a vicious attack tests their bond, forcing Taylor to choose between protecting Dee and his own parole chances.",
+      "releaseInfo": "2026",
+      "imdbRating": "7.3"
     },
     {
       "id": "tt16478058",
@@ -19,6 +21,15 @@
       "releaseInfo": "2026"
     },
     {
+      "id": "tt7713068",
+      "type": "movie",
+      "name": "Birds of Prey and the Fantabulous Emancipation of One Harley Quinn",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNTgwNWEwOWMtNGIxMy00YzU5LTk2MzgtMjAzMmM1MjZiY2RiXkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt7713068/img",
+      "releaseInfo": "2020"
+    },
+    {
       "id": "tt1099212",
       "type": "movie",
       "name": "Twilight",
@@ -26,6 +37,15 @@
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt1099212/img",
       "releaseInfo": "2008"
+    },
+    {
+      "id": "tt1872194",
+      "type": "movie",
+      "name": "The Judge",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTcyNzIxOTIwMV5BMl5BanBnXkFtZTgwMzE0NjQwMjE@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt1872194/img",
+      "releaseInfo": "2014"
     },
     {
       "id": "tt11561116",
@@ -37,31 +57,13 @@
       "releaseInfo": "2026"
     },
     {
-      "id": "tt0120791",
+      "id": "tt1226271",
       "type": "movie",
-      "name": "Practical Magic",
-      "poster": "https://m.media-amazon.com/images/M/MV5BOGM3ZjFhZjAtOTdlMS00MTY2LThjYmYtMTA2ZWM3YjdiM2E4XkEyXkFqcGc@._V1_SX250.jpg",
+      "name": "The Damned United",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjEyMzkzMjM0MV5BMl5BanBnXkFtZTcwNzE3NTU3Mg@@._V1_SX250.jpg",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt0120791/img",
-      "releaseInfo": "1998"
-    },
-    {
-      "id": "tt38061210",
-      "type": "movie",
-      "name": "Why Did I Get Married Again?",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNTE5YWVkMTAtODJkYi00Y2IwLTlkZDAtYTQ3MDI3ODFiMWI5XkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt38061210/img",
-      "releaseInfo": "2026"
-    },
-    {
-      "id": "tt0369735",
-      "type": "movie",
-      "name": "Monster-in-Law",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNzFiNjJlZjUtZWRmNi00YjI2LTg1ZmEtODQ0ZjMxMDFiOWNkXkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt0369735/img",
-      "releaseInfo": "2005"
+      "background": "https://images.metahub.space/background/medium/tt1226271/img",
+      "releaseInfo": "2009"
     },
     {
       "id": "tt0780653",
@@ -82,13 +84,13 @@
       "releaseInfo": "2009"
     },
     {
-      "id": "tt3104988",
+      "id": "tt0120791",
       "type": "movie",
-      "name": "Crazy Rich Asians",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTYxNDMyOTAxN15BMl5BanBnXkFtZTgwMDg1ODYzNTM@._V1_SX250.jpg",
+      "name": "Practical Magic",
+      "poster": "https://m.media-amazon.com/images/M/MV5BOGM3ZjFhZjAtOTdlMS00MTY2LThjYmYtMTA2ZWM3YjdiM2E4XkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt3104988/img",
-      "releaseInfo": "2018"
+      "background": "https://images.metahub.space/background/medium/tt0120791/img",
+      "releaseInfo": "1998"
     }
   ]
 }
