@@ -73,6 +73,15 @@
       "releaseInfo": "2026"
     },
     {
+      "id": "tt0227972",
+      "type": "series",
+      "name": "WWE Smackdown!",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNGExZDZiNGYtOTgwNC00MDM4LTlmZDMtYjRjZTUwNmRjMDE4XkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0227972/img",
+      "releaseInfo": "1999-"
+    },
+    {
       "id": "tt14824792",
       "type": "series",
       "name": "Ted",

@@ -1,13 +1,11 @@
 {
-  "updated_at": "2026-09-24T21:01:39.929266+01:00",
+  "updated_at": "2026-09-25T21:03:20.576474+01:00",
   "netflix": {
     "source": "verified-local",
     "movies": 10,
-    "series": 9,
+    "series": 10,
     "unresolved_movies": [],
-    "unresolved_series": [
-      "WWE SmackDown"
-    ]
+    "unresolved_series": []
   },
   "imdb_last_12_months": {
     "minimum_rating": 7.5,
@@ -56,8 +54,8 @@
       "ja",
       "ko"
     ],
-    "from": "2025-09-24",
-    "to": "2026-09-24",
+    "from": "2025-09-25",
+    "to": "2026-09-25",
     "movies": 10,
     "series": 99,
     "movie_source": "https://caching.graphql.imdb.com/",
