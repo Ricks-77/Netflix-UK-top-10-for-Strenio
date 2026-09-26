@@ -9,7 +9,7 @@
       "background": "https://live.metahub.space/background/medium/tt43383343/img",
       "description": "The Soul Reapers and Quincies clash in a final battle as Yhwach breaches the Royal Palace. When the Soul King falls, reality begins collapsing. Former enemies unite to storm the transformed palace and face a threat to all existence. A theatrical screening of the first three episodes of the anime featuring an exclusive behind‑the‑scenes conversation with creator Tite Kubo, chief series director Tomohisa Taguchi, and series director Hikaru Murata about the production.",
       "releaseInfo": "2026",
-      "imdbRating": "8.9"
+      "imdbRating": "9.0"
     },
     {
       "id": "tt33764258",
@@ -45,17 +45,6 @@
       "imdbRating": "8.0"
     },
     {
-      "id": "tt35538033",
-      "type": "movie",
-      "name": "Resident Evil",
-      "poster": "https://images.metahub.space/poster/small/tt35538033/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt35538033/img",
-      "description": "Follows a hapless courier tasked with delivering a package to a remote hospital. He soon finds himself caught in the middle of an outbreak and must fight through hordes of mutated creatures to survive.",
-      "releaseInfo": "2026",
-      "imdbRating": "7.7"
-    },
-    {
       "id": "tt18259538",
       "type": "movie",
       "name": "Avatar Aang: The Last Airbender",
@@ -65,6 +54,17 @@
       "description": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands.",
       "releaseInfo": "2026",
       "imdbRating": "7.7"
+    },
+    {
+      "id": "tt35538033",
+      "type": "movie",
+      "name": "Resident Evil",
+      "poster": "https://images.metahub.space/poster/small/tt35538033/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt35538033/img",
+      "description": "Follows a hapless courier tasked with delivering a package to a remote hospital. He soon finds himself caught in the middle of an outbreak and must fight through hordes of mutated creatures to survive.",
+      "releaseInfo": "2026",
+      "imdbRating": "7.6"
     },
     {
       "id": "tt33100314",
@@ -96,17 +96,6 @@
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt14173636/img",
       "description": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places.",
-      "releaseInfo": "2026",
-      "imdbRating": "7.5"
-    },
-    {
-      "id": "tt1756855",
-      "type": "movie",
-      "name": "Coyote vs. Acme",
-      "poster": "https://images.metahub.space/poster/small/tt1756855/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt1756855/img",
-      "description": "After enduring years of malfunctioning products, Wile E. Coyote teams up with a local personal injury attorney to take on ACME, the manufacturer of anything and everything used by the Looney Tunes characters.",
       "releaseInfo": "2026",
       "imdbRating": "7.5"
     }
