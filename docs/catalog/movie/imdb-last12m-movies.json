@@ -87,17 +87,6 @@
       "description": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
       "releaseInfo": "2025",
       "imdbRating": "7.5"
-    },
-    {
-      "id": "tt14173636",
-      "type": "movie",
-      "name": "The Invite",
-      "poster": "https://images.metahub.space/poster/small/tt14173636/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt14173636/img",
-      "description": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places.",
-      "releaseInfo": "2026",
-      "imdbRating": "7.5"
     }
   ]
 }
