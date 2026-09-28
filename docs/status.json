@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T20:47:43.769410+01:00",
+  "updated_at": "2026-09-28T23:08:20.252511+01:00",
   "netflix": {
     "source": "verified-local",
     "movies": 10,
@@ -54,8 +54,8 @@
       "ja",
       "ko"
     ],
-    "from": "2025-09-27",
-    "to": "2026-09-27",
+    "from": "2025-09-28",
+    "to": "2026-09-28",
     "movies": 8,
     "series": 99,
     "movie_source": "https://caching.graphql.imdb.com/",
