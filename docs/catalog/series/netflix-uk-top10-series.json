@@ -28,6 +28,25 @@
       "releaseInfo": "2024-"
     },
     {
+      "id": "tt2369037",
+      "type": "series",
+      "name": "Leaving",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDVmNWJiMGUtMDc3NS00ZDdiLWJjZTQtYjE4MWU4MDk3YTQ3XkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt2369037/img",
+      "releaseInfo": "2012"
+    },
+    {
+      "id": "tt36258621",
+      "type": "series",
+      "name": "The Golden Ticket",
+      "poster": "https://images.metahub.space/poster/small/tt36258621/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt36258621/img",
+      "description": "Follows contestants who will compete to gain entry into a \"retro-futuristic\" chocolate factory by obtaining golden tickets. Once inside, they will face various challenges.",
+      "releaseInfo": "2026–"
+    },
+    {
       "id": "tt33081352",
       "type": "series",
       "name": "A Different World",

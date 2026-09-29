@@ -19,6 +19,15 @@
       "releaseInfo": "2026"
     },
     {
+      "id": "tt18259086",
+      "type": "movie",
+      "name": "Sonic the Hedgehog 3",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjZjNjE5NDEtOWJjYS00Mjk2LWI1ZDYtOWI1ZWI3MzRjM2UzXkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt18259086/img",
+      "releaseInfo": "2024"
+    },
+    {
       "id": "tt29028515",
       "type": "movie",
       "name": "Wasteman",

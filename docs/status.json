@@ -1,16 +1,11 @@
 {
-  "updated_at": "2026-09-29T19:51:17.217937+01:00",
+  "updated_at": "2026-09-29T21:53:50.974739+01:00",
   "netflix": {
     "source": "verified-local",
-    "movies": 9,
-    "series": 8,
-    "unresolved_movies": [
-      "Sonic the Hedgehog 3"
-    ],
-    "unresolved_series": [
-      "Leaving",
-      "Wonka's The Golden Ticket"
-    ]
+    "movies": 10,
+    "series": 10,
+    "unresolved_movies": [],
+    "unresolved_series": []
   },
   "imdb_last_12_months": {
     "minimum_rating": 7.5,
