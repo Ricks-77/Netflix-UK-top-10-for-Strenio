@@ -1,6 +1,24 @@
 {
   "metas": [
     {
+      "id": "tt8790086",
+      "type": "movie",
+      "name": "Kraven the Hunter",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZDU0YTI5ODAtN2NmMS00YTg3LTgyNDItN2RmOWEzOTkzZjcyXkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt8790086/img",
+      "releaseInfo": "2024"
+    },
+    {
+      "id": "tt6933238",
+      "type": "movie",
+      "name": "Unabomber",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDE2ODhlNTUtYjdiOS00OTlmLTg5OGMtMGNjZWZmNWE4MGJiXkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt6933238/img",
+      "releaseInfo": "2026"
+    },
+    {
       "id": "tt29028515",
       "type": "movie",
       "name": "Wasteman",
@@ -12,40 +30,31 @@
       "imdbRating": "7.3"
     },
     {
-      "id": "tt16478058",
+      "id": "tt38457052",
       "type": "movie",
-      "name": "Best of the Best",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMWJiYzQ5MmMtNzIyNS00YzQ0LTkyNmQtZmQ0NWQ4MmFhMzU5XkEyXkFqcGc@._V1_SX250.jpg",
+      "name": "Aileen: Queen of the Serial Killers",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYjg4MDg1YTAtNDYwMC00MGEyLTk3NTYtMWY4YjJmNDMyZDdkXkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt16478058/img",
-      "releaseInfo": "2026"
+      "background": "https://images.metahub.space/background/medium/tt38457052/img",
+      "releaseInfo": "2025"
     },
     {
-      "id": "tt7713068",
+      "id": "tt32820897",
       "type": "movie",
-      "name": "Birds of Prey and the Fantabulous Emancipation of One Harley Quinn",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNTgwNWEwOWMtNGIxMy00YzU5LTk2MzgtMjAzMmM1MjZiY2RiXkEyXkFqcGc@._V1_SX250.jpg",
+      "name": "Demon Slayer: Kimetsu No Yaiba Infinity Castle",
+      "poster": "https://m.media-amazon.com/images/M/MV5BOGQ3YWUzYjEtMTJiYy00ZjQ0LWI0YjktYjhiNGVhNGExYTM3XkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt7713068/img",
-      "releaseInfo": "2020"
+      "background": "https://images.metahub.space/background/medium/tt32820897/img",
+      "releaseInfo": "2025"
     },
     {
-      "id": "tt1099212",
+      "id": "tt10365912",
       "type": "movie",
-      "name": "Twilight",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTQ2NzUxMTAxN15BMl5BanBnXkFtZTcwMzEyMTIwMg@@._V1_SX250.jpg",
+      "name": "Becoming Led Zeppelin",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNTBhMzliNzYtMjQwMy00MjdhLWIyOGYtYzdiY2FlNjk3YTkzXkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt1099212/img",
-      "releaseInfo": "2008"
-    },
-    {
-      "id": "tt1872194",
-      "type": "movie",
-      "name": "The Judge",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTcyNzIxOTIwMV5BMl5BanBnXkFtZTgwMzE0NjQwMjE@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt1872194/img",
-      "releaseInfo": "2014"
+      "background": "https://images.metahub.space/background/medium/tt10365912/img",
+      "releaseInfo": "2025"
     },
     {
       "id": "tt11561116",
@@ -57,40 +66,22 @@
       "releaseInfo": "2026"
     },
     {
-      "id": "tt1226271",
+      "id": "tt0251127",
       "type": "movie",
-      "name": "The Damned United",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjEyMzkzMjM0MV5BMl5BanBnXkFtZTcwNzE3NTU3Mg@@._V1_SX250.jpg",
+      "name": "How to Lose a Guy in 10 Days",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjE4NTA1NzExN15BMl5BanBnXkFtZTYwNjc3MjM3._V1_SX250.jpg",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt1226271/img",
-      "releaseInfo": "2009"
+      "background": "https://images.metahub.space/background/medium/tt0251127/img",
+      "releaseInfo": "2003"
     },
     {
-      "id": "tt0780653",
+      "id": "tt1637725",
       "type": "movie",
-      "name": "The Wolfman",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTI4OTVlZGItNjAzNi00OTg2LWI4MTAtOTZhMDNhY2UwOGVhXkEyXkFqcGc@._V1_SX250.jpg",
+      "name": "Ted",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1OTU0ODcxMV5BMl5BanBnXkFtZTcwOTMxNTUwOA@@._V1_SX250.jpg",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt0780653/img",
-      "releaseInfo": "2010"
-    },
-    {
-      "id": "tt1259571",
-      "type": "movie",
-      "name": "The Twilight Saga: New Moon",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTI3MjE3NDIxNF5BMl5BanBnXkFtZTcwODM3NTY5Mg@@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt1259571/img",
-      "releaseInfo": "2009"
-    },
-    {
-      "id": "tt0120791",
-      "type": "movie",
-      "name": "Practical Magic",
-      "poster": "https://m.media-amazon.com/images/M/MV5BOGM3ZjFhZjAtOTdlMS00MTY2LThjYmYtMTA2ZWM3YjdiM2E4XkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt0120791/img",
-      "releaseInfo": "1998"
+      "background": "https://images.metahub.space/background/medium/tt1637725/img",
+      "releaseInfo": "2012"
     }
   ]
 }

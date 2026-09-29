@@ -1,6 +1,15 @@
 {
   "metas": [
     {
+      "id": "tt44877899",
+      "type": "series",
+      "name": "Outside",
+      "poster": "https://m.media-amazon.com/images/M/MV5BOTI3OTkyYmEtNzNmZi00OTlkLThlNGItZjEzMjRjZjZlMWNkXkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt44877899/img",
+      "releaseInfo": "2026-"
+    },
+    {
       "id": "tt13207736",
       "type": "series",
       "name": "Monster",
@@ -19,13 +28,22 @@
       "releaseInfo": "2024-"
     },
     {
-      "id": "tt35853579",
+      "id": "tt33081352",
       "type": "series",
-      "name": "The Real Unforgotten",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjQyZTQ3MTItZGY5Yy00MTgyLThhOGQtMzE4NmQzOTY1ZTQwXkEyXkFqcGc@._V1_SX250.jpg",
+      "name": "A Different World",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNGIwZDc3OWYtZTZkOS00NmRjLTk3NTAtNjQzODI3ZTI4MWU4XkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt35853579/img",
-      "releaseInfo": "2025"
+      "background": "https://images.metahub.space/background/medium/tt33081352/img",
+      "releaseInfo": "2026-"
+    },
+    {
+      "id": "tt35929525",
+      "type": "series",
+      "name": "Shaque: Trust No One",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYWRlNDA3MGYtMWMzZS00MDAwLTk4MTAtY2RhMGI3OTA2OTY1XkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt35929525/img",
+      "releaseInfo": "2026-"
     },
     {
       "id": "tt38218082",
@@ -46,51 +64,13 @@
       "releaseInfo": "2026"
     },
     {
-      "id": "tt37439410",
+      "id": "tt35853579",
       "type": "series",
-      "name": "The Perfect Lie",
-      "poster": "https://m.media-amazon.com/images/M/MV5BYzZkNzcyODktZTE5Yy00ZGEzLWE1OWUtNzVkZjI5NzNlODgzXkEyXkFqcGc@._V1_SX250.jpg",
+      "name": "The Real Unforgotten",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjQyZTQ3MTItZGY5Yy00MTgyLThhOGQtMzE4NmQzOTY1ZTQwXkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt37439410/img",
-      "releaseInfo": "2026-"
-    },
-    {
-      "id": "tt44113382",
-      "type": "series",
-      "name": "Death of the Pastor's Wife",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjM2MDkyZjEtZmJmOS00MWQzLTlhNjEtZThiMGE3NGQyN2RlXkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt44113382/img",
-      "releaseInfo": "2026"
-    },
-    {
-      "id": "tt37578538",
-      "type": "series",
-      "name": "The Doll",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNDA3ZDljYWEtZjBmOS00NmM1LWI3YWMtODJmZGM5YzhjODNjXkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt37578538/img",
-      "releaseInfo": "2026"
-    },
-    {
-      "id": "tt0227972",
-      "type": "series",
-      "name": "WWE Smackdown!",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNGExZDZiNGYtOTgwNC00MDM4LTlmZDMtYjRjZTUwNmRjMDE4XkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt0227972/img",
-      "releaseInfo": "1999-"
-    },
-    {
-      "id": "tt14824792",
-      "type": "series",
-      "name": "Ted",
-      "poster": "https://images.metahub.space/poster/small/tt14824792/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt14824792/img",
-      "description": "It's 1993, and Ted the bear's moment of fame has passed. He's living back home with his best friend, John Bennett, and his family. While Ted may be a lousy influence on John, he's a loyal pal who will go out on a limb for friendship.",
-      "releaseInfo": "2024–",
-      "imdbRating": "7.9"
+      "background": "https://images.metahub.space/background/medium/tt35853579/img",
+      "releaseInfo": "2025"
     }
   ]
 }

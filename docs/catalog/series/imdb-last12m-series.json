@@ -815,17 +815,6 @@
       "imdbRating": "8.3"
     },
     {
-      "id": "tt36592690",
-      "type": "series",
-      "name": "The Fragrant Flower Blooms with Dignity",
-      "poster": "https://images.metahub.space/poster/small/tt36592690/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt36592690/img",
-      "description": "An elite girls' school resides next to a boys' school for delinquents. One day, two students from each school, Kaoruko and Rintaro, meet and develop a connection.",
-      "releaseInfo": "2025",
-      "imdbRating": "8.3"
-    },
-    {
       "id": "tt1055238",
       "type": "series",
       "name": "Would I Lie to You?",
@@ -1087,6 +1076,17 @@
       "background": "https://images.metahub.space/background/medium/tt12063450/img",
       "description": "A lonely boy wandering the Arctic regions of North America meets a wolf, and the two become fast friends, depending on each other to survive the harsh environment. But the boy has a history, and the wolf is more than meets the eye...",
       "releaseInfo": "2021–",
+      "imdbRating": "8.2"
+    },
+    {
+      "id": "tt40197357",
+      "type": "series",
+      "name": "Scrubs",
+      "poster": "https://images.metahub.space/poster/small/tt40197357/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt40197357/img",
+      "description": "JD and Turk scrub in together after a long break. Medicine and interns have evolved, but their friendship remains strong. New and familiar faces at Sacred Heart bring laughs, emotion, and unexpected moments.",
+      "releaseInfo": "2026–",
       "imdbRating": "8.2"
     }
   ]
