@@ -1,28 +1,28 @@
 {
-  "date": "2026-09-23",
-  "source": "FlixPatrol Netflix UK daily chart, cross-checked against StreamRank UK Netflix daily chart (both 23 September 2026)",
+  "date": "2026-09-29",
+  "source": "FlixPatrol Netflix UK daily chart (29 September 2026); freshness and rank movements cross-checked against StreamRank UK Netflix daily chart (28 September 2026)",
   "movies": [
+    "Kraven the Hunter",
+    "UNABOMBER",
+    "Sonic the Hedgehog 3",
     "Wasteman",
-    "Best of the Best",
-    "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)",
-    "Twilight",
-    "The Judge",
+    "Aileen: Queen of the Serial Killers",
+    "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+    "Becoming Led Zeppelin",
     "The Whisper Man",
-    "The Damned United",
-    "The Wolfman",
-    "The Twilight Saga: New Moon",
-    "Practical Magic"
+    "How to Lose a Guy in 10 Days",
+    "Ted"
   ],
   "series": [
+    "Outside",
     "Monster: The Lizzie Borden Story",
     "The Gentlemen",
-    "The Real Unforgotten",
+    "Leaving",
+    "Wonka's The Golden Ticket",
+    "A Different World",
+    "Shaque: Trust No One",
     "Crew Girl",
     "Not a Stranger",
-    "The Perfect Lie",
-    "Death of the Pastor's Wife",
-    "The Doll",
-    "WWE SmackDown",
-    "ted"
+    "The Real Unforgotten"
   ]
 }
