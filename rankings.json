@@ -1,28 +1,28 @@
 {
-  "date": "2026-09-30",
-  "source": "FlixPatrol Netflix UK daily chart (30 September 2026); complete same-day UK chart verified with exactly 10 movies and 10 TV series",
+  "date": "2026-10-01",
+  "source": "FlixPatrol Netflix UK daily chart (1 October 2026); complete same-day UK chart verified with exactly 10 movies and 10 TV series, with rank continuity cross-checked against the 30 September 2026 UK chart",
   "movies": [
     "Kraven the Hunter",
     "UNABOMBER",
     "Sonic the Hedgehog 3",
-    "Wasteman",
     "Aileen: Queen of the Serial Killers",
-    "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
-    "Becoming Led Zeppelin",
-    "The Whisper Man",
+    "Wasteman",
     "How to Lose a Guy in 10 Days",
+    "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+    "The Whisper Man",
+    "Becoming Led Zeppelin",
     "Ted"
   ],
   "series": [
     "Outside",
+    "Raw",
     "Monster: The Lizzie Borden Story",
     "The Gentlemen",
     "Leaving",
     "Wonka's The Golden Ticket",
+    "LEGO ONE PIECE",
     "A Different World",
     "Shaque: Trust No One",
-    "Crew Girl",
-    "Not a Stranger",
-    "The Real Unforgotten"
+    "Crew Girl"
   ]
 }
