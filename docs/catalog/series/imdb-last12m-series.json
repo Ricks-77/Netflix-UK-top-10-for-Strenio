@@ -320,6 +320,17 @@
       "imdbRating": "8.6"
     },
     {
+      "id": "tt26743760",
+      "type": "series",
+      "name": "The Apothecary Diaries",
+      "poster": "https://images.metahub.space/poster/small/tt26743760/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt26743760/img",
+      "description": "A young maiden is kidnapped and sold into servitude at the emperor's palace, where she secretly employs her pharmacist skills with the help of the head eunuch to unravel medical mysteries in the inner court.",
+      "releaseInfo": "2023–",
+      "imdbRating": "8.6"
+    },
+    {
       "id": "tt10590066",
       "type": "series",
       "name": "All Creatures Great & Small",
@@ -404,7 +415,7 @@
       "posterShape": "poster",
       "background": "https://live.metahub.space/background/medium/tt0149460/img",
       "description": "The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an interplanetary delivery company in the retro-futuristic 31st century.",
-      "releaseInfo": "1999–2026",
+      "releaseInfo": "1999–",
       "imdbRating": "8.5"
     },
     {
@@ -569,6 +580,17 @@
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt32315888/img",
       "description": "Follows a group of middle-aged women, as they form a punk-rock band to participate in a talent contest.",
+      "releaseInfo": "2025–",
+      "imdbRating": "8.5"
+    },
+    {
+      "id": "tt36985473",
+      "type": "series",
+      "name": "The Wonderfully Weird World of Gumball",
+      "poster": "https://images.metahub.space/poster/small/tt36985473/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt36985473/img",
+      "description": "In Elmore, reality bends and family life gets weird. Gumball pulls Darwin, Anais, and the whole town into adventures - from fighting evil fast food to dealing with an AI crushing on his mom. The show's so wild, it needed a new name.",
       "releaseInfo": "2025–",
       "imdbRating": "8.5"
     },
@@ -1064,28 +1086,6 @@
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt10970762/img",
       "description": "This sequel to \"The Handmaid's Tale\" follows Agnes and Daisy, two teens in Gilead who must navigate an elite preparatory school where obedience is brutally enforced. Their bond becomes the catalyst that will transform their lives.",
-      "releaseInfo": "2026–",
-      "imdbRating": "8.2"
-    },
-    {
-      "id": "tt12063450",
-      "type": "series",
-      "name": "To Your Eternity",
-      "poster": "https://images.metahub.space/poster/small/tt12063450/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt12063450/img",
-      "description": "A lonely boy wandering the Arctic regions of North America meets a wolf, and the two become fast friends, depending on each other to survive the harsh environment. But the boy has a history, and the wolf is more than meets the eye...",
-      "releaseInfo": "2021–",
-      "imdbRating": "8.2"
-    },
-    {
-      "id": "tt40197357",
-      "type": "series",
-      "name": "Scrubs",
-      "poster": "https://images.metahub.space/poster/small/tt40197357/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt40197357/img",
-      "description": "JD and Turk scrub in together after a long break. Medicine and interns have evolved, but their friendship remains strong. New and familiar faces at Sacred Heart bring laughs, emotion, and unexpected moments.",
       "releaseInfo": "2026–",
       "imdbRating": "8.2"
     }

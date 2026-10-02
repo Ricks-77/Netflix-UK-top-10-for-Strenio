@@ -10,15 +10,6 @@
       "releaseInfo": "2026-"
     },
     {
-      "id": "tt1233560",
-      "type": "series",
-      "name": "Raw",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMWMzY2RmM2UtNzZlOS00NDI2LWFmYzctZWI2NDFmNjAxOTliXkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt1233560/img",
-      "releaseInfo": "2008-2013"
-    },
-    {
       "id": "tt13207736",
       "type": "series",
       "name": "Monster",
@@ -37,15 +28,6 @@
       "releaseInfo": "2024-"
     },
     {
-      "id": "tt2369037",
-      "type": "series",
-      "name": "Leaving",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMDVmNWJiMGUtMDc3NS00ZDdiLWJjZTQtYjE4MWU4MDk3YTQ3XkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt2369037/img",
-      "releaseInfo": "2012"
-    },
-    {
       "id": "tt36258621",
       "type": "series",
       "name": "The Golden Ticket",
@@ -56,6 +38,15 @@
       "releaseInfo": "2026–"
     },
     {
+      "id": "tt2369037",
+      "type": "series",
+      "name": "Leaving",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDVmNWJiMGUtMDc3NS00ZDdiLWJjZTQtYjE4MWU4MDk3YTQ3XkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt2369037/img",
+      "releaseInfo": "2012"
+    },
+    {
       "id": "tt41538904",
       "type": "series",
       "name": "Lego One Piece",
@@ -63,6 +54,15 @@
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt41538904/img",
       "releaseInfo": "2026"
+    },
+    {
+      "id": "tt1233560",
+      "type": "series",
+      "name": "Raw",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMWMzY2RmM2UtNzZlOS00NDI2LWFmYzctZWI2NDFmNjAxOTliXkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt1233560/img",
+      "releaseInfo": "2008-2013"
     },
     {
       "id": "tt33081352",
