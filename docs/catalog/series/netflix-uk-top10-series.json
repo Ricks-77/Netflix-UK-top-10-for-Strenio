@@ -10,32 +10,13 @@
       "releaseInfo": "2026-"
     },
     {
-      "id": "tt13207736",
+      "id": "tt21097264",
       "type": "series",
-      "name": "Monster",
-      "poster": "https://m.media-amazon.com/images/M/MV5BZjJkZmEzMTctYmUyMC00MzVjLWFiYzEtZGYzYmRjOWI5MTRkXkEyXkFqcGc@._V1_SX250.jpg",
+      "name": "East of Eden",
+      "poster": "https://m.media-amazon.com/images/M/MV5BY2FhZjRkNDEtMWViZC00YmM2LTljNTMtY2U4MzE3MDY0YmMwXkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt13207736/img",
-      "releaseInfo": "2022-"
-    },
-    {
-      "id": "tt13210838",
-      "type": "series",
-      "name": "The Gentlemen",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMzM0YzFhMTYtYjZkNS00MWRmLTg2ZDgtY2MzYjQ5ODVmOTI1XkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt13210838/img",
-      "releaseInfo": "2024-"
-    },
-    {
-      "id": "tt36258621",
-      "type": "series",
-      "name": "The Golden Ticket",
-      "poster": "https://images.metahub.space/poster/small/tt36258621/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt36258621/img",
-      "description": "Follows contestants who will compete to gain entry into a \"retro-futuristic\" chocolate factory by obtaining golden tickets. Once inside, they will face various challenges.",
-      "releaseInfo": "2026–"
+      "background": "https://images.metahub.space/background/medium/tt21097264/img",
+      "releaseInfo": "2026"
     },
     {
       "id": "tt2369037",
@@ -47,6 +28,24 @@
       "releaseInfo": "2012"
     },
     {
+      "id": "tt13210838",
+      "type": "series",
+      "name": "The Gentlemen",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzM0YzFhMTYtYjZkNS00MWRmLTg2ZDgtY2MzYjQ5ODVmOTI1XkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt13210838/img",
+      "releaseInfo": "2024-"
+    },
+    {
+      "id": "tt13207736",
+      "type": "series",
+      "name": "Monster",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZjJkZmEzMTctYmUyMC00MzVjLWFiYzEtZGYzYmRjOWI5MTRkXkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt13207736/img",
+      "releaseInfo": "2022-"
+    },
+    {
       "id": "tt41538904",
       "type": "series",
       "name": "Lego One Piece",
@@ -54,24 +53,6 @@
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt41538904/img",
       "releaseInfo": "2026"
-    },
-    {
-      "id": "tt1233560",
-      "type": "series",
-      "name": "Raw",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMWMzY2RmM2UtNzZlOS00NDI2LWFmYzctZWI2NDFmNjAxOTliXkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt1233560/img",
-      "releaseInfo": "2008-2013"
-    },
-    {
-      "id": "tt33081352",
-      "type": "series",
-      "name": "A Different World",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNGIwZDc3OWYtZTZkOS00NmRjLTk3NTAtNjQzODI3ZTI4MWU4XkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt33081352/img",
-      "releaseInfo": "2026-"
     },
     {
       "id": "tt35929525",
@@ -83,12 +64,12 @@
       "releaseInfo": "2026-"
     },
     {
-      "id": "tt38218082",
+      "id": "tt33081352",
       "type": "series",
-      "name": "Crew Girl",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMWVmYTE5OWQtOWJlMi00NzY4LWJmMTAtZDQ2ZTg1MTZhNWVlXkEyXkFqcGc@._V1_SX250.jpg",
+      "name": "A Different World",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNGIwZDc3OWYtZTZkOS00NmRjLTk3NTAtNjQzODI3ZTI4MWU4XkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt38218082/img",
+      "background": "https://images.metahub.space/background/medium/tt33081352/img",
       "releaseInfo": "2026-"
     }
   ]

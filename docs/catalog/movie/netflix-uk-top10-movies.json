@@ -28,6 +28,24 @@
       "releaseInfo": "2024"
     },
     {
+      "id": "tt1490017",
+      "type": "movie",
+      "name": "The Lego Movie",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTg4MDk1ODExN15BMl5BanBnXkFtZTgwNzIyNjg3MDE@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt1490017/img",
+      "releaseInfo": "2014"
+    },
+    {
+      "id": "tt36429458",
+      "type": "movie",
+      "name": "Doing Life",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYmNlYzg5NmMtMWZlMi00MWMwLWJmODEtMzVhOTQ3NjEzOGM2XkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt36429458/img",
+      "releaseInfo": "2026"
+    },
+    {
       "id": "tt18259086",
       "type": "movie",
       "name": "Sonic the Hedgehog 3",
@@ -37,6 +55,24 @@
       "releaseInfo": "2024"
     },
     {
+      "id": "tt0162983",
+      "type": "movie",
+      "name": "Hanging Up",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDZkZjE3NDItZjk4MC00OWU4LWI0MjctOWU2NWM4ZTkzZTI2XkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0162983/img",
+      "releaseInfo": "2000"
+    },
+    {
+      "id": "tt1077368",
+      "type": "movie",
+      "name": "Dark Shadows",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjNiYWMxZjctMzEyZS00NDZmLTgxYmYtM2NmOGI0MmY3ZTJiXkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt1077368/img",
+      "releaseInfo": "2012"
+    },
+    {
       "id": "tt0251127",
       "type": "movie",
       "name": "How to Lose a Guy in 10 Days",
@@ -44,53 +80,6 @@
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt0251127/img",
       "releaseInfo": "2003"
-    },
-    {
-      "id": "tt38457052",
-      "type": "movie",
-      "name": "Aileen: Queen of the Serial Killers",
-      "poster": "https://m.media-amazon.com/images/M/MV5BYjg4MDg1YTAtNDYwMC00MGEyLTk3NTYtMWY4YjJmNDMyZDdkXkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt38457052/img",
-      "releaseInfo": "2025"
-    },
-    {
-      "id": "tt29028515",
-      "type": "movie",
-      "name": "Wasteman",
-      "poster": "https://images.metahub.space/poster/small/tt29028515/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt29028515/img",
-      "description": "Follows parolee Taylor whose fresh start hopes are jeopardized by cellmate Dee's arrival. As Dee takes Taylor under his wing, a vicious attack tests their bond, forcing Taylor to choose between protecting Dee and his own parole chances.",
-      "releaseInfo": "2026",
-      "imdbRating": "7.3"
-    },
-    {
-      "id": "tt11561116",
-      "type": "movie",
-      "name": "The Whisper Man",
-      "poster": "https://m.media-amazon.com/images/M/MV5BOTI1YmY3YTQtYTg2Zi00OTZkLTk3NzQtNjcxNzIzMjk2ODZlXkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt11561116/img",
-      "releaseInfo": "2026"
-    },
-    {
-      "id": "tt1637725",
-      "type": "movie",
-      "name": "Ted",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1OTU0ODcxMV5BMl5BanBnXkFtZTcwOTMxNTUwOA@@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt1637725/img",
-      "releaseInfo": "2012"
-    },
-    {
-      "id": "tt32820897",
-      "type": "movie",
-      "name": "Demon Slayer: Kimetsu No Yaiba Infinity Castle",
-      "poster": "https://m.media-amazon.com/images/M/MV5BOGQ3YWUzYjEtMTJiYy00ZjQ0LWI0YjktYjhiNGVhNGExYTM3XkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt32820897/img",
-      "releaseInfo": "2025"
     }
   ]
 }

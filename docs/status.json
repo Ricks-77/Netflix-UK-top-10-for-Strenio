@@ -1,11 +1,16 @@
 {
-  "updated_at": "2026-10-03T20:17:33.502025+01:00",
+  "updated_at": "2026-10-03T20:35:25.932729+01:00",
   "netflix": {
     "source": "verified-local",
-    "movies": 10,
-    "series": 10,
-    "unresolved_movies": [],
-    "unresolved_series": []
+    "movies": 9,
+    "series": 8,
+    "unresolved_movies": [
+      "White Chicks"
+    ],
+    "unresolved_series": [
+      "Wonka's The Golden Ticket",
+      "JoJo's Bizarre Adventure"
+    ]
   },
   "imdb_last_12_months": {
     "minimum_rating": 7.5,
