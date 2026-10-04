@@ -1,6 +1,15 @@
 {
   "metas": [
     {
+      "id": "tt21097264",
+      "type": "series",
+      "name": "East of Eden",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNmI2ODMyNjctZTA1MS00ODNhLWI3ZjAtMmE4MDE4OWRjMWZlXkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt21097264/img",
+      "releaseInfo": "2026"
+    },
+    {
       "id": "tt44877899",
       "type": "series",
       "name": "Outside",
@@ -10,13 +19,13 @@
       "releaseInfo": "2026-"
     },
     {
-      "id": "tt21097264",
+      "id": "tt0227972",
       "type": "series",
-      "name": "East of Eden",
-      "poster": "https://m.media-amazon.com/images/M/MV5BY2FhZjRkNDEtMWViZC00YmM2LTljNTMtY2U4MzE3MDY0YmMwXkEyXkFqcGc@._V1_SX250.jpg",
+      "name": "WWE Smackdown!",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNGExZDZiNGYtOTgwNC00MDM4LTlmZDMtYjRjZTUwNmRjMDE4XkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt21097264/img",
-      "releaseInfo": "2026"
+      "background": "https://images.metahub.space/background/medium/tt0227972/img",
+      "releaseInfo": "1999-"
     },
     {
       "id": "tt2369037",
@@ -44,6 +53,16 @@
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt13207736/img",
       "releaseInfo": "2022-"
+    },
+    {
+      "id": "tt36258621",
+      "type": "series",
+      "name": "The Golden Ticket",
+      "poster": "https://images.metahub.space/poster/small/tt36258621/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt36258621/img",
+      "description": "Follows contestants who will compete to gain entry into a \"retro-futuristic\" chocolate factory by obtaining golden tickets. Once inside, they will face various challenges.",
+      "releaseInfo": "2026–"
     },
     {
       "id": "tt41538904",
