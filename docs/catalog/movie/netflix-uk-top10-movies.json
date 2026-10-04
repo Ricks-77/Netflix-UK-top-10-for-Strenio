@@ -22,10 +22,12 @@
       "id": "tt8790086",
       "type": "movie",
       "name": "Kraven the Hunter",
-      "poster": "https://m.media-amazon.com/images/M/MV5BZDU0YTI5ODAtN2NmMS00YTg3LTgyNDItN2RmOWEzOTkzZjcyXkEyXkFqcGc@._V1_SX250.jpg",
+      "poster": "https://images.metahub.space/poster/small/tt8790086/img",
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt8790086/img",
-      "releaseInfo": "2024"
+      "description": "Kraven's complex relationship with his ruthless father, Nikolai Kravinoff, starts him down a path of vengeance with brutal consequences, motivating him to become not only the greatest hunter in the world, but also one of its most ...",
+      "releaseInfo": "2024",
+      "imdbRating": "5.5"
     },
     {
       "id": "tt36429458",

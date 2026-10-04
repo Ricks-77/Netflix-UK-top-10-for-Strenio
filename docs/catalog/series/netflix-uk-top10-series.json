@@ -22,10 +22,12 @@
       "id": "tt0227972",
       "type": "series",
       "name": "WWE Smackdown!",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNGExZDZiNGYtOTgwNC00MDM4LTlmZDMtYjRjZTUwNmRjMDE4XkEyXkFqcGc@._V1_SX250.jpg",
+      "poster": "https://images.metahub.space/poster/small/tt0227972/img",
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt0227972/img",
-      "releaseInfo": "1999-"
+      "description": "Superstars of World Wrestling Entertainment do battle in elaborate, long running rivalries in a weekly two-hour showdown.",
+      "releaseInfo": "1999–",
+      "imdbRating": "7.3"
     },
     {
       "id": "tt2369037",
