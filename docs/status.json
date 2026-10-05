@@ -1,12 +1,10 @@
 {
-  "updated_at": "2026-10-05T20:25:21.367962+01:00",
+  "updated_at": "2026-10-05T23:45:03.292457+01:00",
   "netflix": {
     "source": "verified-local",
-    "movies": 9,
+    "movies": 10,
     "series": 10,
-    "unresolved_movies": [
-      "Ice Age: Continental Drift"
-    ],
+    "unresolved_movies": [],
     "unresolved_series": []
   },
   "imdb_last_12_months": {

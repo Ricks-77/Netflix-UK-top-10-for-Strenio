@@ -55,6 +55,15 @@
       "releaseInfo": "2014"
     },
     {
+      "id": "tt1667889",
+      "type": "movie",
+      "name": "Ice Age: Continental Drift",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTM3NDM5MzY5Ml5BMl5BanBnXkFtZTcwNjExMDUwOA@@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt1667889/img",
+      "releaseInfo": "2012"
+    },
+    {
       "id": "tt0381707",
       "type": "movie",
       "name": "White Chicks",
