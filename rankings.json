@@ -1,28 +1,28 @@
 {
-  "date": "2026-10-04",
-  "source": "FlixPatrol Netflix UK daily chart (4 October 2026); complete same-day chart verified with exactly 10 movies and 10 TV series; day-on-day rank movements reconcile with the 3 October chart and the same-day FlixPatrol world table confirms the UK #1s.",
+  "date": "2026-10-05",
+  "source": "FlixPatrol Netflix UK daily chart, 5 October 2026; complete 10-movie and 10-series chart verified against the prior day's rank movements and current Netflix UK catalogue availability.",
   "movies": [
     "The Widower: 'Til Death Do Us Part",
     "UNABOMBER",
     "Kraven the Hunter",
     "Doing Life",
+    "Ice Age",
     "The Lego Movie",
-    "Sonic the Hedgehog 3",
+    "Ice Age: Continental Drift",
     "White Chicks",
-    "Hanging Up",
-    "Schumacher '94 - The Birth of a Legend",
+    "Sonic the Hedgehog 3",
     "Ocean's 8"
   ],
   "series": [
     "East of Eden",
     "Outside",
-    "WWE SmackDown",
-    "Leaving",
     "The Gentlemen",
+    "Leaving",
     "Monster: The Lizzie Borden Story",
     "Wonka's The Golden Ticket",
+    "WWE SmackDown",
     "LEGO ONE PIECE",
-    "Shaque: Trust No One",
-    "A Different World"
+    "Percy Jackson and the Olympians",
+    "Shaque: Trust No One"
   ]
 }
