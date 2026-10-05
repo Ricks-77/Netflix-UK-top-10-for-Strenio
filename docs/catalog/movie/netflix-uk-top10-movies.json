@@ -22,12 +22,10 @@
       "id": "tt8790086",
       "type": "movie",
       "name": "Kraven the Hunter",
-      "poster": "https://images.metahub.space/poster/small/tt8790086/img",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZDU0YTI5ODAtN2NmMS00YTg3LTgyNDItN2RmOWEzOTkzZjcyXkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt8790086/img",
-      "description": "Kraven's complex relationship with his ruthless father, Nikolai Kravinoff, starts him down a path of vengeance with brutal consequences, motivating him to become not only the greatest hunter in the world, but also one of its most ...",
-      "releaseInfo": "2024",
-      "imdbRating": "5.5"
+      "releaseInfo": "2024"
     },
     {
       "id": "tt36429458",
@@ -39,6 +37,15 @@
       "releaseInfo": "2026"
     },
     {
+      "id": "tt0268380",
+      "type": "movie",
+      "name": "Ice Age",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDBlYzU2OGMtOGJjNi00ZGZjLWIwNjMtYzdiZjkwYWNjZDljXkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0268380/img",
+      "releaseInfo": "2002"
+    },
+    {
       "id": "tt1490017",
       "type": "movie",
       "name": "The Lego Movie",
@@ -46,15 +53,6 @@
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt1490017/img",
       "releaseInfo": "2014"
-    },
-    {
-      "id": "tt18259086",
-      "type": "movie",
-      "name": "Sonic the Hedgehog 3",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjZjNjE5NDEtOWJjYS00Mjk2LWI1ZDYtOWI1ZWI3MzRjM2UzXkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt18259086/img",
-      "releaseInfo": "2024"
     },
     {
       "id": "tt0381707",
@@ -66,22 +64,13 @@
       "releaseInfo": "2004"
     },
     {
-      "id": "tt0162983",
+      "id": "tt18259086",
       "type": "movie",
-      "name": "Hanging Up",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMDZkZjE3NDItZjk4MC00OWU4LWI0MjctOWU2NWM4ZTkzZTI2XkEyXkFqcGc@._V1_SX250.jpg",
+      "name": "Sonic the Hedgehog 3",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjZjNjE5NDEtOWJjYS00Mjk2LWI1ZDYtOWI1ZWI3MzRjM2UzXkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt0162983/img",
-      "releaseInfo": "2000"
-    },
-    {
-      "id": "tt39453404",
-      "type": "movie",
-      "name": "Schumacher '94: The Birth of a Legend",
-      "poster": "https://m.media-amazon.com/images/M/MV5BOWI2NmQ5ZmUtYmIxZi00YjViLWJmMjEtNjM3NmQ5MTQ5Y2Q3XkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt39453404/img",
-      "releaseInfo": "2026"
+      "background": "https://images.metahub.space/background/medium/tt18259086/img",
+      "releaseInfo": "2024"
     },
     {
       "id": "tt5164214",

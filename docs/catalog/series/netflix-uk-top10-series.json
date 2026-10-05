@@ -19,15 +19,13 @@
       "releaseInfo": "2026-"
     },
     {
-      "id": "tt0227972",
+      "id": "tt13210838",
       "type": "series",
-      "name": "WWE Smackdown!",
-      "poster": "https://images.metahub.space/poster/small/tt0227972/img",
+      "name": "The Gentlemen",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzM0YzFhMTYtYjZkNS00MWRmLTg2ZDgtY2MzYjQ5ODVmOTI1XkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt0227972/img",
-      "description": "Superstars of World Wrestling Entertainment do battle in elaborate, long running rivalries in a weekly two-hour showdown.",
-      "releaseInfo": "1999–",
-      "imdbRating": "7.3"
+      "background": "https://images.metahub.space/background/medium/tt13210838/img",
+      "releaseInfo": "2024-"
     },
     {
       "id": "tt2369037",
@@ -37,15 +35,6 @@
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt2369037/img",
       "releaseInfo": "2012"
-    },
-    {
-      "id": "tt13210838",
-      "type": "series",
-      "name": "The Gentlemen",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMzM0YzFhMTYtYjZkNS00MWRmLTg2ZDgtY2MzYjQ5ODVmOTI1XkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt13210838/img",
-      "releaseInfo": "2024-"
     },
     {
       "id": "tt13207736",
@@ -67,6 +56,15 @@
       "releaseInfo": "2026–"
     },
     {
+      "id": "tt0227972",
+      "type": "series",
+      "name": "WWE Smackdown!",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNGExZDZiNGYtOTgwNC00MDM4LTlmZDMtYjRjZTUwNmRjMDE4XkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0227972/img",
+      "releaseInfo": "1999-"
+    },
+    {
       "id": "tt41538904",
       "type": "series",
       "name": "Lego One Piece",
@@ -76,21 +74,21 @@
       "releaseInfo": "2026"
     },
     {
+      "id": "tt12324366",
+      "type": "series",
+      "name": "Percy Jackson and the Olympians",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTI3YmIzNzYtOTcwNy00ZTZiLTg5NmQtMTUyNGY1ZWVmZDJiXkEyXkFqcGc@._V1_SX250.jpg",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt12324366/img",
+      "releaseInfo": "2023-"
+    },
+    {
       "id": "tt35929525",
       "type": "series",
       "name": "Shaque: Trust No One",
       "poster": "https://m.media-amazon.com/images/M/MV5BYWRlNDA3MGYtMWMzZS00MDAwLTk4MTAtY2RhMGI3OTA2OTY1XkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt35929525/img",
-      "releaseInfo": "2026-"
-    },
-    {
-      "id": "tt33081352",
-      "type": "series",
-      "name": "A Different World",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNGIwZDc3OWYtZTZkOS00NmRjLTk3NTAtNjQzODI3ZTI4MWU4XkEyXkFqcGc@._V1_SX250.jpg",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt33081352/img",
       "releaseInfo": "2026-"
     }
   ]
