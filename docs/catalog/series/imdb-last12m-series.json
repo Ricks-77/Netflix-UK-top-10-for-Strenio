@@ -562,17 +562,6 @@
       "imdbRating": "8.5"
     },
     {
-      "id": "tt33040785",
-      "type": "series",
-      "name": "Culinary Class Wars",
-      "poster": "https://images.metahub.space/poster/small/tt33040785/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt33040785/img",
-      "description": "Pits 100 renowned chefs and undiscovered talents against each other in a culinary battle. Judged by the esteemed Paik Jong-won and Chef Anh Sung-jae, the show promises to showcase the ultimate clash of culinary skills and creativity.",
-      "releaseInfo": "2024–",
-      "imdbRating": "8.5"
-    },
-    {
       "id": "tt32315888",
       "type": "series",
       "name": "Riot Women",
@@ -581,6 +570,17 @@
       "background": "https://images.metahub.space/background/medium/tt32315888/img",
       "description": "Follows a group of middle-aged women, as they form a punk-rock band to participate in a talent contest.",
       "releaseInfo": "2025–",
+      "imdbRating": "8.5"
+    },
+    {
+      "id": "tt33040785",
+      "type": "series",
+      "name": "Culinary Class Wars",
+      "poster": "https://images.metahub.space/poster/small/tt33040785/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt33040785/img",
+      "description": "Pits 100 renowned chefs and undiscovered talents against each other in a culinary battle. Judged by the esteemed Paik Jong-won and Chef Anh Sung-jae, the show promises to showcase the ultimate clash of culinary skills and creativity.",
+      "releaseInfo": "2024–",
       "imdbRating": "8.5"
     },
     {
