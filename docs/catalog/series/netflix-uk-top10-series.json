@@ -10,15 +10,13 @@
       "releaseInfo": "2026"
     },
     {
-      "id": "tt4816626",
+      "id": "tt44877899",
       "type": "series",
-      "name": "Outsiders",
-      "poster": "https://images.metahub.space/poster/small/tt4816626/img",
+      "name": "Outside",
+      "poster": "https://m.media-amazon.com/images/M/MV5BOTI3OTkyYmEtNzNmZi00OTlkLThlNGItZjEzMjRjZjZlMWNkXkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt4816626/img",
-      "description": "A story of struggle for power set in the rugged and mysterious hills of Appalachia.",
-      "releaseInfo": "2016–2017",
-      "imdbRating": "7.4"
+      "background": "https://images.metahub.space/background/medium/tt44877899/img",
+      "releaseInfo": "2026-"
     },
     {
       "id": "tt13210838",
@@ -33,12 +31,10 @@
       "id": "tt2369037",
       "type": "series",
       "name": "Leaving",
-      "poster": "https://images.metahub.space/poster/small/tt2369037/img",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDVmNWJiMGUtMDc3NS00ZDdiLWJjZTQtYjE4MWU4MDk3YTQ3XkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt2369037/img",
-      "description": "The forbidden love between a middle-aged family woman and a callow youth working in the same hotel.",
-      "releaseInfo": "2012",
-      "imdbRating": "7.0"
+      "releaseInfo": "2012"
     },
     {
       "id": "tt13207736",

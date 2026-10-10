@@ -49,12 +49,10 @@
       "id": "tt1490017",
       "type": "movie",
       "name": "The Lego Movie",
-      "poster": "https://images.metahub.space/poster/small/tt1490017/img",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTg4MDk1ODExN15BMl5BanBnXkFtZTgwNzIyNjg3MDE@._V1_SX250.jpg",
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt1490017/img",
-      "description": "An ordinary LEGO construction worker, thought to be the prophesied as \"special\", is recruited to join a quest to stop an evil tyrant from gluing the LEGO universe into eternal stasis.",
-      "releaseInfo": "2014",
-      "imdbRating": "7.7"
+      "releaseInfo": "2014"
     },
     {
       "id": "tt1667889",
@@ -78,12 +76,10 @@
       "id": "tt18259086",
       "type": "movie",
       "name": "Sonic the Hedgehog 3",
-      "poster": "https://images.metahub.space/poster/small/tt18259086/img",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjZjNjE5NDEtOWJjYS00Mjk2LWI1ZDYtOWI1ZWI3MzRjM2UzXkEyXkFqcGc@._V1_SX250.jpg",
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt18259086/img",
-      "description": "Sonic, Knuckles, and Tails reunite against a powerful new adversary, Shadow, a mysterious villain with powers unlike anything they have faced before. With their abilities outmatched, Team Sonic must seek out an unlikely alliance.",
-      "releaseInfo": "2024",
-      "imdbRating": "6.9"
+      "releaseInfo": "2024"
     },
     {
       "id": "tt5164214",
