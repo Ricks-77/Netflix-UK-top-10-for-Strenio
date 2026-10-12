@@ -76,6 +76,17 @@
       "description": "Through unlikely bonds formed during night shifts at a local aquarium, Tova, an elderly widow, learns of a life-changing discovery that may bring her joy and wonder once again.",
       "releaseInfo": "2026",
       "imdbRating": "7.6"
+    },
+    {
+      "id": "tt31450459",
+      "type": "movie",
+      "name": "Digger",
+      "poster": "https://images.metahub.space/poster/small/tt31450459/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt31450459/img",
+      "description": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
+      "releaseInfo": "2026",
+      "imdbRating": "7.5"
     }
   ]
 }
