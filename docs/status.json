@@ -1,11 +1,17 @@
 {
-  "updated_at": "2026-10-14T21:14:49.262739+01:00",
+  "updated_at": "2026-10-15T01:38:07.826917+01:00",
   "netflix": {
     "source": "verified-local",
     "movies": 10,
     "series": 10,
     "unresolved_movies": [],
-    "unresolved_series": []
+    "unresolved_series": [],
+    "state": "refresh_failed",
+    "refresh_success": false,
+    "stale": true,
+    "catalog_preserved": true,
+    "error": "Could not obtain a trustworthy current Netflix UK Top 10. direct: 403 Client Error: Forbidden for url: https://flixpatrol.com/top10/netflix/united-kingdom/2026-10-15/ | jina: Missing matching Netflix UK daily chart heading/date | local: Chart date 2026-10-05 is not current (2026-10-15)",
+    "last_attempt_at": "2026-10-15T01:38:07.826917+01:00"
   },
   "imdb_last_12_months": {
     "minimum_rating": 7.5,
@@ -54,8 +60,8 @@
       "ja",
       "ko"
     ],
-    "from": "2025-10-14",
-    "to": "2026-10-14",
+    "from": "2025-10-15",
+    "to": "2026-10-15",
     "movies": 8,
     "series": 99,
     "movie_source": "https://caching.graphql.imdb.com/",
