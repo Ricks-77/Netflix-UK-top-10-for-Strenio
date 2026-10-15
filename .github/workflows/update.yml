@@ -9,8 +9,13 @@ on:
       - "requirements.txt"
       - "rankings.json"
       - ".github/workflows/update.yml"
+  pull_request:
   schedule:
     - cron: "20 16,18 * * *"
+
+concurrency:
+  group: netflix-catalog-update-${{ github.ref }}
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -28,17 +33,30 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Regression tests
+        run: python -m unittest discover -s tests -v
+
       - name: Refresh Netflix UK Top 10
+        if: github.event_name != 'pull_request'
+        id: refresh
+        continue-on-error: true
         run: python update.py
 
       - name: Commit changed catalogs
+        if: always() && steps.refresh.outcome != 'skipped' && (steps.refresh.outcome == 'success' || steps.refresh.outcome == 'failure')
         run: |
           git config user.name "netflix-uk-top10-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/catalog docs/status.json
+          git add docs/catalog docs/status.json rankings.json
           if git diff --cached --quiet; then
             echo "No catalog changes"
           else
             git commit -m "Update Netflix UK Top 10"
             git push
           fi
+
+      - name: Fail when refresh failed
+        if: always() && steps.refresh.outcome == 'failure'
+        run: |
+          echo "::error::Refresh failed; see docs/status.json. Previous Netflix catalog retained when source validation fails."
+          exit 1

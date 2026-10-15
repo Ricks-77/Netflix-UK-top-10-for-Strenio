@@ -2,9 +2,10 @@
 import calendar
 import json
 import re
+import sys
 import unicodedata
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime
+from datetime import date, datetime
 from pathlib import Path
 from urllib.parse import quote, urlencode
 from zoneinfo import ZoneInfo
@@ -93,7 +94,9 @@ def parse_markdown_section(text: str, heading: str):
             found.append((rank, title))
     by_rank = {}
     for rank, title in found:
-        by_rank.setdefault(rank, title)
+        if rank in by_rank:
+            raise ValueError(f"Duplicate chart rank {rank}")
+        by_rank[rank] = title
     return [by_rank[r] for r in sorted(by_rank) if 1 <= r <= 10][:10]
 
 def parse_html_section(html: str, heading: str):
@@ -106,10 +109,16 @@ def parse_html_section(html: str, heading: str):
     if not header:
         return []
     container = header.find_next(lambda t: t.name in ("div", "table") and t.find("tbody"))
-    if not container:
+    if not container or container.find_previous(["h2", "h3", "h4"]) != header:
         return []
     titles = []
-    for row in container.find("tbody").find_all("tr")[:10]:
+    rows = container.find("tbody").find_all("tr")
+    if len(rows) != 10:
+        return []
+    for rank, row in enumerate(rows, 1):
+        first_cell = row.find("td")
+        if not first_cell or first_cell.get_text(strip=True) != f"{rank}.":
+            return []
         title = ""
         for a in row.find_all("a", href=True):
             txt = a.get_text(" ", strip=True)
@@ -121,40 +130,94 @@ def parse_html_section(html: str, heading: str):
             titles.append(title)
     return titles[:10]
 
-def fetch_netflix_rankings():
+def publish_netflix_catalogs(movie_path, movies, series_path, series, rankings):
+    # Git publishes the entire set in one commit. Roll back local writes if any
+    # write fails so the workflow cannot commit a partly updated Netflix set.
+    paths = (movie_path, series_path, LOCAL_RANKINGS)
+    before = {p: p.read_bytes() if p.exists() else None for p in paths}
     try:
-        data = json.loads(LOCAL_RANKINGS.read_text(encoding="utf-8"))
-        movies = data.get("movies", [])
-        series = data.get("series", [])
-        if len(movies) == 10 and len(series) == 10:
-            return movies, series, "verified-local"
+        write_catalog(movie_path, movies)
+        write_catalog(series_path, series)
+        LOCAL_RANKINGS.write_text(json.dumps({k: v for k, v in rankings.items()
+                                             if k != "retrieval_errors"}, indent=2) + "\n", encoding="utf-8")
     except Exception:
-        pass
+        for p, content in before.items():
+            if content is None:
+                p.unlink(missing_ok=True)
+            else:
+                p.write_bytes(content)
+        raise
 
+
+def london_today():
+    return datetime.now(ZoneInfo("Europe/London")).date()
+
+
+def validate_rankings(data, today):
+    """Daily charts must be complete and explicitly dated today in London."""
+    if not isinstance(data, dict):
+        raise ValueError("Rankings must be an object")
+    chart_date = date.fromisoformat(data.get("date", ""))
+    if chart_date != today:
+        raise ValueError(f"Chart date {chart_date} is not current ({today})")
+    for key in ("movies", "series"):
+        titles = data.get(key)
+        if (not isinstance(titles, list) or len(titles) != 10
+                or any(not isinstance(t, str) or not norm(t) for t in titles)
+                or len({norm(t) for t in titles}) != 10):
+            raise ValueError(f"{key} must contain ten distinct nonempty titles")
+    return data
+
+
+def verify_chart_heading(text, today, markdown=False):
+    # Dates in navigation, links, HTTP headers or the requested URL are not
+    # evidence of the chart date. Require the chart's own heading/title.
+    if markdown:
+        headings = re.findall(r"(?m)^(?:Title:|#{1,2} )\s*(.+)$", text)
+    else:
+        soup = BeautifulSoup(text, "html.parser")
+        headings = [h.get_text(" ", strip=True) for h in soup.find_all(["h1", "title"])]
+    expected = f"{today.strftime('%B')} {today.day}, {today.year}"
+    pattern = rf"TOP 10 on Netflix in (?:the )?United Kingdom on {re.escape(expected)}(?:\s|$|[–—|])"
+    if not any(re.search(pattern, h, re.I) for h in headings):
+        raise ValueError("Missing matching Netflix UK daily chart heading/date")
+
+
+def fetch_netflix_rankings(today=None):
+    today = today or london_today()
     headers = {"User-Agent": UA, "Accept": "text/plain,text/html,*/*"}
     errors = []
+    dated_url = FLIXPATROL_URL + today.isoformat() + "/"
+    sources = [("direct", dated_url, False),
+               ("jina", "https://r.jina.ai/" + dated_url, True)]
+    for source, url, markdown in sources:
+        try:
+            r = requests.get(url, headers=headers, timeout=TIMEOUT)
+            r.raise_for_status()
+            verify_chart_heading(r.text, today, markdown)
+            parser = parse_markdown_section if markdown else parse_html_section
+            data = validate_rankings({
+                "date": today.isoformat(), "source": source, "source_url": dated_url,
+                "movies": parser(r.text, "TOP 10 Movies"),
+                "series": parser(r.text, "TOP 10 TV Shows"),
+            }, today)
+            data["retrieval_errors"] = errors
+            return data
+        except Exception as e:
+            errors.append(f"{source}: {e}")
+    # A manually verified or previously fetched same-day chart can bridge an
+    # outage. Old, undated and future local files can never count as success.
     try:
-        r = requests.get(JINA_FLIXPATROL_URL, headers=headers, timeout=TIMEOUT)
-        r.raise_for_status()
-        movies = parse_markdown_section(r.text, "TOP 10 Movies")
-        series = parse_markdown_section(r.text, "TOP 10 TV Shows")
-        if len(movies) >= 8 and len(series) >= 8:
-            return movies[:10], series[:10], "jina"
-        errors.append(f"Jina returned movies={len(movies)}, series={len(series)}")
+        data = validate_rankings(json.loads(LOCAL_RANKINGS.read_text(encoding="utf-8")), today)
+        if not isinstance(data.get("source"), str) or not data["source"].strip():
+            raise ValueError("Local chart has no provenance")
+        data = dict(data)
+        data["source"] = "verified-local"
+        data["retrieval_errors"] = errors
+        return data
     except Exception as e:
-        errors.append(f"Jina: {e}")
-
-    try:
-        r = requests.get(FLIXPATROL_URL, headers=headers, timeout=TIMEOUT)
-        r.raise_for_status()
-        movies = parse_html_section(r.text, "TOP 10 Movies")
-        series = parse_html_section(r.text, "TOP 10 TV Shows")
-        if len(movies) >= 8 and len(series) >= 8:
-            return movies[:10], series[:10], "direct"
-        errors.append(f"Direct returned movies={len(movies)}, series={len(series)}")
-    except Exception as e:
-        errors.append(f"Direct: {e}")
-    raise RuntimeError("Could not obtain a trustworthy Netflix UK Top 10. " + " | ".join(errors))
+        errors.append(f"local: {e}")
+    raise RuntimeError("Could not obtain a trustworthy current Netflix UK Top 10. " + " | ".join(errors))
 
 def resolve_cinemeta_title(title: str, media_type: str):
     if media_type == "series" and norm(title) == "sealook":
@@ -187,7 +250,7 @@ def resolve_cinemeta_title(title: str, media_type: str):
             item[k] = chosen[k]
     return item
 
-def build_netflix_catalog(titles, media_type: str, path: Path):
+def build_netflix_catalog(titles, media_type: str, path: Path, publish=True):
     previous = load_previous(path)
     prev_by_name = {norm(x.get("name")): x for x in previous if x.get("name")}
     def one(title):
@@ -196,9 +259,10 @@ def build_netflix_catalog(titles, media_type: str, path: Path):
         resolved = list(pool.map(one, titles))
     metas = [item for _, item in resolved if item]
     unresolved = [title for title, item in resolved if not item]
-    if len(metas) < 8:
+    if len(metas) != 10 or len({m["id"] for m in metas}) != 10:
         raise RuntimeError(f"Only resolved {len(metas)}/{len(titles)} {media_type} Netflix titles; refusing overwrite: {unresolved}")
-    write_catalog(path, metas)
+    if publish:
+        write_catalog(path, metas)
     return metas, unresolved
 
 def one_year_ago(d):
@@ -505,24 +569,60 @@ def main():
         },
     }
 
-    movies, series, source = fetch_netflix_rankings()
-    m, mu = build_netflix_catalog(movies, "movie", OUT / "catalog/movie/netflix-uk-top10-movies.json")
-    s, su = build_netflix_catalog(series, "series", OUT / "catalog/series/netflix-uk-top10-series.json")
-    status["netflix"] = {"source": source, "movies": len(m), "series": len(s), "unresolved_movies": mu, "unresolved_series": su}
+    failed = False
+    try:
+        previous_status = json.loads((OUT / "status.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        previous_status = {}
+    previous_netflix = previous_status.get("netflix", {})
+    try:
+        rankings = fetch_netflix_rankings()
+        movie_path = OUT / "catalog/movie/netflix-uk-top10-movies.json"
+        series_path = OUT / "catalog/series/netflix-uk-top10-series.json"
+        m, mu = build_netflix_catalog(rankings["movies"], "movie", movie_path, publish=False)
+        s, su = build_netflix_catalog(rankings["series"], "series", series_path, publish=False)
+        # Resolve and validate BOTH charts before changing either published file.
+        publish_netflix_catalogs(movie_path, m, series_path, s, rankings)
+        status["netflix"] = {
+            "state": "current", "refresh_success": True, "stale": False,
+            "rankings_date": rankings["date"], "source": rankings["source"],
+            "last_success_at": status["updated_at"],
+            "movies": len(m), "series": len(s),
+            "unresolved_movies": mu, "unresolved_series": su,
+            "retrieval_errors": rankings["retrieval_errors"],
+        }
+    except Exception as e:
+        failed = True
+        status["netflix"] = dict(previous_netflix)
+        # Legacy status did not track chart dates: do not infer one from its
+        # update timestamp. Unknown provenance is explicitly stale.
+        status["netflix"].update({
+            "state": "refresh_failed", "refresh_success": False,
+            "stale": previous_netflix.get("rankings_date") != london_today().isoformat(),
+            "catalog_preserved": True, "error": str(e),
+            "last_attempt_at": status["updated_at"],
+        })
 
-    im, start, today, movie_url = build_imdb_catalog("movie", OUT / "catalog/movie/imdb-last12m-movies.json")
-    it, _, _, series_url = build_imdb_catalog("series", OUT / "catalog/series/imdb-last12m-series.json")
-    status["imdb_last_12_months"].update({
-        "from": start.isoformat(),
-        "to": today.isoformat(),
-        "movies": len(im),
-        "series": len(it),
-        "movie_source": movie_url,
-        "series_source": series_url,
-    })
+    try:
+        im, start, today, movie_url = build_imdb_catalog("movie", OUT / "catalog/movie/imdb-last12m-movies.json")
+        it, _, _, series_url = build_imdb_catalog("series", OUT / "catalog/series/imdb-last12m-series.json")
+        status["imdb_last_12_months"].update({
+            "from": start.isoformat(),
+            "to": today.isoformat(),
+            "movies": len(im),
+            "series": len(it),
+            "movie_source": movie_url,
+            "series_source": series_url,
+        })
+    except Exception as e:
+        failed = True
+        status["imdb_last_12_months"] = dict(previous_status.get("imdb_last_12_months", {}))
+        status["imdb_last_12_months"].update({"refresh_success": False, "error": str(e)})
 
+    OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "status.json").write_text(json.dumps(status, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(status, indent=2))
+    return 1 if failed else 0
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
