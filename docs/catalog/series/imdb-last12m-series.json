@@ -23,6 +23,17 @@
       "imdbRating": "9.3"
     },
     {
+      "id": "tt39395275",
+      "type": "series",
+      "name": "Dragon Ball Super: Beerus",
+      "poster": "https://images.metahub.space/poster/small/tt39395275/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt39395275/img",
+      "description": "Several years have passed since the fierce battle against Majin Buu, and Earth has finally regained a brief moment of peace. At the same time, Beerus, the God of Destruction, awakens from his long, deep sleep. The Kais and Supreme...",
+      "releaseInfo": "2026–",
+      "imdbRating": "9.2"
+    },
+    {
       "id": "tt2861424",
       "type": "series",
       "name": "Rick and Morty",
@@ -1065,17 +1076,6 @@
       "background": "https://images.metahub.space/background/medium/tt10970762/img",
       "description": "This sequel to \"The Handmaid's Tale\" follows Agnes and Daisy, two teens in Gilead who must navigate an elite preparatory school where obedience is brutally enforced. Their bond becomes the catalyst that will transform their lives.",
       "releaseInfo": "2026–",
-      "imdbRating": "8.2"
-    },
-    {
-      "id": "tt12063450",
-      "type": "series",
-      "name": "To Your Eternity",
-      "poster": "https://images.metahub.space/poster/small/tt12063450/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt12063450/img",
-      "description": "A lonely boy wandering the Arctic regions of North America meets a wolf, and the two become fast friends, depending on each other to survive the harsh environment. But the boy has a history, and the wolf is more than meets the eye...",
-      "releaseInfo": "2021–",
       "imdbRating": "8.2"
     },
     {
