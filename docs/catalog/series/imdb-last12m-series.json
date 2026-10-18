@@ -991,17 +991,6 @@
       "imdbRating": "8.2"
     },
     {
-      "id": "tt14218830",
-      "type": "series",
-      "name": "Abbott Elementary",
-      "poster": "https://images.metahub.space/poster/small/tt14218830/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt14218830/img",
-      "description": "A workplace comedy centered on a group of dedicated teachers - and an oblivious principal - in a Philadelphia public school where, despite the odds stacked against them, they are determined to help their students succeed in life.",
-      "releaseInfo": "2021–",
-      "imdbRating": "8.2"
-    },
-    {
       "id": "tt7441658",
       "type": "series",
       "name": "Black Clover",
@@ -1010,6 +999,17 @@
       "background": "https://images.metahub.space/background/medium/tt7441658/img",
       "description": "Asta and Yuno were abandoned together at the same church and have been inseparable since. As children, they promised that they would compete against each other to see who would become the next Emperor Magus.",
       "releaseInfo": "2017–2026",
+      "imdbRating": "8.2"
+    },
+    {
+      "id": "tt14218830",
+      "type": "series",
+      "name": "Abbott Elementary",
+      "poster": "https://images.metahub.space/poster/small/tt14218830/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt14218830/img",
+      "description": "A workplace comedy centered on a group of dedicated teachers - and an oblivious principal - in a Philadelphia public school where, despite the odds stacked against them, they are determined to help their students succeed in life.",
+      "releaseInfo": "2021–",
       "imdbRating": "8.2"
     },
     {
