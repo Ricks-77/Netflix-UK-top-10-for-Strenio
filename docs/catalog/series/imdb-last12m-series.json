@@ -45,6 +45,17 @@
       "imdbRating": "9.0"
     },
     {
+      "id": "tt33043892",
+      "type": "series",
+      "name": "Dexter: Resurrection",
+      "poster": "https://images.metahub.space/poster/small/tt33043892/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt33043892/img",
+      "description": "Dexter Morgan awakens from a coma and sets out for New York City, determined to find Harrison and make things right. But when Miami Metro's Angel Batista arrives with questions, Dexter realizes his past is catching up to him fast.",
+      "releaseInfo": "2025–",
+      "imdbRating": "9.0"
+    },
+    {
       "id": "tt14986406",
       "type": "series",
       "name": "Bleach: Thousand-Year Blood War",
@@ -452,17 +463,6 @@
       "imdbRating": "8.5"
     },
     {
-      "id": "tt8289930",
-      "type": "series",
-      "name": "Formula 1: Drive to Survive",
-      "poster": "https://images.metahub.space/poster/small/tt8289930/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt8289930/img",
-      "description": "Docuseries following the FIA Formula One World Championship across multiple seasons.",
-      "releaseInfo": "2019–",
-      "imdbRating": "8.5"
-    },
-    {
       "id": "tt0290988",
       "type": "series",
       "name": "Trailer Park Boys",
@@ -628,6 +628,17 @@
       "imdbRating": "8.4"
     },
     {
+      "id": "tt8289930",
+      "type": "series",
+      "name": "Formula 1: Drive to Survive",
+      "poster": "https://images.metahub.space/poster/small/tt8289930/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt8289930/img",
+      "description": "Docuseries following the FIA Formula One World Championship across multiple seasons.",
+      "releaseInfo": "2019–",
+      "imdbRating": "8.4"
+    },
+    {
       "id": "tt11247158",
       "type": "series",
       "name": "The Legend of Vox Machina",
@@ -768,6 +779,17 @@
       "background": "https://images.metahub.space/background/medium/tt3006802/img",
       "description": "Honeymooning in 1945 Scotland, a combat nurse is suddenly transported back to the 1700s.",
       "releaseInfo": "2014–2026",
+      "imdbRating": "8.3"
+    },
+    {
+      "id": "tt12590266",
+      "type": "series",
+      "name": "Cyberpunk: Edgerunners",
+      "poster": "https://images.metahub.space/poster/small/tt12590266/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt12590266/img",
+      "description": "A Street Kid trying to survive in a technology and body modification-obsessed city of the future. Having everything to lose, he chooses to stay alive by becoming an Edgerunner, a Mercenary outlaw also known as a Cyberpunk.",
+      "releaseInfo": "2022–",
       "imdbRating": "8.3"
     },
     {
@@ -1065,28 +1087,6 @@
       "background": "https://images.metahub.space/background/medium/tt1091909/img",
       "description": "In the 1890s, William Murdoch uses radical forensic techniques for the time, including fingerprinting and trace evidence, to solve some of the city's most gruesome murders.",
       "releaseInfo": "2008–",
-      "imdbRating": "8.2"
-    },
-    {
-      "id": "tt10970762",
-      "type": "series",
-      "name": "The Testaments",
-      "poster": "https://images.metahub.space/poster/small/tt10970762/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt10970762/img",
-      "description": "This sequel to \"The Handmaid's Tale\" follows Agnes and Daisy, two teens in Gilead who must navigate an elite preparatory school where obedience is brutally enforced. Their bond becomes the catalyst that will transform their lives.",
-      "releaseInfo": "2026–",
-      "imdbRating": "8.2"
-    },
-    {
-      "id": "tt40197357",
-      "type": "series",
-      "name": "Scrubs",
-      "poster": "https://images.metahub.space/poster/small/tt40197357/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt40197357/img",
-      "description": "JD and Turk scrub in together after a long break. Medicine and interns have evolved, but their friendship remains strong. New and familiar faces at Sacred Heart bring laughs, emotion, and unexpected moments.",
-      "releaseInfo": "2026–",
       "imdbRating": "8.2"
     }
   ]
