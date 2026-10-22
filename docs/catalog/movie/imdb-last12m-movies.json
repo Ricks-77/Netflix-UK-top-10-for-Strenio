@@ -1,6 +1,17 @@
 {
   "metas": [
     {
+      "id": "tt45368240",
+      "type": "movie",
+      "name": "You Can See Everything",
+      "poster": "https://images.metahub.space/poster/small/tt45368240/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt45368240/img",
+      "description": "Thirty-four days before she's sent to prison, notorious Theranos founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait becomes a mind-bending three-year journey.",
+      "releaseInfo": "2026",
+      "imdbRating": "9.3"
+    },
+    {
       "id": "tt43383343",
       "type": "movie",
       "name": "BLEACH: Thousand-Year Blood War - The Calamity",
