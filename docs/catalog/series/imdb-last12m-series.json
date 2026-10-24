@@ -23,17 +23,6 @@
       "imdbRating": "9.3"
     },
     {
-      "id": "tt39395275",
-      "type": "series",
-      "name": "Dragon Ball Super: Beerus",
-      "poster": "https://images.metahub.space/poster/small/tt39395275/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt39395275/img",
-      "description": "Several years have passed since the fierce battle against Majin Buu, and Earth has finally regained a brief moment of peace. At the same time, Beerus, the God of Destruction, awakens from his long, deep sleep. The Kais and Supreme...",
-      "releaseInfo": "2026–",
-      "imdbRating": "9.1"
-    },
-    {
       "id": "tt2861424",
       "type": "series",
       "name": "Rick and Morty",
@@ -97,6 +86,17 @@
       "background": "https://images.metahub.space/background/medium/tt4834232/img",
       "description": "A live weekly show in which a band of professional voice actors improvise, role-play, and roll their way through an epic Dungeons and Dragons campaign.",
       "releaseInfo": "2015–",
+      "imdbRating": "9.0"
+    },
+    {
+      "id": "tt39395275",
+      "type": "series",
+      "name": "Dragon Ball Super: Beerus",
+      "poster": "https://images.metahub.space/poster/small/tt39395275/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt39395275/img",
+      "description": "Several years have passed since the fierce battle against Majin Buu, and Earth has finally regained a brief moment of peace. At the same time, Beerus, the God of Destruction, awakens from his long, deep sleep. The Kais and Supreme...",
+      "releaseInfo": "2026–",
       "imdbRating": "9.0"
     },
     {

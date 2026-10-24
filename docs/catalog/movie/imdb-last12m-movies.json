@@ -89,6 +89,17 @@
       "imdbRating": "7.6"
     },
     {
+      "id": "tt34890576",
+      "type": "movie",
+      "name": "Clayface",
+      "poster": "https://images.metahub.space/poster/small/tt34890576/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt34890576/img",
+      "description": "Rising Hollywood star Matt Hagen descends into a horrifying revenge-filled monster when scientific ambition strips him of his identity and humanity.",
+      "releaseInfo": "2026",
+      "imdbRating": "7.6"
+    },
+    {
       "id": "tt31450459",
       "type": "movie",
       "name": "Digger",
