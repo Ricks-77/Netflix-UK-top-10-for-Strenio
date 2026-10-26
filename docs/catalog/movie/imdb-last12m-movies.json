@@ -109,6 +109,17 @@
       "description": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
       "releaseInfo": "2026",
       "imdbRating": "7.5"
+    },
+    {
+      "id": "tt6262770",
+      "type": "movie",
+      "name": "Tenzing",
+      "poster": "https://images.metahub.space/poster/small/tt6262770/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt6262770/img",
+      "description": "The untold and inspiring tale of one of the most important mountain climbers in history who, with Edmund Hillary, became the first person to reach the summit of Mount Everest.",
+      "releaseInfo": "2026",
+      "imdbRating": "7.5"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T19:06:48.323884+00:00",
+  "updated_at": "2026-10-26T21:04:55.174976+00:00",
   "netflix": {
     "source": "verified-local",
     "movies": 10,
@@ -10,8 +10,8 @@
     "refresh_success": false,
     "stale": true,
     "catalog_preserved": true,
-    "error": "Could not obtain a trustworthy current Netflix UK Top 10. direct: 403 Client Error: Forbidden for url: https://flixpatrol.com/top10/netflix/united-kingdom/2026-10-25/ | jina: Missing matching Netflix UK daily chart heading/date | local: Chart date 2026-10-05 is not current (2026-10-25)",
-    "last_attempt_at": "2026-10-25T19:06:48.323884+00:00"
+    "error": "Could not obtain a trustworthy current Netflix UK Top 10. direct: 403 Client Error: Forbidden for url: https://flixpatrol.com/top10/netflix/united-kingdom/2026-10-26/ | jina: Missing matching Netflix UK daily chart heading/date | local: Chart date 2026-10-05 is not current (2026-10-26)",
+    "last_attempt_at": "2026-10-26T21:04:55.174976+00:00"
   },
   "imdb_last_12_months": {
     "minimum_rating": 7.5,
@@ -60,9 +60,9 @@
       "ja",
       "ko"
     ],
-    "from": "2025-10-25",
-    "to": "2026-10-25",
-    "movies": 10,
+    "from": "2025-10-26",
+    "to": "2026-10-26",
+    "movies": 11,
     "series": 99,
     "movie_source": "https://caching.graphql.imdb.com/",
     "series_source": "https://caching.graphql.imdb.com/"
