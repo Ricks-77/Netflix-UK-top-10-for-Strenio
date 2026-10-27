@@ -9,7 +9,7 @@
       "background": "https://images.metahub.space/background/medium/tt45368240/img",
       "description": "Thirty-four days before she's sent to prison, notorious Theranos founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait becomes a mind-bending three-year journey.",
       "releaseInfo": "2026",
-      "imdbRating": "9.3"
+      "imdbRating": "9.2"
     },
     {
       "id": "tt43383343",
@@ -20,7 +20,7 @@
       "background": "https://images.metahub.space/background/medium/tt43383343/img",
       "description": "The Soul Reapers and Quincies clash in a final battle as Yhwach breaches the Royal Palace. When the Soul King falls, reality begins collapsing. Former enemies unite to storm the transformed palace and face a threat to all existence.",
       "releaseInfo": "2026",
-      "imdbRating": "8.9"
+      "imdbRating": "9.0"
     },
     {
       "id": "tt33764258",
@@ -67,17 +67,6 @@
       "imdbRating": "7.7"
     },
     {
-      "id": "tt35538033",
-      "type": "movie",
-      "name": "Resident Evil",
-      "poster": "https://images.metahub.space/poster/small/tt35538033/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt35538033/img",
-      "description": "Follows a hapless courier tasked with delivering a package to a remote hospital. He soon finds himself caught in the middle of an outbreak and must fight through hordes of mutated creatures to survive.",
-      "releaseInfo": "2026",
-      "imdbRating": "7.6"
-    },
-    {
       "id": "tt33100314",
       "type": "movie",
       "name": "Remarkably Bright Creatures",
@@ -98,6 +87,17 @@
       "description": "Rising Hollywood star Matt Hagen descends into a horrifying revenge-filled monster when scientific ambition strips him of his identity and humanity.",
       "releaseInfo": "2026",
       "imdbRating": "7.6"
+    },
+    {
+      "id": "tt35538033",
+      "type": "movie",
+      "name": "Resident Evil",
+      "poster": "https://images.metahub.space/poster/small/tt35538033/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt35538033/img",
+      "description": "Follows a hapless courier tasked with delivering a package to a remote hospital. He soon finds himself caught in the middle of an outbreak and must fight through hordes of mutated creatures to survive.",
+      "releaseInfo": "2026",
+      "imdbRating": "7.5"
     },
     {
       "id": "tt31450459",
