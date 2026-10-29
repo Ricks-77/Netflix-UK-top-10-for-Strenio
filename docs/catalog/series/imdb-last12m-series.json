@@ -991,17 +991,6 @@
       "imdbRating": "8.2"
     },
     {
-      "id": "tt22074164",
-      "type": "series",
-      "name": "Jury Duty Presents",
-      "poster": "https://images.metahub.space/poster/small/tt22074164/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt22074164/img",
-      "description": "An unsuspecting hero is put through a series of real-life activities. Unbeknown to them, the activities are elaborately staged by actors.",
-      "releaseInfo": "2023–2026",
-      "imdbRating": "8.2"
-    },
-    {
       "id": "tt7441658",
       "type": "series",
       "name": "Black Clover",
@@ -1010,6 +999,17 @@
       "background": "https://images.metahub.space/background/medium/tt7441658/img",
       "description": "Asta and Yuno were abandoned together at the same church and have been inseparable since. As children, they promised that they would compete against each other to see who would become the next Emperor Magus.",
       "releaseInfo": "2017–2026",
+      "imdbRating": "8.2"
+    },
+    {
+      "id": "tt22074164",
+      "type": "series",
+      "name": "Jury Duty Presents",
+      "poster": "https://images.metahub.space/poster/small/tt22074164/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt22074164/img",
+      "description": "An unsuspecting hero is put through a series of real-life activities. Unbeknown to them, the activities are elaborately staged by actors.",
+      "releaseInfo": "2023–2026",
       "imdbRating": "8.2"
     },
     {
