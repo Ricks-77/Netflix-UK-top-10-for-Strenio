@@ -45,6 +45,17 @@
       "imdbRating": "9.0"
     },
     {
+      "id": "tt33043892",
+      "type": "series",
+      "name": "Dexter: Resurrection",
+      "poster": "https://images.metahub.space/poster/small/tt33043892/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt33043892/img",
+      "description": "Dexter Morgan awakens from a coma and sets out for New York City, determined to find Harrison and make things right. But when Miami Metro's Angel Batista arrives with questions, Dexter realizes his past is catching up to him fast.",
+      "releaseInfo": "2025–",
+      "imdbRating": "9.0"
+    },
+    {
       "id": "tt14986406",
       "type": "series",
       "name": "Bleach: Thousand-Year Blood War",
@@ -669,17 +680,6 @@
       "background": "https://images.metahub.space/background/medium/tt34809853/img",
       "description": "The collapse of teachers' Authority, the establishment of the Teachers' Authority Protection Bureau under the Ministry of Education, and the dispatch of supervisors to problem schools to punish students and parents who cross the l...",
       "releaseInfo": "2026–",
-      "imdbRating": "8.4"
-    },
-    {
-      "id": "tt9174582",
-      "type": "series",
-      "name": "Brassic",
-      "poster": "https://images.metahub.space/poster/small/tt9174582/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt9174582/img",
-      "description": "Comedy series about Vinnie and Dylan, who have grown up together and are inseparable. When Dylan's girlfriend wants to move in search of a better life for her and her son, he must face the hardest decision of his life.",
-      "releaseInfo": "2019–2025",
       "imdbRating": "8.4"
     },
     {
