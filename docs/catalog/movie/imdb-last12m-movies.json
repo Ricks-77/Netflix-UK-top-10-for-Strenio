@@ -9,7 +9,7 @@
       "background": "https://images.metahub.space/background/medium/tt45368240/img",
       "description": "Thirty-four days before she's sent to prison, notorious Theranos founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait becomes a mind-bending three-year journey.",
       "releaseInfo": "2026",
-      "imdbRating": "9.2"
+      "imdbRating": "9.1"
     },
     {
       "id": "tt43383343",
@@ -20,7 +20,7 @@
       "background": "https://images.metahub.space/background/medium/tt43383343/img",
       "description": "The Soul Reapers and Quincies clash in a final battle as Yhwach breaches the Royal Palace. When the Soul King falls, reality begins collapsing. Former enemies unite to storm the transformed palace and face a threat to all existence.",
       "releaseInfo": "2026",
-      "imdbRating": "9.0"
+      "imdbRating": "8.9"
     },
     {
       "id": "tt2056785",
@@ -54,6 +54,17 @@
       "description": "A science teacher wakes up alone on a spaceship. As his memory returns, he uncovers a mission to stop a mysterious substance killing Earth's sun, and realizes that an unexpected friendship may be the key.",
       "releaseInfo": "2026",
       "imdbRating": "8.2"
+    },
+    {
+      "id": "tt35511966",
+      "type": "movie",
+      "name": "La bola negra",
+      "poster": "https://images.metahub.space/poster/small/tt35511966/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt35511966/img",
+      "description": "Explores what it means to be gay throughout different eras, focusing on \"three existences\" that are connected through themes of sexuality, desire, pain, and inheritance.",
+      "releaseInfo": "2026",
+      "imdbRating": "8.1"
     },
     {
       "id": "tt22084616",
