@@ -815,6 +815,17 @@
       "imdbRating": "8.3"
     },
     {
+      "id": "tt7441658",
+      "type": "series",
+      "name": "Black Clover",
+      "poster": "https://images.metahub.space/poster/small/tt7441658/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt7441658/img",
+      "description": "Asta and Yuno were abandoned together at the same church and have been inseparable since. As children, they promised that they would compete against each other to see who would become the next Emperor Magus.",
+      "releaseInfo": "2017–2026",
+      "imdbRating": "8.3"
+    },
+    {
       "id": "tt0115147",
       "type": "series",
       "name": "The Daily Show",
@@ -936,17 +947,6 @@
       "imdbRating": "8.2"
     },
     {
-      "id": "tt0206512",
-      "type": "series",
-      "name": "SpongeBob SquarePants",
-      "poster": "https://images.metahub.space/poster/small/tt0206512/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt0206512/img",
-      "description": "The misadventures of a talking sea sponge who works at a fast food restaurant, attends a boating school, and lives in an underwater pineapple.",
-      "releaseInfo": "1999–",
-      "imdbRating": "8.2"
-    },
-    {
       "id": "tt5626028",
       "type": "series",
       "name": "My Hero Academia",
@@ -955,6 +955,17 @@
       "background": "https://images.metahub.space/background/medium/tt5626028/img",
       "description": "A superhero-admiring boy enrolls in a prestigious hero academy and learns what it really means to be a hero, after the strongest superhero grants him his own powers.",
       "releaseInfo": "2016–2026",
+      "imdbRating": "8.2"
+    },
+    {
+      "id": "tt0206512",
+      "type": "series",
+      "name": "SpongeBob SquarePants",
+      "poster": "https://images.metahub.space/poster/small/tt0206512/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0206512/img",
+      "description": "The misadventures of a talking sea sponge who works at a fast food restaurant, attends a boating school, and lives in an underwater pineapple.",
+      "releaseInfo": "1999–",
       "imdbRating": "8.2"
     },
     {
@@ -988,17 +999,6 @@
       "background": "https://images.metahub.space/background/medium/tt13706018/img",
       "description": "A spy on an undercover mission gets married and adopts a child as part of his cover. His wife and daughter have secrets of their own, and all three must strive to keep together.",
       "releaseInfo": "2022–",
-      "imdbRating": "8.2"
-    },
-    {
-      "id": "tt7441658",
-      "type": "series",
-      "name": "Black Clover",
-      "poster": "https://images.metahub.space/poster/small/tt7441658/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt7441658/img",
-      "description": "Asta and Yuno were abandoned together at the same church and have been inseparable since. As children, they promised that they would compete against each other to see who would become the next Emperor Magus.",
-      "releaseInfo": "2017–2026",
       "imdbRating": "8.2"
     },
     {

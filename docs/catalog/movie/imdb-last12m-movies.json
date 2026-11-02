@@ -78,6 +78,17 @@
       "imdbRating": "7.9"
     },
     {
+      "id": "tt32333324",
+      "type": "movie",
+      "name": "Batman: Knightfall - Part 1: Knightfall",
+      "poster": "https://images.metahub.space/poster/small/tt32333324/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt32333324/img",
+      "description": "When the mysterious behemoth known only as Bane frees Batman's entire rogue's gallery from Arkham Asylum, the Caped Crusader is pushed to his mental and physical breaking point.",
+      "releaseInfo": "2026",
+      "imdbRating": "7.8"
+    },
+    {
       "id": "tt18259538",
       "type": "movie",
       "name": "Avatar Aang: The Last Airbender",
