@@ -142,6 +142,17 @@
       "description": "Rising Hollywood star Matt Hagen descends into a horrifying revenge-filled monster when scientific ambition strips him of his identity and humanity.",
       "releaseInfo": "2026",
       "imdbRating": "7.5"
+    },
+    {
+      "id": "tt36583977",
+      "type": "movie",
+      "name": "Forgotten Island",
+      "poster": "https://images.metahub.space/poster/small/tt36583977/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt36583977/img",
+      "description": "Two best friends become stranded on the mystical world of Nakali, where their only escape might cost them their shared lifetime of memories.",
+      "releaseInfo": "2026",
+      "imdbRating": "7.5"
     }
   ]
 }
