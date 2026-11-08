@@ -67,6 +67,17 @@
       "imdbRating": "8.1"
     },
     {
+      "id": "tt34384661",
+      "type": "movie",
+      "name": "Godzilla Minus Zero",
+      "poster": "https://images.metahub.space/poster/small/tt34384661/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt34384661/img",
+      "description": "Direct continuation of Takashi Yamazaki's Godzilla Minus One.",
+      "releaseInfo": "2026",
+      "imdbRating": "8.0"
+    },
+    {
       "id": "tt22084616",
       "type": "movie",
       "name": "Spider-Man: Brand New Day",
@@ -122,17 +133,6 @@
       "imdbRating": "7.5"
     },
     {
-      "id": "tt31450459",
-      "type": "movie",
-      "name": "Digger",
-      "poster": "https://images.metahub.space/poster/small/tt31450459/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt31450459/img",
-      "description": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
-      "releaseInfo": "2026",
-      "imdbRating": "7.5"
-    },
-    {
       "id": "tt34890576",
       "type": "movie",
       "name": "Clayface",
@@ -140,6 +140,17 @@
       "posterShape": "poster",
       "background": "https://images.metahub.space/background/medium/tt34890576/img",
       "description": "Rising Hollywood star Matt Hagen descends into a horrifying revenge-filled monster when scientific ambition strips him of his identity and humanity.",
+      "releaseInfo": "2026",
+      "imdbRating": "7.5"
+    },
+    {
+      "id": "tt31450459",
+      "type": "movie",
+      "name": "Digger",
+      "poster": "https://images.metahub.space/poster/small/tt31450459/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt31450459/img",
+      "description": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
       "releaseInfo": "2026",
       "imdbRating": "7.5"
     },

@@ -738,6 +738,17 @@
       "imdbRating": "8.4"
     },
     {
+      "id": "tt6150576",
+      "type": "series",
+      "name": "Midnight Diner: Tokyo Stories",
+      "poster": "https://images.metahub.space/poster/small/tt6150576/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt6150576/img",
+      "description": "An anthology of human relationship stories connected by the only open in the wee hours diner the characters frequent. Resolutions are often facilitated by the owner/chef.",
+      "releaseInfo": "2016–2019",
+      "imdbRating": "8.4"
+    },
+    {
       "id": "tt12637874",
       "type": "series",
       "name": "Fallout",
@@ -1076,17 +1087,6 @@
       "background": "https://images.metahub.space/background/medium/tt1091909/img",
       "description": "In the 1890s, William Murdoch uses radical forensic techniques for the time, including fingerprinting and trace evidence, to solve some of the city's most gruesome murders.",
       "releaseInfo": "2008–",
-      "imdbRating": "8.2"
-    },
-    {
-      "id": "tt10970762",
-      "type": "series",
-      "name": "The Testaments",
-      "poster": "https://images.metahub.space/poster/small/tt10970762/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt10970762/img",
-      "description": "This sequel to \"The Handmaid's Tale\" follows Agnes and Daisy, two teens in Gilead who must navigate an elite preparatory school where obedience is brutally enforced. Their bond becomes the catalyst that will transform their lives.",
-      "releaseInfo": "2026–",
       "imdbRating": "8.2"
     }
   ]
