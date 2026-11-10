@@ -785,10 +785,10 @@
       "id": "tt12590266",
       "type": "series",
       "name": "Cyberpunk: Edgerunners",
-      "poster": "https://images.metahub.space/poster/small/tt12590266/img",
+      "poster": "https://live.metahub.space/poster/small/tt12590266/img",
       "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt12590266/img",
-      "description": "A Street Kid trying to survive in a technology and body modification-obsessed city of the future. Having everything to lose, he chooses to stay alive by becoming an Edgerunner, a Mercenary outlaw also known as a Cyberpunk.",
+      "background": "https://live.metahub.space/background/medium/tt12590266/img",
+      "description": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
       "releaseInfo": "2022–",
       "imdbRating": "8.3"
     },
@@ -936,6 +936,17 @@
       "imdbRating": "8.3"
     },
     {
+      "id": "tt27995115",
+      "type": "series",
+      "name": "The Devil's Plan",
+      "poster": "https://images.metahub.space/poster/small/tt27995115/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt27995115/img",
+      "description": "In this competition of intelligence, contestants face off in games of wit and strategy to be crowned winner and go home with the ultimate prize.",
+      "releaseInfo": "2023–",
+      "imdbRating": "8.3"
+    },
+    {
       "id": "tt11198330",
       "type": "series",
       "name": "House of the Dragon",
@@ -1076,17 +1087,6 @@
       "background": "https://images.metahub.space/background/medium/tt14466018/img",
       "description": "Follows rookie police officers working in Belfast, a city in which being a frontline response cop comes with unique pressures and dangers.",
       "releaseInfo": "2023–",
-      "imdbRating": "8.2"
-    },
-    {
-      "id": "tt1091909",
-      "type": "series",
-      "name": "Murdoch Mysteries",
-      "poster": "https://images.metahub.space/poster/small/tt1091909/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt1091909/img",
-      "description": "In the 1890s, William Murdoch uses radical forensic techniques for the time, including fingerprinting and trace evidence, to solve some of the city's most gruesome murders.",
-      "releaseInfo": "2008–",
       "imdbRating": "8.2"
     }
   ]
