@@ -9,7 +9,7 @@
       "background": "https://images.metahub.space/background/medium/tt45368240/img",
       "description": "Thirty-four days before she's sent to prison, notorious Theranos founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait becomes a mind-bending three-year journey.",
       "releaseInfo": "2026",
-      "imdbRating": "9.1"
+      "imdbRating": "9.0"
     },
     {
       "id": "tt43383343",
@@ -65,6 +65,17 @@
       "description": "Explores what it means to be gay throughout different eras, focusing on \"three existences\" that are connected through themes of sexuality, desire, pain, and inheritance.",
       "releaseInfo": "2026",
       "imdbRating": "8.2"
+    },
+    {
+      "id": "tt15799564",
+      "type": "movie",
+      "name": "Wild Horse Nine",
+      "poster": "https://images.metahub.space/poster/small/tt15799564/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt15799564/img",
+      "description": "CIA agents Chris and Lee face a trust-testing mission from Santiago to Easter Island during 1973 in Chile.",
+      "releaseInfo": "2026",
+      "imdbRating": "8.1"
     },
     {
       "id": "tt34384661",
