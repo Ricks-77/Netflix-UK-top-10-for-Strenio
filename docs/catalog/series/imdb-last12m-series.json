@@ -606,17 +606,6 @@
       "imdbRating": "8.5"
     },
     {
-      "id": "tt3920596",
-      "type": "series",
-      "name": "Big Little Lies",
-      "poster": "https://images.metahub.space/poster/small/tt3920596/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt3920596/img",
-      "description": "The apparently-perfect lives of upper-class mothers of students at a prestigious elementary school unravel to the point of murder when a single mother moves to their quaint California beach town.",
-      "releaseInfo": "2017–2026",
-      "imdbRating": "8.4"
-    },
-    {
       "id": "tt5875444",
       "type": "series",
       "name": "Slow Horses",
@@ -1087,6 +1076,17 @@
       "background": "https://images.metahub.space/background/medium/tt14466018/img",
       "description": "Follows rookie police officers working in Belfast, a city in which being a frontline response cop comes with unique pressures and dangers.",
       "releaseInfo": "2023–",
+      "imdbRating": "8.2"
+    },
+    {
+      "id": "tt1091909",
+      "type": "series",
+      "name": "Murdoch Mysteries",
+      "poster": "https://images.metahub.space/poster/small/tt1091909/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt1091909/img",
+      "description": "In the 1890s, William Murdoch uses radical forensic techniques for the time, including fingerprinting and trace evidence, to solve some of the city's most gruesome murders.",
+      "releaseInfo": "2008–",
       "imdbRating": "8.2"
     }
   ]
