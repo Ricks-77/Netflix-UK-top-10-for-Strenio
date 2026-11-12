@@ -55,4 +55,17 @@ class LanguageCatalogues(unittest.TestCase):
         rows=u.merge_imdb_catalogues([[a],[b,a],[c]])
         self.assertEqual([r['id']for r in rows],['tt3','tt1','tt2'])
 
+    def test_failed_language_refresh_preserves_all_four_published_files(self):
+        with tempfile.TemporaryDirectory()as d,patch.object(u,'OUT',Path(d)):
+            paths=[Path(d)/f'catalog/movie/imdb-last12m-movies{s}.json'for s in ('','-en','-pt','-es')]
+            for path in paths:path.parent.mkdir(parents=True,exist_ok=True);path.write_text('{"metas":[]}')
+            before={p:p.read_bytes()for p in paths}
+            def build(media,path,language=None):
+                path.write_text('{"metas":[{"new":true}]}')
+                if language=='pt':raise RuntimeError('upstream unavailable')
+                return [],u.date(2026,11,12),u.date(2026,11,12),'source'
+            with patch.object(u,'build_imdb_catalog',side_effect=build):
+                with self.assertRaises(RuntimeError):u.refresh_imdb_type('movie')
+            self.assertTrue(all(p.read_bytes()==original for p,original in before.items()))
+
 if __name__=='__main__':unittest.main()

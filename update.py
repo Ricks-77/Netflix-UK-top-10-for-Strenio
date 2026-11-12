@@ -590,6 +590,32 @@ def merge_imdb_catalogues(catalogues):
             if row["id"] not in unique: unique[row["id"]]=row
     return sorted(unique.values(),key=lambda r:(-float(r["imdbRating"]),-int(r.get("imdbVotes",0)),r["name"].casefold()))
 
+def refresh_imdb_type(media_type):
+    """Publish All and its three language subsets as one coherent group."""
+    suffix = "movies" if media_type == "movie" else "series"
+    paths = {lang: OUT / f"catalog/{media_type}/imdb-last12m-{suffix}{'-'+lang if lang else ''}.json" for lang in (None, *CATALOG_PRIMARY_LANGUAGES)}
+    backups = {path: path.read_bytes() if path.exists() else None for path in paths.values()}
+    rows, statuses = [], {}
+    try:
+        for language, path in paths.items():
+            items, start, today, source_url = build_imdb_catalog(media_type, path, language)
+            rows.append(items)
+            if language:
+                statuses[f"{media_type}:{language}"] = {"refresh_success": True, "count": len(items), "from": start.isoformat(), "to": today.isoformat(), "original_language": language}
+        merged = merge_imdb_catalogues(rows)
+        write_catalog(paths[None], merged)
+        return merged, start, today, source_url, statuses
+    except Exception:
+        # A scoped refresh must not leave All smaller than a retained subset.
+        # The workflow commits only after this group is coherent again.
+        for path, original in backups.items():
+            if original is None:
+                path.unlink(missing_ok=True)
+            else:
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_bytes(original)
+        raise
+
 def main():
     status = {
         "updated_at": datetime.now(ZoneInfo("Europe/London")).isoformat(),
@@ -637,44 +663,24 @@ def main():
             "last_attempt_at": status["updated_at"],
         })
 
-    fresh_imdb = {}
-    try:
-        im, start, today, movie_url = build_imdb_catalog("movie", OUT / "catalog/movie/imdb-last12m-movies.json")
-        it, _, _, series_url = build_imdb_catalog("series", OUT / "catalog/series/imdb-last12m-series.json")
-        fresh_imdb = {"movie":[im],"series":[it]}
-        status["imdb_last_12_months"].update({
-            "from": start.isoformat(),
-            "to": today.isoformat(),
-            "movies": len(im),
-            "series": len(it),
-            "movie_source": movie_url,
-            "series_source": series_url,
-        })
-    except Exception as e:
-        failed = True
-        status["imdb_last_12_months"] = dict(previous_status.get("imdb_last_12_months", {}))
-        status["imdb_last_12_months"].update({"refresh_success": False, "error": str(e)})
-
-    # Separate scoped searches keep Portuguese/Spanish titles from disappearing
-    # behind the global top100 cutoff. A valid empty result is not an outage.
     language_status = {}
-    for media_type, suffix in (("series", "series"), ("movie", "movies")):
-        for language in CATALOG_PRIMARY_LANGUAGES:
-            path = OUT / f"catalog/{media_type}/imdb-last12m-{suffix}-{language}.json"
-            key = f"{media_type}:{language}"
-            try:
-                items, start, today, source_url = build_imdb_catalog(media_type, path, language)
-                if media_type in fresh_imdb: fresh_imdb[media_type].append(items)
-                language_status[key] = {"refresh_success": True, "count": len(items), "from": start.isoformat(), "to": today.isoformat(), "original_language": language}
-            except Exception as e:
-                failed = True
-                language_status[key] = {"refresh_success": False, "catalog_preserved": path.exists(), "error": str(e)}
+    imdb_ok = True
+    for media_type, suffix in (("movie", "movies"), ("series", "series")):
+        try:
+            items, start, today, source_url, scoped = refresh_imdb_type(media_type)
+            status["imdb_last_12_months"].update({"from": start.isoformat(), "to": today.isoformat(), suffix: len(items), media_type+"_source": source_url})
+            language_status.update(scoped)
+        except Exception as e:
+            failed = True
+            imdb_ok = False
+            status["imdb_last_12_months"][suffix] = previous_status.get("imdb_last_12_months", {}).get(suffix)
+            status["imdb_last_12_months"][media_type+"_error"] = str(e)
+            for language in CATALOG_PRIMARY_LANGUAGES:
+                key = f"{media_type}:{language}"
+                language_status[key] = dict(previous_status.get("imdb_language_catalogues", {}).get(key, {}))
+                language_status[key].update({"refresh_success": False, "catalog_preserved": True, "error": str(e)})
+    status["imdb_last_12_months"]["refresh_success"] = imdb_ok
     status["imdb_language_catalogues"] = language_status
-    for media_type, lists in fresh_imdb.items():
-        suffix="movies" if media_type=="movie" else"series"
-        merged=merge_imdb_catalogues(lists)
-        write_catalog(OUT/f"catalog/{media_type}/imdb-last12m-{suffix}.json",merged)
-        status["imdb_last_12_months"]["movies" if media_type=="movie" else"series"]=len(merged)
 
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "status.json").write_text(json.dumps(status, indent=2) + "\n", encoding="utf-8")
