@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T22:48:39.574866+00:00",
+  "updated_at": "2026-11-12T03:31:37.211276+00:00",
   "netflix": {
     "source": "verified-local",
     "movies": 10,
@@ -10,8 +10,8 @@
     "refresh_success": false,
     "stale": true,
     "catalog_preserved": true,
-    "error": "Could not obtain a trustworthy current Netflix UK Top 10. direct: 403 Client Error: Forbidden for url: https://flixpatrol.com/top10/netflix/united-kingdom/2026-11-11/ | jina: Missing matching Netflix UK daily chart heading/date | local: Chart date 2026-10-05 is not current (2026-11-11)",
-    "last_attempt_at": "2026-11-11T22:48:39.574866+00:00"
+    "error": "Could not obtain a trustworthy current Netflix UK Top 10. direct: 403 Client Error: Forbidden for url: https://flixpatrol.com/top10/netflix/united-kingdom/2026-11-12/ | jina: Missing matching Netflix UK daily chart heading/date | local: Chart date 2026-10-05 is not current (2026-11-12)",
+    "last_attempt_at": "2026-11-12T03:31:37.211276+00:00"
   },
   "imdb_last_12_months": {
     "minimum_rating": 7.5,
@@ -60,11 +60,55 @@
       "ja",
       "ko"
     ],
-    "from": "2025-11-11",
-    "to": "2026-11-11",
+    "from": "2025-11-12",
+    "to": "2026-11-12",
     "movies": 15,
-    "series": 99,
+    "series": 133,
     "movie_source": "https://caching.graphql.imdb.com/",
     "series_source": "https://caching.graphql.imdb.com/"
+  },
+  "imdb_language_catalogues": {
+    "series:en": {
+      "refresh_success": true,
+      "count": 100,
+      "from": "2025-11-12",
+      "to": "2026-11-12",
+      "original_language": "en"
+    },
+    "series:pt": {
+      "refresh_success": true,
+      "count": 1,
+      "from": "2025-11-12",
+      "to": "2026-11-12",
+      "original_language": "pt"
+    },
+    "series:es": {
+      "refresh_success": true,
+      "count": 4,
+      "from": "2025-11-12",
+      "to": "2026-11-12",
+      "original_language": "es"
+    },
+    "movie:en": {
+      "refresh_success": true,
+      "count": 12,
+      "from": "2025-11-12",
+      "to": "2026-11-12",
+      "original_language": "en"
+    },
+    "movie:pt": {
+      "refresh_success": true,
+      "count": 0,
+      "from": "2025-11-12",
+      "to": "2026-11-12",
+      "original_language": "pt"
+    },
+    "movie:es": {
+      "refresh_success": true,
+      "count": 1,
+      "from": "2025-11-12",
+      "to": "2026-11-12",
+      "original_language": "es"
+    }
   }
 }
