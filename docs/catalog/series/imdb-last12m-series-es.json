@@ -1,0 +1,72 @@
+{
+  "metas": [
+    {
+      "id": "tt9892936",
+      "type": "series",
+      "name": "One Hundred Years of Solitude",
+      "poster": "https://images.metahub.space/poster/small/tt9892936/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt9892936/img",
+      "description": "In the timeless town of Macondo, seven generations of the Buendía family navigate love, oblivion and the inescapability of their past and their fate.",
+      "releaseInfo": "2024–2026",
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "History"
+      ],
+      "imdbRating": "8.3",
+      "imdbVotes": 23229,
+      "matchingOriginalLanguage": "es"
+    },
+    {
+      "id": "tt14362262",
+      "type": "series",
+      "name": "The Boss",
+      "poster": "https://images.metahub.space/poster/small/tt14362262/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt14362262/img",
+      "description": "The apartment manager of a residential building takes advantage of his power of surveillance to meddle in the lives of the tenants.",
+      "releaseInfo": "2022–",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Mystery"
+      ],
+      "imdbRating": "8.0",
+      "imdbVotes": 7745,
+      "matchingOriginalLanguage": "es"
+    },
+    {
+      "id": "tt18482892",
+      "type": "series",
+      "name": "Alpha Males",
+      "poster": "https://images.metahub.space/poster/small/tt18482892/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt18482892/img",
+      "description": "Pedro, Luis, Raúl and Santi are four friends who feel a bit lost in the new world of empowered women, each trying to adjust in their own haphazard way.",
+      "releaseInfo": "2022–",
+      "genres": [
+        "Comedy"
+      ],
+      "imdbRating": "7.7",
+      "imdbVotes": 14273,
+      "matchingOriginalLanguage": "es"
+    },
+    {
+      "id": "tt0922037",
+      "type": "series",
+      "name": "La que se avecina",
+      "poster": "https://images.metahub.space/poster/small/tt0922037/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0922037/img",
+      "description": "Follow the lives of the residents of a relatively luxurious block, the problems of sharing housing, the housing bubble, and young people's difficulties finding apartments.",
+      "releaseInfo": "2007–",
+      "genres": [
+        "Comedy"
+      ],
+      "imdbRating": "7.6",
+      "imdbVotes": 5852,
+      "matchingOriginalLanguage": "es"
+    }
+  ]
+}

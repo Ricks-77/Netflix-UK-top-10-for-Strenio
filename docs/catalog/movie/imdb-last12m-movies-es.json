@@ -1,0 +1,22 @@
+{
+  "metas": [
+    {
+      "id": "tt35511966",
+      "type": "movie",
+      "name": "La bola negra",
+      "poster": "https://images.metahub.space/poster/small/tt35511966/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt35511966/img",
+      "description": "Explores what it means to be gay throughout different eras, focusing on \"three existences\" that are connected through themes of sexuality, desire, pain, and inheritance.",
+      "releaseInfo": "2026",
+      "genres": [
+        "Drama",
+        "History",
+        "Musical"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 13288,
+      "matchingOriginalLanguage": "es"
+    }
+  ]
+}

@@ -154,7 +154,7 @@ class RefreshTests(unittest.TestCase):
         before = self.seed()
         original = u.write_catalog
         def fail_series(path, metas):
-            if '/series/' in str(path):
+            if '/series/' in Path(path).as_posix():
                 raise OSError('disk write failed')
             original(path, metas)
         with patch.object(u, 'fetch_netflix_rankings', return_value=chart() | {'retrieval_errors': []}), patch.object(u, 'resolve_cinemeta_title', side_effect=lambda title, media: {'id':title, 'name':title}), patch.object(u, 'write_catalog', side_effect=fail_series):
@@ -176,3 +176,4 @@ class RefreshTests(unittest.TestCase):
 
 
 if __name__ == '__main__': unittest.main()
+

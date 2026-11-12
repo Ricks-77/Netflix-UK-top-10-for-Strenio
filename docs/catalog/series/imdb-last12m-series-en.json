@@ -1,0 +1,1749 @@
+{
+  "metas": [
+    {
+      "id": "tt2348531",
+      "type": "series",
+      "name": "Half in the Bag",
+      "poster": "https://images.metahub.space/poster/small/tt2348531/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt2348531/img",
+      "description": "Two VCR repairmen, Mike and Jay, scam an elderly man out of his fortune by discussing movies while on the job, and occasionally go on eccentric misadventures.",
+      "releaseInfo": "2011–",
+      "genres": [
+        "Comedy",
+        "Talk-Show"
+      ],
+      "imdbRating": "9.3",
+      "imdbVotes": 5814,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt2861424",
+      "type": "series",
+      "name": "Rick and Morty",
+      "poster": "https://images.metahub.space/poster/small/tt2861424/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt2861424/img",
+      "description": "The fractured domestic lives of a nihilistic mad scientist and his anxious grandson are further complicated by their inter-dimensional misadventures.",
+      "releaseInfo": "2013–",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ],
+      "imdbRating": "9.0",
+      "imdbVotes": 718513,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt33043892",
+      "type": "series",
+      "name": "Dexter: Resurrection",
+      "poster": "https://images.metahub.space/poster/small/tt33043892/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt33043892/img",
+      "description": "Dexter Morgan awakens from a coma and sets out for New York City, determined to find Harrison and make things right. But when Miami Metro's Angel Batista arrives with questions, Dexter realizes his past is catching up to him fast.",
+      "releaseInfo": "2025–",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "imdbRating": "9.0",
+      "imdbVotes": 165612,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt10541088",
+      "type": "series",
+      "name": "Clarkson's Farm",
+      "poster": "https://images.metahub.space/poster/small/tt10541088/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt10541088/img",
+      "description": "Follow Jeremy Clarkson as he attempts to run a farm in the countryside.",
+      "releaseInfo": "2021–",
+      "genres": [
+        "Documentary",
+        "Comedy",
+        "Reality-TV"
+      ],
+      "imdbRating": "9.0",
+      "imdbVotes": 91832,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt4934214",
+      "type": "series",
+      "name": "Taskmaster",
+      "poster": "https://images.metahub.space/poster/small/tt4934214/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt4934214/img",
+      "description": "Five comedians are set tasks challenging their creativity and wit. The tasks are supervised by Alex Horne but the Taskmaster, Greg Davies, always has the final word.",
+      "releaseInfo": "2015–",
+      "genres": [
+        "Comedy",
+        "Game-Show"
+      ],
+      "imdbRating": "9.0",
+      "imdbVotes": 33009,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt4834232",
+      "type": "series",
+      "name": "Critical Role",
+      "poster": "https://images.metahub.space/poster/small/tt4834232/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt4834232/img",
+      "description": "A live weekly show in which a band of professional voice actors improvise, role-play, and roll their way through an epic Dungeons and Dragons campaign.",
+      "releaseInfo": "2015–",
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "imdbRating": "9.0",
+      "imdbVotes": 15207,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt31938062",
+      "type": "series",
+      "name": "The Pitt",
+      "poster": "https://images.metahub.space/poster/small/tt31938062/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt31938062/img",
+      "description": "The daily lives of healthcare professionals in a Pittsburgh hospital as they juggle personal crises, workplace politics, and the emotional toll of treating critically ill patients, revealing the resilience required in their noble ...",
+      "releaseInfo": "2025–",
+      "genres": [
+        "Drama"
+      ],
+      "imdbRating": "8.9",
+      "imdbVotes": 179426,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt0472954",
+      "type": "series",
+      "name": "It's Always Sunny in Philadelphia",
+      "poster": "https://images.metahub.space/poster/small/tt0472954/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0472954/img",
+      "description": "Five friends with big egos and small brains are the proprietors of an Irish pub in Philadelphia.",
+      "releaseInfo": "2005–",
+      "genres": [
+        "Comedy"
+      ],
+      "imdbRating": "8.8",
+      "imdbVotes": 287504,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt3530232",
+      "type": "series",
+      "name": "Last Week Tonight with John Oliver",
+      "poster": "https://images.metahub.space/poster/small/tt3530232/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt3530232/img",
+      "description": "Former Daily Show host and correspondent John Oliver brings his persona to this weekly news satire program.",
+      "releaseInfo": "2014–",
+      "genres": [
+        "Comedy",
+        "News",
+        "Talk-Show"
+      ],
+      "imdbRating": "8.8",
+      "imdbVotes": 106340,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt1408430",
+      "type": "series",
+      "name": "30 for 30",
+      "poster": "https://images.metahub.space/poster/small/tt1408430/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt1408430/img",
+      "description": "A collection of documentary films focused on sports.",
+      "releaseInfo": "2009–",
+      "genres": [
+        "Documentary",
+        "Biography",
+        "History"
+      ],
+      "imdbRating": "8.8",
+      "imdbVotes": 6177,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt10986410",
+      "type": "series",
+      "name": "Ted Lasso",
+      "poster": "https://images.metahub.space/poster/small/tt10986410/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt10986410/img",
+      "description": "American college football coach Ted Lasso is hired to manage AFC Richmond, a struggling English soccer club, and must win over skeptical players, staff, and fans.",
+      "releaseInfo": "2020–",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Sport"
+      ],
+      "imdbRating": "8.7",
+      "imdbVotes": 479534,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt0121955",
+      "type": "series",
+      "name": "South Park",
+      "poster": "https://images.metahub.space/poster/small/tt0121955/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0121955/img",
+      "description": "The misadventures of four foul-mouthed, dirty-minded, irreverent grade-schoolers who live in the quiet, dysfunctional mountain town of South Park, Colorado.",
+      "releaseInfo": "1997–",
+      "genres": [
+        "Animation",
+        "Comedy"
+      ],
+      "imdbRating": "8.7",
+      "imdbVotes": 453710,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt6741278",
+      "type": "series",
+      "name": "Invincible",
+      "poster": "https://images.metahub.space/poster/small/tt6741278/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt6741278/img",
+      "description": "When 17-year-old Mark Grayson inherits superpowers, he becomes the superhero Invincible.",
+      "releaseInfo": "2021–",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure"
+      ],
+      "imdbRating": "8.7",
+      "imdbVotes": 356562,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt35495073",
+      "type": "series",
+      "name": "Heated Rivalry",
+      "poster": "https://images.metahub.space/poster/small/tt35495073/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt35495073/img",
+      "description": "Two rival hockey stars at the top of their game face an unexpected challenge when they develop feelings for each other, complicating their careers and the sport's expectations.",
+      "releaseInfo": "2025–",
+      "genres": [
+        "Drama",
+        "Romance",
+        "Sport"
+      ],
+      "imdbRating": "8.7",
+      "imdbVotes": 116755,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt16026746",
+      "type": "series",
+      "name": "X-Men '97",
+      "poster": "https://images.metahub.space/poster/small/tt16026746/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt16026746/img",
+      "description": "A band of mutants use their uncanny gifts to protect a world that hates and fears them; they're challenged like never before, forced to face a dangerous and unexpected new future.",
+      "releaseInfo": "2024–",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure"
+      ],
+      "imdbRating": "8.7",
+      "imdbVotes": 61196,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt23743442",
+      "type": "series",
+      "name": "The Traitors UK",
+      "poster": "https://images.metahub.space/poster/small/tt23743442/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt23743442/img",
+      "description": "Twenty-two strangers compete in a series of missions for a chance to win £120k. However, amongst the players lie the 'Traitors', who meet in secret and decide who to eliminate from their fellow players known as 'Faithfuls'.",
+      "releaseInfo": "2022–",
+      "genres": [
+        "Game-Show",
+        "Reality-TV"
+      ],
+      "imdbRating": "8.7",
+      "imdbVotes": 8924,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt4574334",
+      "type": "series",
+      "name": "Stranger Things",
+      "poster": "https://images.metahub.space/poster/small/tt4574334/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt4574334/img",
+      "description": "In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries.",
+      "releaseInfo": "2016–2025",
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Horror"
+      ],
+      "imdbRating": "8.6",
+      "imdbVotes": 1754384,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt11280740",
+      "type": "series",
+      "name": "Severance",
+      "poster": "https://images.metahub.space/poster/small/tt11280740/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt11280740/img",
+      "description": "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.",
+      "releaseInfo": "2022–",
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Sci-Fi"
+      ],
+      "imdbRating": "8.6",
+      "imdbVotes": 415465,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt27497448",
+      "type": "series",
+      "name": "A Knight of the Seven Kingdoms",
+      "poster": "https://images.metahub.space/poster/small/tt27497448/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt27497448/img",
+      "description": "A century before the events of \"Game of Thrones,\" Ser Duncan the Tall, and his squire, Egg, wander through Westeros while the Targaryen dynasty rule the Iron Throne. Great destinies and enemies await the incomparable friends.",
+      "releaseInfo": "2026–",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "imdbRating": "8.6",
+      "imdbVotes": 294159,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt1983079",
+      "type": "series",
+      "name": "Call the Midwife",
+      "poster": "https://images.metahub.space/poster/small/tt1983079/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt1983079/img",
+      "description": "Chronicles the lives of a group of midwives living in East London in the late 1950s to the early 1970s.",
+      "releaseInfo": "2012–",
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "imdbRating": "8.6",
+      "imdbVotes": 36420,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt0380136",
+      "type": "series",
+      "name": "QI",
+      "poster": "https://images.metahub.space/poster/small/tt0380136/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0380136/img",
+      "description": "A comedy panel game in which being Quite Interesting is more important than being right. Sandi Toksvig is joined each week by four comedians to share anecdotes and trivia, and maybe answer some questions as well.",
+      "releaseInfo": "2003–",
+      "genres": [
+        "Comedy",
+        "Game-Show"
+      ],
+      "imdbRating": "8.6",
+      "imdbVotes": 35855,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt10332508",
+      "type": "series",
+      "name": "Primal",
+      "poster": "https://images.metahub.space/poster/small/tt10332508/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt10332508/img",
+      "description": "A caveman and a dinosaur bond over unfortunate tragedies and become each other's only hope of survival in a treacherous world.",
+      "releaseInfo": "2019–",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure"
+      ],
+      "imdbRating": "8.6",
+      "imdbVotes": 31471,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt10590066",
+      "type": "series",
+      "name": "All Creatures Great & Small",
+      "poster": "https://images.metahub.space/poster/small/tt10590066/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt10590066/img",
+      "description": "The heartwarming life and work of country vets in the 1930s and 1940s Yorkshire Dales, based on the beloved books by James Herriot.",
+      "releaseInfo": "2020–",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "imdbRating": "8.6",
+      "imdbVotes": 23992,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt1877368",
+      "type": "series",
+      "name": "The Great British Baking Show",
+      "poster": "https://images.metahub.space/poster/small/tt1877368/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt1877368/img",
+      "description": "Bakers attempt three challenges each week trying to impress the judges enough to go through to the next round and eventually are crowned Britain's best amateur baker.",
+      "releaseInfo": "2010–",
+      "genres": [
+        "Game-Show",
+        "Reality-TV"
+      ],
+      "imdbRating": "8.6",
+      "imdbVotes": 16408,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt18249282",
+      "type": "series",
+      "name": "Shoresy",
+      "poster": "https://images.metahub.space/poster/small/tt18249282/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt18249282/img",
+      "description": "The foul-mouthed, chirp-serving, mother-loving, fan favorite character Shoresy joins a senior AAA hockey team in Sudbury to never lose again.",
+      "releaseInfo": "2022–",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama"
+      ],
+      "imdbRating": "8.6",
+      "imdbVotes": 13777,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt15248880",
+      "type": "series",
+      "name": "Adventure Time: Fionna & Cake",
+      "poster": "https://images.metahub.space/poster/small/tt15248880/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt15248880/img",
+      "description": "Fionna, her best friend Cake and the former Ice King, Simon Petrikov, embark on an adventure through the multiverse, dodging new threats and making self-discoveries along the way.",
+      "releaseInfo": "2023–",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure"
+      ],
+      "imdbRating": "8.6",
+      "imdbVotes": 12715,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt9475088",
+      "type": "series",
+      "name": "Vader: A Star Wars Theory Fan Series",
+      "poster": "https://images.metahub.space/poster/small/tt9475088/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt9475088/img",
+      "description": "Darth Vader fights between losing Padmé and serving the new master who promised to save her.",
+      "releaseInfo": "2018–",
+      "genres": [
+        "Short",
+        "Action",
+        "Adventure"
+      ],
+      "imdbRating": "8.6",
+      "imdbVotes": 5207,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt1190634",
+      "type": "series",
+      "name": "The Boys",
+      "poster": "https://images.metahub.space/poster/small/tt1190634/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt1190634/img",
+      "description": "A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers.",
+      "releaseInfo": "2019–2026",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Crime"
+      ],
+      "imdbRating": "8.5",
+      "imdbVotes": 1035861,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt14452776",
+      "type": "series",
+      "name": "The Bear",
+      "poster": "https://images.metahub.space/poster/small/tt14452776/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt14452776/img",
+      "description": "A young chef from the fine-dining world returns to Chicago to run his family's sandwich shop.",
+      "releaseInfo": "2022–2026",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "imdbRating": "8.5",
+      "imdbVotes": 330192,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt0149460",
+      "type": "series",
+      "name": "Futurama",
+      "poster": "https://live.metahub.space/poster/small/tt0149460/img",
+      "posterShape": "poster",
+      "background": "https://live.metahub.space/background/medium/tt0149460/img",
+      "description": "The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an interplanetary delivery company in the retro-futuristic 31st century.",
+      "releaseInfo": "1999–2026",
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Sci-Fi & Fantasy"
+      ],
+      "imdbRating": "8.5",
+      "imdbVotes": 281527,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt0290988",
+      "type": "series",
+      "name": "Trailer Park Boys",
+      "poster": "https://images.metahub.space/poster/small/tt0290988/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0290988/img",
+      "description": "Three petty felons have a documentary made about their life in a trailer park.",
+      "releaseInfo": "2001–2026",
+      "genres": [
+        "Comedy",
+        "Crime"
+      ],
+      "imdbRating": "8.5",
+      "imdbVotes": 58873,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt2100976",
+      "type": "series",
+      "name": "Impractical Jokers",
+      "poster": "https://images.metahub.space/poster/small/tt2100976/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt2100976/img",
+      "description": "Q, Sal, Joe and Murr are real-life best friends who love challenging each other to the most outrageous dares and stunts ever caught on hidden camera.",
+      "releaseInfo": "2011–",
+      "genres": [
+        "Comedy",
+        "Reality-TV"
+      ],
+      "imdbRating": "8.5",
+      "imdbVotes": 53009,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt12074628",
+      "type": "series",
+      "name": "Smiling Friends",
+      "poster": "https://images.metahub.space/poster/small/tt12074628/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt12074628/img",
+      "description": "In a colorful yet bizarre world, the employees at a small firm dedicated to making its customers smile discover that their jobs are rarely as simple as they seem.",
+      "releaseInfo": "2020–2026",
+      "genres": [
+        "Animation",
+        "Short",
+        "Comedy"
+      ],
+      "imdbRating": "8.5",
+      "imdbVotes": 33695,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt36594331",
+      "type": "series",
+      "name": "Star Wars: Maul - Shadow Lord",
+      "poster": "https://images.metahub.space/poster/small/tt36594331/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt36594331/img",
+      "description": "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
+      "releaseInfo": "2026–",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure"
+      ],
+      "imdbRating": "8.5",
+      "imdbVotes": 32058,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt1353056",
+      "type": "series",
+      "name": "RuPaul's Drag Race",
+      "poster": "https://images.metahub.space/poster/small/tt1353056/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt1353056/img",
+      "description": "RuPaul searches for America's next drag superstar.",
+      "releaseInfo": "2009–",
+      "genres": [
+        "Game-Show",
+        "Reality-TV"
+      ],
+      "imdbRating": "8.5",
+      "imdbVotes": 26090,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt7259746",
+      "type": "series",
+      "name": "Queer Eye",
+      "poster": "https://images.metahub.space/poster/small/tt7259746/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt7259746/img",
+      "description": "A new Fab Five set out to Atlanta to help some of the city's people refine their wardrobes, grooming, diet, cultural pursuits, and home décor.",
+      "releaseInfo": "2018–2026",
+      "genres": [
+        "Reality-TV"
+      ],
+      "imdbRating": "8.5",
+      "imdbVotes": 22587,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt1230180",
+      "type": "series",
+      "name": "The Angry Video Game Nerd",
+      "poster": "https://images.metahub.space/poster/small/tt1230180/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt1230180/img",
+      "description": "A foul-mouthed nerd reviews bad video games.",
+      "releaseInfo": "2004–",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Sci-Fi"
+      ],
+      "imdbRating": "8.5",
+      "imdbVotes": 16227,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt2301351",
+      "type": "series",
+      "name": "RuPaul's Drag Race All Stars",
+      "poster": "https://images.metahub.space/poster/small/tt2301351/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt2301351/img",
+      "description": "New show will serve up a new twist on the mega-hit RuPaul's Drag Race as it pits queens from previous seasons in a wig-to-wig drag battle royale.",
+      "releaseInfo": "2012–",
+      "genres": [
+        "Game-Show",
+        "Reality-TV"
+      ],
+      "imdbRating": "8.5",
+      "imdbVotes": 11402,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt19037550",
+      "type": "series",
+      "name": "Love on the Spectrum U.S.",
+      "poster": "https://images.metahub.space/poster/small/tt19037550/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt19037550/img",
+      "description": "It follows people on the autism spectrum as they navigate the world of dating and relationships.",
+      "releaseInfo": "2022–",
+      "genres": [
+        "Documentary",
+        "Comedy",
+        "Drama"
+      ],
+      "imdbRating": "8.5",
+      "imdbVotes": 7622,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt36985473",
+      "type": "series",
+      "name": "The Wonderfully Weird World of Gumball",
+      "poster": "https://images.metahub.space/poster/small/tt36985473/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt36985473/img",
+      "description": "In Elmore, reality bends and family life gets weird. Gumball pulls Darwin, Anais, and the whole town into adventures - from fighting evil fast food to dealing with an AI crushing on his mom. The show's so wild, it needed a new name.",
+      "releaseInfo": "2025–",
+      "genres": [
+        "Animation",
+        "Short",
+        "Adventure"
+      ],
+      "imdbRating": "8.5",
+      "imdbVotes": 5150,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt5875444",
+      "type": "series",
+      "name": "Slow Horses",
+      "poster": "https://images.metahub.space/poster/small/tt5875444/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt5875444/img",
+      "description": "A dysfunctional team of MI5 agents navigate the espionage world's smoke and mirrors to defend the UK from sinister forces.",
+      "releaseInfo": "2022–",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "imdbRating": "8.4",
+      "imdbVotes": 170323,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt8289930",
+      "type": "series",
+      "name": "Formula 1: Drive to Survive",
+      "poster": "https://images.metahub.space/poster/small/tt8289930/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt8289930/img",
+      "description": "Docuseries following the FIA Formula One World Championship across multiple seasons.",
+      "releaseInfo": "2019–",
+      "genres": [
+        "Documentary",
+        "Sport"
+      ],
+      "imdbRating": "8.4",
+      "imdbVotes": 61113,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt11247158",
+      "type": "series",
+      "name": "The Legend of Vox Machina",
+      "poster": "https://images.metahub.space/poster/small/tt11247158/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt11247158/img",
+      "description": "After saving the realm from evil and destruction at the hands of the most terrifying power couple in Exandria, Vox Machina is faced with saving the world once again-this time, from a sinister group of dragons known as the Chroma C...",
+      "releaseInfo": "2022–",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure"
+      ],
+      "imdbRating": "8.4",
+      "imdbVotes": 57488,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt1094229",
+      "type": "series",
+      "name": "Heartland",
+      "poster": "https://images.metahub.space/poster/small/tt1094229/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt1094229/img",
+      "description": "A multi-generational saga set in Alberta, Canada and centered on a family getting through life together in both happy and trying times.",
+      "releaseInfo": "2007–",
+      "genres": [
+        "Drama",
+        "Family"
+      ],
+      "imdbRating": "8.4",
+      "imdbVotes": 22973,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt26453092",
+      "type": "series",
+      "name": "The Mighty Nein",
+      "poster": "https://images.metahub.space/poster/small/tt26453092/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt26453092/img",
+      "description": "Follows a group of criminals and misfits who are the only ones that can prevent the kingdom from plunging into chaos when an arcane artifact capable of reshaping reality falls into the wrong hands.",
+      "releaseInfo": "2025–",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure"
+      ],
+      "imdbRating": "8.4",
+      "imdbVotes": 15038,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt0924651",
+      "type": "series",
+      "name": "The Graham Norton Show",
+      "poster": "https://images.metahub.space/poster/small/tt0924651/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0924651/img",
+      "description": "Irish comedian Graham Norton hosts his very own chat show, which includes chatting to A-list celebrities, the very famous Red Chair game, live music, lots of jokes and fun from Graham and the celebrities themselves.",
+      "releaseInfo": "2007–",
+      "genres": [
+        "Comedy",
+        "Talk-Show"
+      ],
+      "imdbRating": "8.4",
+      "imdbVotes": 14591,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt10324164",
+      "type": "series",
+      "name": "Prehistoric Planet",
+      "poster": "https://images.metahub.space/poster/small/tt10324164/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt10324164/img",
+      "description": "Travel back 66 million years to when majestic dinosaurs and extraordinary creatures roamed the lands, seas, and skies.",
+      "releaseInfo": "2022–2025",
+      "genres": [
+        "Documentary",
+        "Animation",
+        "Family"
+      ],
+      "imdbRating": "8.4",
+      "imdbVotes": 13073,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt4803766",
+      "type": "series",
+      "name": "Alone",
+      "poster": "https://images.metahub.space/poster/small/tt4803766/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt4803766/img",
+      "description": "Ten survival \"experts\" attempt to survive alone. The winner receives $500,000.",
+      "releaseInfo": "2015–",
+      "genres": [
+        "Documentary",
+        "Game-Show",
+        "Reality-TV"
+      ],
+      "imdbRating": "8.4",
+      "imdbVotes": 9561,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt9780442",
+      "type": "series",
+      "name": "RuPaul's Drag Race UK",
+      "poster": "https://images.metahub.space/poster/small/tt9780442/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt9780442/img",
+      "description": "UK version of RuPaul's hit reality competition show where RuPaul searches for the country's next drag superstar.",
+      "releaseInfo": "2019–",
+      "genres": [
+        "Game-Show",
+        "Reality-TV"
+      ],
+      "imdbRating": "8.4",
+      "imdbVotes": 5696,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt12637874",
+      "type": "series",
+      "name": "Fallout",
+      "poster": "https://images.metahub.space/poster/small/tt12637874/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt12637874/img",
+      "description": "In a future, post-apocalyptic Los Angeles brought about by nuclear decimation, citizens must live in underground bunkers to protect themselves from radiation, mutants and bandits.",
+      "releaseInfo": "2024–",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "imdbRating": "8.3",
+      "imdbVotes": 407707,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt11737520",
+      "type": "series",
+      "name": "One Piece",
+      "poster": "https://images.metahub.space/poster/small/tt11737520/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt11737520/img",
+      "description": "With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure.",
+      "releaseInfo": "2023–",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "imdbRating": "8.3",
+      "imdbVotes": 212443,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt3006802",
+      "type": "series",
+      "name": "Outlander",
+      "poster": "https://images.metahub.space/poster/small/tt3006802/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt3006802/img",
+      "description": "Honeymooning in 1945 Scotland, a combat nurse is suddenly transported back to the 1700s.",
+      "releaseInfo": "2014–2026",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "imdbRating": "8.3",
+      "imdbVotes": 206052,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt31510819",
+      "type": "series",
+      "name": "MobLand",
+      "poster": "https://images.metahub.space/poster/small/tt31510819/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt31510819/img",
+      "description": "Power is up for grabs as two warring crime families clash in a battle that threatens to topple empires. In the crossfire stands Harry Da Souza, a street-smart 'fixer' who knows too well where loyalties lie when opposing forces col...",
+      "releaseInfo": "2025–",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "imdbRating": "8.3",
+      "imdbVotes": 142026,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt11815682",
+      "type": "series",
+      "name": "Hacks",
+      "poster": "https://images.metahub.space/poster/small/tt11815682/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt11815682/img",
+      "description": "Explores a dark mentorship that forms between Deborah Vance, a legendary Las Vegas comedian, and a young adult coming to grips through comedy.",
+      "releaseInfo": "2021–2026",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "imdbRating": "8.3",
+      "imdbVotes": 71784,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt0115147",
+      "type": "series",
+      "name": "The Daily Show",
+      "poster": "https://images.metahub.space/poster/small/tt0115147/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0115147/img",
+      "description": "A comedy news show featuring humorous takes on top stories.",
+      "releaseInfo": "1996–",
+      "genres": [
+        "Comedy",
+        "News",
+        "Talk-Show"
+      ],
+      "imdbRating": "8.3",
+      "imdbVotes": 49979,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt2396135",
+      "type": "series",
+      "name": "Shetland",
+      "poster": "https://images.metahub.space/poster/small/tt2396135/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt2396135/img",
+      "description": "A local police team investigates crimes within the close-knit island community of Shetland.",
+      "releaseInfo": "2013–",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "imdbRating": "8.3",
+      "imdbVotes": 33098,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt14674086",
+      "type": "series",
+      "name": "Welcome to Wrexham",
+      "poster": "https://images.metahub.space/poster/small/tt14674086/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt14674086/img",
+      "description": "Docuseries chronicling the purchase and stewardship of Wrexham AFC, one of professional football's oldest clubs, by two Hollywood actors, Ryan Reynolds and Rob McElhenney.",
+      "releaseInfo": "2022–",
+      "genres": [
+        "Documentary",
+        "Reality-TV",
+        "Sport"
+      ],
+      "imdbRating": "8.3",
+      "imdbVotes": 25980,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt1055238",
+      "type": "series",
+      "name": "Would I Lie to You?",
+      "poster": "https://images.metahub.space/poster/small/tt1055238/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt1055238/img",
+      "description": "Celebrities tell their most unbelievable stories and anecdotes, the opposing team must sort the truth from the twaddle and determine whether each tale is a barely believe truth, or a pack of lies.",
+      "releaseInfo": "2007–",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Game-Show"
+      ],
+      "imdbRating": "8.3",
+      "imdbVotes": 11371,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt37022512",
+      "type": "series",
+      "name": "The Other Bennet Sister",
+      "poster": "https://images.metahub.space/poster/small/tt37022512/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt37022512/img",
+      "description": "Mary leaves her sisters' shadows to find herself, embarking on a journey from Meryton to London and the Lake District. Her quest for independence leads to an unexpected love story in Regency-era England.",
+      "releaseInfo": "2026–",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "imdbRating": "8.3",
+      "imdbVotes": 10933,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt0159881",
+      "type": "series",
+      "name": "Jeopardy!",
+      "poster": "https://images.metahub.space/poster/small/tt0159881/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0159881/img",
+      "description": "A returning champion and two challengers test their buzzer skills and their knowledge in a wide range of academic and popular categories.",
+      "releaseInfo": "1984–",
+      "genres": [
+        "Game-Show"
+      ],
+      "imdbRating": "8.3",
+      "imdbVotes": 9164,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt11198330",
+      "type": "series",
+      "name": "House of the Dragon",
+      "poster": "https://images.metahub.space/poster/small/tt11198330/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt11198330/img",
+      "description": "An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.",
+      "releaseInfo": "2022–",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 577789,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt15677150",
+      "type": "series",
+      "name": "Shrinking",
+      "poster": "https://images.metahub.space/poster/small/tt15677150/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt15677150/img",
+      "description": "A grieving therapist starts to tell his clients exactly what he thinks. Ignoring his training and ethics, he finds himself making huge changes to people's lives - including his own.",
+      "releaseInfo": "2023–",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 133793,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt0206512",
+      "type": "series",
+      "name": "SpongeBob SquarePants",
+      "poster": "https://images.metahub.space/poster/small/tt0206512/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0206512/img",
+      "description": "The misadventures of a talking sea sponge who works at a fast food restaurant, attends a boating school, and lives in an underwater pineapple.",
+      "releaseInfo": "1999–",
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Family"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 129063,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt14186672",
+      "type": "series",
+      "name": "Landman",
+      "poster": "https://images.metahub.space/poster/small/tt14186672/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt14186672/img",
+      "description": "A modern-day tale of fortune seeking in the world of West Texas oil rigs.",
+      "releaseInfo": "2024–",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Western"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 119946,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt22074164",
+      "type": "series",
+      "name": "Jury Duty Presents",
+      "poster": "https://images.metahub.space/poster/small/tt22074164/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt22074164/img",
+      "description": "An unsuspecting hero is put through a series of real-life activities. Unbeknown to them, the activities are elaborately staged by actors.",
+      "releaseInfo": "2023–2026",
+      "genres": [
+        "Comedy",
+        "Reality-TV"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 58167,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt14218830",
+      "type": "series",
+      "name": "Abbott Elementary",
+      "poster": "https://images.metahub.space/poster/small/tt14218830/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt14218830/img",
+      "description": "A workplace comedy centered on a group of dedicated teachers - and an oblivious principal - in a Philadelphia public school where, despite the odds stacked against them, they are determined to help their students succeed in life.",
+      "releaseInfo": "2021–",
+      "genres": [
+        "Comedy"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 56713,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt13138834",
+      "type": "series",
+      "name": "Time",
+      "poster": "https://images.metahub.space/poster/small/tt13138834/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt13138834/img",
+      "description": "An anthology series exploring life in the British prison system.",
+      "releaseInfo": "2021–",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 33917,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt34991493",
+      "type": "series",
+      "name": "Dutton Ranch",
+      "poster": "https://images.metahub.space/poster/small/tt34991493/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt34991493/img",
+      "description": "Beth Dutton and Rip Wheeler fight to survive on their cherished 7,000-acre ranch amid tough times and stiff competition, while ensuring young Carter becomes the man he's supposed to be.",
+      "releaseInfo": "2026–",
+      "genres": [
+        "Drama",
+        "Western"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 28668,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt14466018",
+      "type": "series",
+      "name": "Blue Lights",
+      "poster": "https://images.metahub.space/poster/small/tt14466018/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt14466018/img",
+      "description": "Follows rookie police officers working in Belfast, a city in which being a frontline response cop comes with unique pressures and dangers.",
+      "releaseInfo": "2023–",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 25183,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt1091909",
+      "type": "series",
+      "name": "Murdoch Mysteries",
+      "poster": "https://images.metahub.space/poster/small/tt1091909/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt1091909/img",
+      "description": "In the 1890s, William Murdoch uses radical forensic techniques for the time, including fingerprinting and trace evidence, to solve some of the city's most gruesome murders.",
+      "releaseInfo": "2008–",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 20949,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt10970762",
+      "type": "series",
+      "name": "The Testaments",
+      "poster": "https://images.metahub.space/poster/small/tt10970762/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt10970762/img",
+      "description": "This sequel to \"The Handmaid's Tale\" follows Agnes and Daisy, two teens in Gilead who must navigate an elite preparatory school where obedience is brutally enforced. Their bond becomes the catalyst that will transform their lives.",
+      "releaseInfo": "2026–",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 15704,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt40197357",
+      "type": "series",
+      "name": "Scrubs",
+      "poster": "https://images.metahub.space/poster/small/tt40197357/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt40197357/img",
+      "description": "JD and Turk scrub in together after a long break. Medicine and interns have evolved, but their friendship remains strong. New and familiar faces at Sacred Heart bring laughs, emotion, and unexpected moments.",
+      "releaseInfo": "2026–",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 14361,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt2345459",
+      "type": "series",
+      "name": "8 Out of 10 Cats Does Countdown",
+      "poster": "https://images.metahub.space/poster/small/tt2345459/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt2345459/img",
+      "description": "A raunchy spoof edition of Countdown (1982) with the stars of 8 Out of 10 Cats (2005).",
+      "releaseInfo": "2012–",
+      "genres": [
+        "Comedy",
+        "Game-Show"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 7499,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt27790101",
+      "type": "series",
+      "name": "Conan O'Brien Must Go",
+      "poster": "https://images.metahub.space/poster/small/tt27790101/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt27790101/img",
+      "description": "After years of conversations with listeners from across the world on his podcast Conan O'Brien Needs a Friend (2018), Conan O'Brien sets off on an epic journey to connect with some of his dedicated followers in person.",
+      "releaseInfo": "2024–",
+      "genres": [
+        "Documentary",
+        "Comedy"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 5864,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt4680444",
+      "type": "series",
+      "name": "Forged in Fire",
+      "poster": "https://images.metahub.space/poster/small/tt4680444/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt4680444/img",
+      "description": "Four custom knife makers compete to make the best usable knife through a series of challenges.",
+      "releaseInfo": "2015–",
+      "genres": [
+        "Game-Show",
+        "Reality-TV"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 5153,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt8772296",
+      "type": "series",
+      "name": "Euphoria",
+      "poster": "https://images.metahub.space/poster/small/tt8772296/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt8772296/img",
+      "description": "A dark coming-of-age drama exploring love, addiction, friendship and identity in a world full of temptation and uncertainty.",
+      "releaseInfo": "2019–2026",
+      "genres": [
+        "Drama"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 328024,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt14688458",
+      "type": "series",
+      "name": "Silo",
+      "poster": "https://images.metahub.space/poster/small/tt14688458/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt14688458/img",
+      "description": "Men and women live in a giant silo underground with several regulations which they believe are in place to protect them from the toxic and ruined world on the surface.",
+      "releaseInfo": "2023–",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Mystery"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 254634,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt0452046",
+      "type": "series",
+      "name": "Criminal Minds",
+      "poster": "https://images.metahub.space/poster/small/tt0452046/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0452046/img",
+      "description": "The FBI's Behavioral Analysis Unit in Quantico helps police solve violent serial crimes using profiling. Team members analyze evidence and psychology to catch unknown subjects, but their demanding work affects personal lives.",
+      "releaseInfo": "2005–",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 244567,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt13210838",
+      "type": "series",
+      "name": "The Gentlemen",
+      "poster": "https://images.metahub.space/poster/small/tt13210838/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt13210838/img",
+      "description": "When aristocratic Eddie inherits the family estate, he discovers that it's home to a huge weed empire, and its proprietors aren't going anywhere.",
+      "releaseInfo": "2024–",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 216518,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt7203552",
+      "type": "series",
+      "name": "The Morning Show",
+      "poster": "https://images.metahub.space/poster/small/tt7203552/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt7203552/img",
+      "description": "An inside look at the lives of the people who help America wake up in the morning, exploring the unique challenges faced by the team.",
+      "releaseInfo": "2019–2027",
+      "genres": [
+        "Drama"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 153539,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt0203259",
+      "type": "series",
+      "name": "Law & Order: Special Victims Unit",
+      "poster": "https://images.metahub.space/poster/small/tt0203259/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0203259/img",
+      "description": "Follows the NYPD's specially trained squad of detectives who investigate sex crimes, including rape, paedophilia, child abuse, human trafficking and domestic violence.",
+      "releaseInfo": "1999–",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 149084,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt18923754",
+      "type": "series",
+      "name": "Daredevil: Born Again",
+      "poster": "https://images.metahub.space/poster/small/tt18923754/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt18923754/img",
+      "description": "Matt Murdock finds himself on a collision course with Wilson Fisk when their past identities begin to emerge.",
+      "releaseInfo": "2025–",
+      "genres": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 119397,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt17491088",
+      "type": "series",
+      "name": "The Diplomat",
+      "poster": "https://images.metahub.space/poster/small/tt17491088/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt17491088/img",
+      "description": "In the midst of an international crisis, Kate Wyler, a career diplomat, lands in a high-profile job for which she is not suited, with tectonic implications for her marriage and her political future.",
+      "releaseInfo": "2023–",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 108907,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt33332385",
+      "type": "series",
+      "name": "Widow's Bay",
+      "poster": "https://images.metahub.space/poster/small/tt33332385/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt33332385/img",
+      "description": "A skeptical mayor leads the superstitious residents of a cursed New England island.",
+      "releaseInfo": "2026–",
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 104566,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt7772588",
+      "type": "series",
+      "name": "For All Mankind",
+      "poster": "https://images.metahub.space/poster/small/tt7772588/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt7772588/img",
+      "description": "In an alternative version of 1969, the Soviet Union beats the United States to the Moon, and the space race continues on for decades with still grander challenges and goals.",
+      "releaseInfo": "2019–2027",
+      "genres": [
+        "Drama",
+        "Sci-Fi"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 94824,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt12327578",
+      "type": "series",
+      "name": "Star Trek: Strange New Worlds",
+      "poster": "https://images.metahub.space/poster/small/tt12327578/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt12327578/img",
+      "description": "A prequel to Star Trek (1966), this series follows the crew of the USS Enterprise under the command of Captain Christopher Pike.",
+      "releaseInfo": "2022–2027",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 81806,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt11712058",
+      "type": "series",
+      "name": "Mayor of Kingstown",
+      "poster": "https://images.metahub.space/poster/small/tt11712058/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt11712058/img",
+      "description": "The McLusky family are power brokers tackling themes of systemic racism, corruption and inequality in Kingstown, Michigan, where the business of incarceration is the only thriving industry.",
+      "releaseInfo": "2021–",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 77321,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt0852863",
+      "type": "series",
+      "name": "Phineas and Ferb",
+      "poster": "https://images.metahub.space/poster/small/tt0852863/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0852863/img",
+      "description": "Phineas and Ferb invent, scheme, and stay one step ahead of their bratty sister. Meanwhile, their pet platypus plots against evil Dr. Doofenshmirtz.",
+      "releaseInfo": "2007–",
+      "genres": [
+        "Animation",
+        "Short",
+        "Action"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 70148,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt4406178",
+      "type": "series",
+      "name": "The Gilded Age",
+      "poster": "https://images.metahub.space/poster/small/tt4406178/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt4406178/img",
+      "description": "The conflicts surrounding the new money Russell family and their old money neighbors, the van Rhijn family, in 1880s New York City high society.",
+      "releaseInfo": "2022–",
+      "genres": [
+        "Drama"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 56013,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt2805096",
+      "type": "series",
+      "name": "Chicago P.D.",
+      "poster": "https://images.metahub.space/poster/small/tt2805096/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt2805096/img",
+      "description": "Follows the lives of the personnel of the fictional 21st District, which houses both uniformed officers and the department's elite Intelligence Unit as they fight every day to keep the city of Chicago, Illinois safe.",
+      "releaseInfo": "2014–",
+      "genres": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 53766,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt27846061",
+      "type": "series",
+      "name": "Ludwig",
+      "poster": "https://images.metahub.space/poster/small/tt27846061/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt27846061/img",
+      "description": "While seeking to unravel the mystery of his twin brother's disappearance, reclusive puzzle-designer John 'Ludwig' Taylor takes on his twin brother James's identity as DCI on Cambridge's major crimes squad.",
+      "releaseInfo": "2024–",
+      "genres": [
+        "Comedy",
+        "Crime",
+        "Drama"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 27496,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt27610198",
+      "type": "series",
+      "name": "The Amazing Digital Circus",
+      "poster": "https://images.metahub.space/poster/small/tt27610198/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt27610198/img",
+      "description": "A woman finds herself trapped in a virtual circus where she and five others are subject to the whims of a wacky artificial intelligence. In this digital purgatory they must face frightening N.P.C.s and cope with their own personal...",
+      "releaseInfo": "2023–2026",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 23370,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt0983983",
+      "type": "series",
+      "name": "Shaun the Sheep",
+      "poster": "https://images.metahub.space/poster/small/tt0983983/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0983983/img",
+      "description": "Shaun The Sheep is a cheeky and mischievous sheep at Mossy Bottom farm who's the leader of the flock and always plays slapstick jokes, pranks and causes trouble especially on Farmer X and his grumpy guide dog, Bitzer.",
+      "releaseInfo": "2007–2025",
+      "genres": [
+        "Animation",
+        "Short",
+        "Comedy"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 20710,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt18228732",
+      "type": "series",
+      "name": "Colin from Accounts",
+      "poster": "https://images.metahub.space/poster/small/tt18228732/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt18228732/img",
+      "description": "A microbrewery owner and a student doctor are brought together by a car accident that injures a stray dog they agree to adopt, forcing them to navigate each other's vulnerabilities.",
+      "releaseInfo": "2022–2026",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 18530,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt0063951",
+      "type": "series",
+      "name": "Sesame Street",
+      "poster": "https://images.metahub.space/poster/small/tt0063951/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt0063951/img",
+      "description": "On a special inner city street, the inhabitants, human and muppet, teach preschool subjects with comedy, cartoons, games, and songs.",
+      "releaseInfo": "1969–",
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Drama"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 17409,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt11761194",
+      "type": "series",
+      "name": "Power Book IV: Force",
+      "poster": "https://images.metahub.space/poster/small/tt11761194/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt11761194/img",
+      "description": "Follows Tommy Egan after he cuts ties and puts New York in his rearview mirror for good.",
+      "releaseInfo": "2022–2026",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 13462,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt38504111",
+      "type": "series",
+      "name": "Small Prophets",
+      "poster": "https://images.metahub.space/poster/small/tt38504111/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt38504111/img",
+      "description": "Eccentric Michael Sleep, whose darling partner, Clea, disappeared seven years ago, sets out to create Homunculi - magical prophesying spirits that can predict the future.",
+      "releaseInfo": "2026–",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Fantasy"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 10500,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt35854736",
+      "type": "series",
+      "name": "Avatar: Seven Havens",
+      "poster": "https://images.metahub.space/poster/small/tt35854736/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt35854736/img",
+      "description": "After a world-shattering disaster, a young Earthbender learns she's the post-Korra Avatar. Now seen as a harbinger of doom, she and her twin race to save the Seven Havens while pursued by humans and spirits alike.",
+      "releaseInfo": "2026–",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 8555,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt35768911",
+      "type": "series",
+      "name": "Tip Toe",
+      "poster": "https://images.metahub.space/poster/small/tt35768911/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt35768911/img",
+      "description": "Neighbors Leo, a Canal Street bar owner, and Clive, an electrician with teen sons, find their lives unraveling as social tensions rise. Simple disagreements escalate into dangerous hostility in their Manchester suburb.",
+      "releaseInfo": "2026–",
+      "genres": [
+        "Drama"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 8252,
+      "matchingOriginalLanguage": "en"
+    },
+    {
+      "id": "tt23181388",
+      "type": "series",
+      "name": "Life on Our Planet",
+      "poster": "https://images.metahub.space/poster/small/tt23181388/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt23181388/img",
+      "description": "The incredible story of life's epic, four-billion-year journey on Earth comes alive in this series from Steven Spielberg and the team behind \"Our Planet.\"",
+      "releaseInfo": "2023",
+      "genres": [
+        "Documentary"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 8242,
+      "matchingOriginalLanguage": "en"
+    }
+  ]
+}

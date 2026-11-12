@@ -26,6 +26,7 @@ IMDB_MIN_RATING = 7.5
 MOVIE_MIN_VOTES = 10_000
 SERIES_MIN_VOTES = 5_000
 MAX_IMDB_RESULTS = 100
+CATALOG_PRIMARY_LANGUAGES = ("en", "pt", "es")
 SERIES_PAGE_SIZE = 250
 SERIES_EPISODES_TO_CHECK = 20
 # Keep the rolling IMDb rows focused on languages the user actually wants.
@@ -405,14 +406,16 @@ def active_series_ids(candidates, start_date, end_date):
             active.update(found)
     return active
 
-def imdb_search(media_type: str):
+def imdb_search(media_type: str, primary_language=None):
     today = datetime.now(ZoneInfo("Europe/London")).date()
     start = one_year_ago(today)
     min_votes = MOVIE_MIN_VOTES if media_type == "movie" else SERIES_MIN_VOTES
     title_types = ["movie"] if media_type == "movie" else ["tvSeries", "tvMiniSeries"]
 
     type_values = ", ".join(json.dumps(x) for x in title_types)
-    language_values = ", ".join(json.dumps(x) for x in ALLOWED_PRIMARY_LANGUAGES)
+    if primary_language is not None and primary_language not in CATALOG_PRIMARY_LANGUAGES:
+        raise ValueError("Unsupported catalogue primary language")
+    language_values = ", ".join(json.dumps(x) for x in ([primary_language] if primary_language else ALLOWED_PRIMARY_LANGUAGES))
 
     # Movies use their own release date. Series do not: older shows can qualify
     # if they released at least one episode during the rolling 12-month window.
@@ -426,6 +429,7 @@ def imdb_search(media_type: str):
     candidates = []
     seen = set()
     imdb_total = None
+    raw_edges_seen = 0
 
     while True:
         after_arg = f'after: {json.dumps(after)}' if after else ""
@@ -463,9 +467,14 @@ def imdb_search(media_type: str):
 
         data = imdb_graphql(query)
         search = data.get("advancedTitleSearch", {})
+        if not isinstance(search.get("total"), int) or not isinstance(search.get("edges"), list):
+            raise RuntimeError("IMDb search response is incomplete")
         if imdb_total is None:
             imdb_total = search.get("total")
         edges = search.get("edges", [])
+        if not edges and search["total"] > 0:
+            raise RuntimeError("IMDb declared results but returned an empty page")
+        raw_edges_seen += len(edges)
 
         for edge in edges:
             title = ((edge or {}).get("node") or {}).get("title") or {}
@@ -495,16 +504,21 @@ def imdb_search(media_type: str):
 
         page_info = search.get("pageInfo") or {}
         after = page_info.get("endCursor")
+        if page_info.get("hasNextPage") and not after:
+            raise RuntimeError("IMDb pagination is incomplete")
         if not page_info.get("hasNextPage") or not after:
             break
 
+    expected = min(imdb_total or 0, MAX_IMDB_RESULTS) if media_type == "movie" else (imdb_total or 0)
+    if raw_edges_seen < expected or (imdb_total and not candidates):
+        raise RuntimeError("IMDb search did not return its declared qualifying results")
     if media_type == "series":
         print(f"IMDb series candidates checked: {len(candidates)} of total {imdb_total}")
         active_ids = active_series_ids(candidates, start, today)
         candidates = [c for c in candidates if c["id"] in active_ids]
 
     candidates.sort(key=lambda x: (-x["rating"], -x["votes"], x["name"].casefold()))
-    if len(candidates) < 5:
+    if primary_language is None and len(candidates) < 5:
         qualifier = "active " if media_type == "series" else ""
         raise RuntimeError(
             f"IMDb GraphQL returned only {len(candidates)} qualifying {qualifier}{media_type} titles "
@@ -518,6 +532,10 @@ def resolve_cinemeta_id(candidate, media_type: str):
         meta = get_json(f"{CINEMETA}/meta/{media_type}/{imdb_id}.json").get("meta", {})
     except Exception:
         return None
+    if meta.get("id") != imdb_id or (meta.get("type") and meta["type"] != media_type):
+        return None
+    if not isinstance(meta.get("genres"), list) or not meta["genres"] or any(not isinstance(g, str) or not g for g in meta["genres"]):
+        return None
     poster = meta.get("poster")
     if not poster:
         return None
@@ -528,7 +546,7 @@ def resolve_cinemeta_id(candidate, media_type: str):
         "poster": poster,
         "posterShape": "poster",
     }
-    for k in ("background", "description", "releaseInfo"):
+    for k in ("background", "description", "releaseInfo", "genres"):
         if meta.get(k):
             item[k] = meta[k]
     rating = candidate.get("rating")
@@ -538,8 +556,8 @@ def resolve_cinemeta_id(candidate, media_type: str):
         item["imdbRating"] = meta["imdbRating"]
     return item
 
-def build_imdb_catalog(media_type: str, path: Path):
-    candidates, start, today, source_url = imdb_search(media_type)
+def build_imdb_catalog(media_type: str, path: Path, primary_language=None):
+    candidates, start, today, source_url = imdb_search(media_type, primary_language)
     previous = {x.get("id"): x for x in load_previous(path) if x.get("id")}
     with ThreadPoolExecutor(max_workers=12) as pool:
         metas = list(pool.map(lambda c: resolve_cinemeta_id(c, media_type), candidates))
@@ -547,14 +565,30 @@ def build_imdb_catalog(media_type: str, path: Path):
     for c, item in zip(candidates, metas):
         if not item:
             item = previous.get(c["id"])
+        if item and (item.get("id") != c["id"] or item.get("type") != media_type or not isinstance(item.get("genres"), list) or not item["genres"]):
+            item = None
         if item:
             if c.get("rating") is not None:
                 item["imdbRating"] = str(c["rating"])
+            item["imdbVotes"] = c.get("votes", 0)
+            if primary_language:
+                # Proven by the IMDb anyPrimaryLanguages search constraint,
+                # independent of dubbed audio or metadata display language.
+                item["matchingOriginalLanguage"] = primary_language
             final.append(item)
-    if len(final) < 5:
+    if (primary_language is None and len(final) < 5) or (primary_language and len(final) != len(candidates)):
         raise RuntimeError(f"Only resolved {len(final)}/{len(candidates)} IMDb {media_type} titles; refusing overwrite")
     write_catalog(path, final)
     return final, start, today, source_url
+
+def merge_imdb_catalogues(catalogues):
+    # All remains a superset of each language filter, including titles below
+    # the global top100 cutoff. Filter and paginate only after this union.
+    unique={}
+    for rows in catalogues:
+        for row in rows:
+            if row["id"] not in unique: unique[row["id"]]=row
+    return sorted(unique.values(),key=lambda r:(-float(r["imdbRating"]),-int(r.get("imdbVotes",0)),r["name"].casefold()))
 
 def main():
     status = {
@@ -603,9 +637,11 @@ def main():
             "last_attempt_at": status["updated_at"],
         })
 
+    fresh_imdb = {}
     try:
         im, start, today, movie_url = build_imdb_catalog("movie", OUT / "catalog/movie/imdb-last12m-movies.json")
         it, _, _, series_url = build_imdb_catalog("series", OUT / "catalog/series/imdb-last12m-series.json")
+        fresh_imdb = {"movie":[im],"series":[it]}
         status["imdb_last_12_months"].update({
             "from": start.isoformat(),
             "to": today.isoformat(),
@@ -619,6 +655,27 @@ def main():
         status["imdb_last_12_months"] = dict(previous_status.get("imdb_last_12_months", {}))
         status["imdb_last_12_months"].update({"refresh_success": False, "error": str(e)})
 
+    # Separate scoped searches keep Portuguese/Spanish titles from disappearing
+    # behind the global top100 cutoff. A valid empty result is not an outage.
+    language_status = {}
+    for media_type, suffix in (("series", "series"), ("movie", "movies")):
+        for language in CATALOG_PRIMARY_LANGUAGES:
+            path = OUT / f"catalog/{media_type}/imdb-last12m-{suffix}-{language}.json"
+            key = f"{media_type}:{language}"
+            try:
+                items, start, today, source_url = build_imdb_catalog(media_type, path, language)
+                if media_type in fresh_imdb: fresh_imdb[media_type].append(items)
+                language_status[key] = {"refresh_success": True, "count": len(items), "from": start.isoformat(), "to": today.isoformat(), "original_language": language}
+            except Exception as e:
+                failed = True
+                language_status[key] = {"refresh_success": False, "catalog_preserved": path.exists(), "error": str(e)}
+    status["imdb_language_catalogues"] = language_status
+    for media_type, lists in fresh_imdb.items():
+        suffix="movies" if media_type=="movie" else"series"
+        merged=merge_imdb_catalogues(lists)
+        write_catalog(OUT/f"catalog/{media_type}/imdb-last12m-{suffix}.json",merged)
+        status["imdb_last_12_months"]["movies" if media_type=="movie" else"series"]=len(merged)
+
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "status.json").write_text(json.dumps(status, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(status, indent=2))
@@ -626,3 +683,4 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+

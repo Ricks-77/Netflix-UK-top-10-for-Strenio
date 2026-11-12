@@ -9,7 +9,12 @@
       "background": "https://images.metahub.space/background/medium/tt45368240/img",
       "description": "Thirty-four days before she's sent to prison, notorious Theranos founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait becomes a mind-bending three-year journey.",
       "releaseInfo": "2026",
-      "imdbRating": "9.0"
+      "genres": [
+        "Documentary",
+        "Biography"
+      ],
+      "imdbRating": "9.0",
+      "imdbVotes": 31694
     },
     {
       "id": "tt43383343",
@@ -20,7 +25,12 @@
       "background": "https://images.metahub.space/background/medium/tt43383343/img",
       "description": "The Soul Reapers and Quincies clash in a final battle as Yhwach breaches the Royal Palace. When the Soul King falls, reality begins collapsing. Former enemies unite to storm the transformed palace and face a threat to all existence.",
       "releaseInfo": "2026",
-      "imdbRating": "8.9"
+      "genres": [
+        "Animation",
+        "Fantasy"
+      ],
+      "imdbRating": "8.9",
+      "imdbVotes": 18333
     },
     {
       "id": "tt2056785",
@@ -31,7 +41,13 @@
       "background": "https://images.metahub.space/background/medium/tt2056785/img",
       "description": "The adventures of Prue McKeel as she sets off to the forests outside Portland to find her kidnapped brother.",
       "releaseInfo": "2026",
-      "imdbRating": "8.6"
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Fantasy"
+      ],
+      "imdbRating": "8.6",
+      "imdbVotes": 26833
     },
     {
       "id": "tt33764258",
@@ -42,7 +58,13 @@
       "background": "https://images.metahub.space/background/medium/tt33764258/img",
       "description": "After the Trojan War, Odysseus faces a dangerous voyage back to Ithaca, meeting creatures like the Cyclops Polyphemus, Sirens, and Calypso along the way.",
       "releaseInfo": "2026",
-      "imdbRating": "8.4"
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "imdbRating": "8.4",
+      "imdbVotes": 559757
     },
     {
       "id": "tt12042730",
@@ -53,7 +75,13 @@
       "background": "https://images.metahub.space/background/medium/tt12042730/img",
       "description": "A science teacher wakes up alone on a spaceship. As his memory returns, he uncovers a mission to stop a mysterious substance killing Earth's sun, and realizes that an unexpected friendship may be the key.",
       "releaseInfo": "2026",
-      "imdbRating": "8.2"
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Sci-Fi"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 600367
     },
     {
       "id": "tt35511966",
@@ -64,7 +92,13 @@
       "background": "https://images.metahub.space/background/medium/tt35511966/img",
       "description": "Explores what it means to be gay throughout different eras, focusing on \"three existences\" that are connected through themes of sexuality, desire, pain, and inheritance.",
       "releaseInfo": "2026",
-      "imdbRating": "8.2"
+      "genres": [
+        "Drama",
+        "History",
+        "Musical"
+      ],
+      "imdbRating": "8.2",
+      "imdbVotes": 13288
     },
     {
       "id": "tt15799564",
@@ -75,18 +109,13 @@
       "background": "https://images.metahub.space/background/medium/tt15799564/img",
       "description": "CIA agents Chris and Lee face a trust-testing mission from Santiago to Easter Island during 1973 in Chile.",
       "releaseInfo": "2026",
-      "imdbRating": "8.1"
-    },
-    {
-      "id": "tt34384661",
-      "type": "movie",
-      "name": "Godzilla Minus Zero",
-      "poster": "https://images.metahub.space/poster/small/tt34384661/img",
-      "posterShape": "poster",
-      "background": "https://images.metahub.space/background/medium/tt34384661/img",
-      "description": "Direct continuation of Takashi Yamazaki's Godzilla Minus One.",
-      "releaseInfo": "2026",
-      "imdbRating": "8.0"
+      "genres": [
+        "Comedy",
+        "Crime",
+        "Drama"
+      ],
+      "imdbRating": "8.1",
+      "imdbVotes": 12797
     },
     {
       "id": "tt22084616",
@@ -97,7 +126,29 @@
       "background": "https://images.metahub.space/background/medium/tt22084616/img",
       "description": "A forgotten Peter Parker lives alone as a full-time Spider-Man until mounting pressure triggers a dangerous change and a powerful new enemy emerges.",
       "releaseInfo": "2026",
-      "imdbRating": "7.9"
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "imdbRating": "7.9",
+      "imdbVotes": 383868
+    },
+    {
+      "id": "tt34384661",
+      "type": "movie",
+      "name": "Godzilla Minus Zero",
+      "poster": "https://images.metahub.space/poster/small/tt34384661/img",
+      "posterShape": "poster",
+      "background": "https://images.metahub.space/background/medium/tt34384661/img",
+      "description": "Direct continuation of Takashi Yamazaki's Godzilla Minus One.",
+      "releaseInfo": "2026",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "imdbRating": "7.9",
+      "imdbVotes": 19963
     },
     {
       "id": "tt32333324",
@@ -108,7 +159,13 @@
       "background": "https://images.metahub.space/background/medium/tt32333324/img",
       "description": "When the mysterious behemoth known only as Bane frees Batman's entire rogue's gallery from Arkham Asylum, the Caped Crusader is pushed to his mental and physical breaking point.",
       "releaseInfo": "2026",
-      "imdbRating": "7.8"
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure"
+      ],
+      "imdbRating": "7.8",
+      "imdbVotes": 10381
     },
     {
       "id": "tt18259538",
@@ -119,7 +176,13 @@
       "background": "https://images.metahub.space/background/medium/tt18259538/img",
       "description": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands.",
       "releaseInfo": "2026",
-      "imdbRating": "7.7"
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure"
+      ],
+      "imdbRating": "7.7",
+      "imdbVotes": 33249
     },
     {
       "id": "tt33100314",
@@ -130,7 +193,12 @@
       "background": "https://images.metahub.space/background/medium/tt33100314/img",
       "description": "Through unlikely bonds formed during night shifts at a local aquarium, Tova, an elderly widow, learns of a life-changing discovery that may bring her joy and wonder once again.",
       "releaseInfo": "2026",
-      "imdbRating": "7.6"
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "imdbRating": "7.6",
+      "imdbVotes": 56352
     },
     {
       "id": "tt34890576",
@@ -141,7 +209,13 @@
       "background": "https://images.metahub.space/background/medium/tt34890576/img",
       "description": "Rising Hollywood star Matt Hagen descends into a horrifying revenge-filled monster when scientific ambition strips him of his identity and humanity.",
       "releaseInfo": "2026",
-      "imdbRating": "7.5"
+      "genres": [
+        "Horror",
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "imdbRating": "7.5",
+      "imdbVotes": 50465
     },
     {
       "id": "tt31450459",
@@ -152,7 +226,12 @@
       "background": "https://images.metahub.space/background/medium/tt31450459/img",
       "description": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
       "releaseInfo": "2026",
-      "imdbRating": "7.5"
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "imdbRating": "7.5",
+      "imdbVotes": 47604
     },
     {
       "id": "tt36583977",
@@ -163,7 +242,13 @@
       "background": "https://images.metahub.space/background/medium/tt36583977/img",
       "description": "Two best friends become stranded on the mystical world of Nakali, where their only escape might cost them their shared lifetime of memories.",
       "releaseInfo": "2026",
-      "imdbRating": "7.5"
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure"
+      ],
+      "imdbRating": "7.5",
+      "imdbVotes": 11363
     }
   ]
 }
